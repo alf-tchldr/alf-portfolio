@@ -94,7 +94,7 @@ export default function Web() {
             <div className="basis-2/12"></div>
             <div className="basis-8/12 pb-4">
               <div className="pb-2">
-                <a name="contents">CONTENTS</a>
+                <a id="contents">CONTENTS</a>
               </div>
               <div className="grid grid-cols-6 gap-2">
                 <div>
@@ -166,7 +166,7 @@ export default function Web() {
             <div className="basis-2/12"></div>
             <div className="place-self-top basis-3/12 p-12 text-white">
               <h2 className="animate-once animate-ease-in font-callout text-anzac-200 animate-pulse text-2xl ">
-                <a name="strengths">My Strengths</a>
+                <a id="strengths">My Strengths</a>
               </h2>
               <ul className="list-disc pt-2">
                 <li>Storytelling and presentations</li>
@@ -195,7 +195,7 @@ export default function Web() {
             </div>
             <div className="place-self-top basis-3/12 p-12 text-white">
               <h2 className="animate-once animate-ease-in font-callout text-anzac-200 animate-pulse text-2xl ">
-                <a name="areas">
+                <a id="areas">
                   Areas I've Worked In <br />
                   (All B2B)
                 </a>
@@ -242,7 +242,7 @@ export default function Web() {
             <div className="basis-1/5"></div>
             <div className="place-self-top basis-2/5 p-12 text-white">
               <h2 className="animate-once animate-ease-in font-callout text-bright-turquoise-200 animate-pulse text-2xl">
-                <a name="interests">My Professional Interests & Passions</a>
+                <a id="interests">My Professional Interests & Passions</a>
               </h2>
               <ul className="list-disc pt-2">
                 <li>DEIB (Diversity, Equity, Inclusion & Belonging)</li>
@@ -263,7 +263,7 @@ export default function Web() {
             </div>
             <div className="place-self-top basis-2/5 p-12 text-white">
               <h2 className="animate-once animate-ease-in font-callout text-bright-turquoise-200 animate-pulse text-2xl">
-                <a name="motivations">My Motivations</a>
+                <a id="motivations">My Motivations</a>
               </h2>
               <ul className="list-disc pt-2">
                 <li>Learning new perspectives/worlds/contexts</li>
@@ -326,7 +326,7 @@ export default function Web() {
                 />
               </div>
               <h2 className="animate-once animate-ease-in font-callout text-christalle-400 animate-pulse pt-4 text-2xl">
-                <a name="achievements">My Key Achievements</a>
+                <a id="achievements">My Key Achievements</a>
               </h2>
               <ul className="list-disc pt-2">
                 <li>
@@ -411,7 +411,7 @@ export default function Web() {
                 />
               </div>
               <h2 className="font-callout text-christalle-950 pt-4 text-2xl">
-                <a name="examples">Example Products I've Worked On As A PM</a>
+                <a id="examples">Example Products I've Worked On As A PM</a>
               </h2>
               <div className="mt-4 rounded bg-white bg-opacity-25 px-4 py-2 shadow-md">
                 <h3>
@@ -529,7 +529,7 @@ export default function Web() {
             <div className="basis-1/5"></div>
             <div className="basis-2/5 place-self-center p-12 text-white">
               <h2 className="animate-once animate-ease-in font-callout text-mosque-400 animate-pulse text-2xl">
-                <a name="samples">Some Samples of My Work</a>
+                <a id="samples">Some Samples of My Work</a>
               </h2>
               <p className="font-extralight">
                 All samples are completely my own work. They should no longer be particularly commercially consequential
@@ -636,7 +636,7 @@ export default function Web() {
                 />
               </div>
               <h2 className=" animate-once animate-ease-in font-callout text-cerise-200 animate-pulse pt-12 text-2xl">
-                <a name="personality">My Personality Profile</a>
+                <a id="personality">My Personality Profile</a>
               </h2>
               <h4 className="text-cerise-200 mt-4">Psychometrically:</h4>
               <ul className="list-disc pt-2">
@@ -673,7 +673,7 @@ export default function Web() {
             </div>
             <div className="basis-2/6 place-self-center p-12 text-white">
               <h2 className="animate-once animate-ease-in font-callout text-cerise-200 animate-pulse text-2xl">
-                <a name="goodToKnow">Good To Know</a>
+                <a id="goodToKnow">Good To Know</a>
               </h2>
               <ul className="list-disc pt-2">
                 <li>
@@ -769,7 +769,7 @@ export default function Web() {
             <div className="basis-1/5"></div>
             <div className="basis-2/5 place-self-center p-12 text-white">
               <h2 className="font-callout text-anzac-700 text-2xl">
-                <a name="qualifications">My Academic Qualifications</a>
+                <a id="qualifications">My Academic Qualifications</a>
               </h2>
               <div className="mt-4 rounded bg-white bg-opacity-25 px-4 py-2 shadow-md">
                 <h3>MBA - Merit (68.5%) - Warwick Business School</h3>
@@ -847,7 +847,7 @@ export default function Web() {
             </div>
             <div className="basis-2/5 place-self-center p-12 text-white">
               <h2 className="font-callout text-christalle-950 text-2xl">
-                <a name="certifications">My Certifications & Vocational Training</a>
+                <a id="certifications">My Certifications & Vocational Training</a>
               </h2>
               <h3 className="pt-4">
                 Micro-certs: Cloud Computing, AI Strategy, AI Transformers (GPTs), Generative AI x 2, Product Analytics,
@@ -877,7 +877,7 @@ export default function Web() {
             <div className="basis-1/5"></div>
             <div className="basis-2/5 place-self-center p-12 text-white">
               <h2 className="font-callout text-bright-turquoise-400 text-2xl">
-                <a name="qa">Q&A</a>
+                <a id="qa">Q&A</a>
               </h2>
               <h3 className="font-callout text-bright-turquoise-400 pt-4 text-xl">
                 What am I looking for in a new opportunity/role?
@@ -894,13 +894,13 @@ export default function Web() {
               </p>
               <h3 className="font-callout text-bright-turquoise-400 pt-4 text-xl">When should someone not hire me?</h3>
               <p>
-                If the organisational structure is very hierarchial, or heavily based on unwritten social dynamics (like
-                politics or in-groups), I'm unlikely to navigate the environment well. Additionally, if the executives
-                are too busy, not available or not able to set a clear strategic direction, I'd also not do so well. If
-                you want people to stay in their lane, do as they are told, or as sleepwalk as Seth Godin puts it in the
-                book Tribes, I'm likely to cause you stress. If the environment is slow to change, embrace new ideas,
-                people or ways of doing things, also I'm unlikely to be compatible and it will cause tension as I am a
-                changemaker.
+                If the organisational power structure is very hierarchial, or heavily based on unwritten social dynamics
+                (like politics or in-groups), instead of outcomes or collaborative relationship building, I'm unlikely
+                to navigate the environment well. Additionally, if the executives are too busy, not available or not
+                able to set a clear strategic direction, I'd also not do so well. If you want people to stay in their
+                lane, do as they are told, or as sleepwalk as Seth Godin puts it in the book Tribes, I'm likely to cause
+                you stress. If the environment is slow to change, embrace new ideas, people or ways of doing things,
+                also I'm unlikely to be compatible and it will cause tension as I am a changemaker.
               </p>
               <h3 className="font-callout text-bright-turquoise-400 pt-4 text-xl">
                 Why have I had short tenures in previous roles?
