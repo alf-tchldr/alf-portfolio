@@ -1,7 +1,7 @@
-import { Button } from "components/Button/Button"
 import { Metadata } from "next"
 import Image from "next/image"
 
+import { Button } from "components/Button/Button"
 export const metadata: Metadata = {
   title: "Amy Freelander Portfolio",
   twitter: {
@@ -39,7 +39,7 @@ export default function Web() {
             <div className="basis-3/5 justify-start px-8 py-16">
               <div className="place-self-left mx-auto">
                 <h1 className="animate-fade-up font-callout mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl xl:text-6xl">
-                  Hi. I'm Amy.
+                  Hi. I&apos;m Amy.
                 </h1>
                 <p className="animate-fade-up font-callout2 text-christalle-600 text-2xl">
                   And this is my portfolio website.
@@ -73,14 +73,14 @@ export default function Web() {
             <div className="basis-1/5"></div>
             <div className="basis-3/5 place-self-center p-6 pb-12 text-white">
               <p className="mt-4 text-2xl leading-relaxed">
-                I'm an <span className="text-mosque-400">MBA-weilding</span>, recovering{" "}
+                I&apos;m an <span className="text-mosque-400">MBA-weilding</span>, recovering{" "}
                 <span className="text-mosque-400">software engineer turned</span> passionate, creative and inclusive{" "}
-                <span className="text-mosque-400">product leader</span>. I've been a{" "}
-                <span className="text-mosque-400">dedicated Product Manager for 6 years</span> but I've been working{" "}
-                <span className="text-mosque-400">in tech for over 15 years</span>. I suit collaborative, innovative,
-                ambitious and dynamic environments best, so{" "}
-                <span className="text-mosque-400">startups and scaleups</span>, although I've done some great stuff in
-                some of the largest tech firms out there (Google & Visa).
+                <span className="text-mosque-400">product leader</span>. I&apos;ve been a{" "}
+                <span className="text-mosque-400">dedicated Product Manager for 6 years</span> but I&apos;ve been
+                working <span className="text-mosque-400">in tech for over 15 years</span>. I suit collaborative,
+                innovative, ambitious and dynamic environments best, so{" "}
+                <span className="text-mosque-400">startups and scaleups</span>, although I&apos;ve done some great stuff
+                in some of the largest tech firms out there (Google & Visa).
               </p>
               <p className="mt-4 text-2xl leading-relaxed">
                 Please use this website to get to know me and my Product work a little better with the help of some
@@ -94,7 +94,7 @@ export default function Web() {
             <div className="basis-2/12"></div>
             <div className="basis-8/12 pb-4">
               <div className="pb-2">
-                <a id="contents">CONTENTS</a>
+                <span id="contents">CONTENTS</span>
               </div>
               <div className="grid grid-cols-6 gap-2">
                 <div>
@@ -166,7 +166,7 @@ export default function Web() {
             <div className="basis-2/12"></div>
             <div className="place-self-top basis-3/12 p-12 text-white">
               <h2 className="animate-once animate-ease-in font-callout text-anzac-200 animate-pulse text-2xl ">
-                <a id="strengths">My Strengths</a>
+                <span id="strengths">My Strengths</span>
               </h2>
               <ul className="list-disc pt-2">
                 <li>Storytelling and presentations</li>
@@ -195,10 +195,10 @@ export default function Web() {
             </div>
             <div className="place-self-top basis-3/12 p-12 text-white">
               <h2 className="animate-once animate-ease-in font-callout text-anzac-200 animate-pulse text-2xl ">
-                <a id="areas">
-                  Areas I've Worked In <br />
+                <span id="areas">
+                  Areas I&apos;ve Worked In <br />
                   (All B2B)
-                </a>
+                </span>
               </h2>
               <ul className="list-disc pt-2">
                 <li>Payments/FinTech</li>
@@ -220,7 +220,7 @@ export default function Web() {
             <div className="basis-1/5"></div>
             <div className="place-self-top basis-3/5 p-12 text-white">
               <h2 className="font-callout text-anzac-200 text-xl">
-                Things I'm learning and working on improving (the journey is lifelong):
+                Things I&apos;m learning and working on improving (the journey is lifelong):
               </h2>
               <p>
                 Coaching skills, conflict management techniques, pacing myself to adjust to change at a rate suitable
@@ -242,7 +242,7 @@ export default function Web() {
             <div className="basis-1/5"></div>
             <div className="place-self-top basis-2/5 p-12 text-white">
               <h2 className="animate-once animate-ease-in font-callout text-bright-turquoise-200 animate-pulse text-2xl">
-                <a id="interests">My Professional Interests & Passions</a>
+                <span id="interests">My Professional Interests & Passions</span>
               </h2>
               <ul className="list-disc pt-2">
                 <li>DEIB (Diversity, Equity, Inclusion & Belonging)</li>
@@ -263,7 +263,7 @@ export default function Web() {
             </div>
             <div className="place-self-top basis-2/5 p-12 text-white">
               <h2 className="animate-once animate-ease-in font-callout text-bright-turquoise-200 animate-pulse text-2xl">
-                <a id="motivations">My Motivations</a>
+                <span id="motivations">My Motivations</span>
               </h2>
               <ul className="list-disc pt-2">
                 <li>Learning new perspectives/worlds/contexts</li>
@@ -326,7 +326,7 @@ export default function Web() {
                 />
               </div>
               <h2 className="animate-once animate-ease-in font-callout text-christalle-400 animate-pulse pt-4 text-2xl">
-                <a id="achievements">My Key Achievements</a>
+                <span id="achievements">My Key Achievements</span>
               </h2>
               <ul className="list-disc pt-2">
                 <li>
@@ -411,9 +411,9 @@ export default function Web() {
                 />
               </div>
               <h2 className="font-callout text-christalle-950 pt-4 text-2xl">
-                <a id="examples">Example Products I've Worked On As A PM</a>
+                <span id="examples">Example Products I&apos;ve Worked On As A PM</span>
               </h2>
-              <div className="mt-4 rounded bg-white bg-opacity-25 px-4 py-2 shadow-md">
+              <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
                 <h3>
                   A semi-legacy platform with APIs for a lot of data ingestion from hardware sources. The backbone of a
                   monitoring service being used in high-stake environments.{" "}
@@ -423,7 +423,7 @@ export default function Web() {
                 </h3>
               </div>
 
-              <div className="mt-4 rounded bg-white bg-opacity-25 px-4 py-2 shadow-md">
+              <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
                 <h3>
                   A 0-1 online psychometric tool to help people navigate the roles in the cyber security industry and
                   work out how their personality and traits would be suited for cyber security with a strong UX, data
@@ -432,7 +432,7 @@ export default function Web() {
                 </h3>
               </div>
 
-              <div className="mt-4 rounded bg-white bg-opacity-25 px-4 py-2 shadow-md">
+              <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
                 <h3>
                   A decisioning system for multiple territories/languages with lots of data integrations for an online
                   business credit card application and a third party integration with a tool to allow credit analysts to
@@ -444,7 +444,7 @@ export default function Web() {
                 </h3>
               </div>
 
-              <div className="mt-4 rounded bg-white bg-opacity-25 px-4 py-2 shadow-md">
+              <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
                 <h3>
                   A onboarding flow for multiple territories/languages for an online business credit card application
                   that allowed for experimentation and telemetry to increase acquisition growth.{" "}
@@ -455,18 +455,18 @@ export default function Web() {
                 </h3>
               </div>
 
-              <div className="mt-4 rounded bg-white bg-opacity-25 px-4 py-2 shadow-md">
+              <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
                 <h3>
                   Reliable integrations into couriers for ecommerce operations to be able to create, facilitate and
                   manage shipments of goods ordered to customers internationally.{" "}
                   <span className="text-black">
-                    I managed the company's response post-Brexit changes and devised a longer-term strategy to enable
-                    territory and market growth.
+                    I managed the company&apos;s response post-Brexit changes and devised a longer-term strategy to
+                    enable territory and market growth.
                   </span>
                 </h3>
               </div>
 
-              <div className="mt-4 rounded bg-white bg-opacity-25 px-4 py-2 shadow-md">
+              <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
                 <h3>
                   Easy to use integrations into online marketplaces for ecommerce operations so that sellers did not
                   oversell and good efficiently manage orders and inventory.{" "}
@@ -477,12 +477,12 @@ export default function Web() {
                 </h3>
               </div>
 
-              <div className="mt-4 rounded bg-white bg-opacity-25 px-4 py-2 shadow-md">
+              <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
                 <h3>
                   Internal tools for use by customer service or support teams within BigTech. Tools often created by an
                   individual and needed to be professionalised to meet compliance, security and robustness standards. I
-                  helped reduce the team's portfolio by almost 80%, ensuring that time spent was dedicated to the most
-                  impactful tools and initiatives.{" "}
+                  helped reduce the team&apos;s portfolio by almost 80%, ensuring that time spent was dedicated to the
+                  most impactful tools and initiatives.{" "}
                   <span className="text-black">
                     I launched a large scale data workflow tool project to be able to access various complex data
                     sources and create automated actions within different internal systems saving $8bn/year. I assessed
@@ -491,7 +491,7 @@ export default function Web() {
                 </h3>
               </div>
 
-              <div className="mt-4 rounded bg-white bg-opacity-25 px-4 py-2 shadow-md">
+              <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
                 <h3>
                   Bug management tracking and communications system for use throughout BigTech to help ensure
                   information on customer-facing issues were resolved in a timely and transparent manner.{" "}
@@ -502,7 +502,7 @@ export default function Web() {
                 </h3>
               </div>
 
-              <div className="mt-4 rounded bg-white bg-opacity-25 px-4 py-2 shadow-md">
+              <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
                 <h3>
                   Reliable and speedy integrations into workforce management solutions from a legacy contact centre
                   management platform through scheduled data ingestion files and SQL stored procedures.{" "}
@@ -529,7 +529,7 @@ export default function Web() {
             <div className="basis-1/5"></div>
             <div className="basis-2/5 place-self-center p-12 text-white">
               <h2 className="animate-once animate-ease-in font-callout text-mosque-400 animate-pulse text-2xl">
-                <a id="samples">Some Samples of My Work</a>
+                <span id="samples">Some Samples of My Work</span>
               </h2>
               <p className="font-extralight">
                 All samples are completely my own work. They should no longer be particularly commercially consequential
@@ -565,7 +565,7 @@ export default function Web() {
               </p>
               <p>Linnworks (Ecommerce Operations scaleup): Incident Management workshop</p>
               <p>
-                Tchldr (EdTech startup): My startup's pitch deck for an edTech platform for core human skills for
+                Tchldr (EdTech startup): My startup&apos;s pitch deck for an edTech platform for core human skills for
                 engineering managers
               </p>
               <p>Google: Key aspects of a Lean Agile mindset</p>
@@ -591,7 +591,7 @@ export default function Web() {
               </p>
 
               <p className="border-mosque-100 hover:border-mosque-700 hover:bg-mosque-700 my-4 border-y-2 p-2 font-semibold">
-                MBA case study: Google's HR Strategy
+                MBA case study: Google&apos;s HR Strategy
               </p>
 
               <p className="border-mosque-100 hover:border-mosque-700 hover:bg-mosque-700 my-4 border-y-2 p-2 font-semibold">
@@ -609,7 +609,7 @@ export default function Web() {
               </p>
               <p className="border-mosque-100 hover:border-mosque-700 hover:bg-mosque-700 my-4 border-y-2 p-2 font-semibold">
                 MBA final dissertation (machine learning based): What, If Any, Are The Relationships Between Gender Pay
-                Gaps And An Employer's Brand, Amongst Major UK Employers?
+                Gaps And An Employer&apos;s Brand, Amongst Major UK Employers?
               </p>
             </div>
           </div>
@@ -636,11 +636,11 @@ export default function Web() {
                 />
               </div>
               <h2 className=" animate-once animate-ease-in font-callout text-cerise-200 animate-pulse pt-12 text-2xl">
-                <a id="personality">My Personality Profile</a>
+                <span id="personality">My Personality Profile</span>
               </h2>
               <h4 className="text-cerise-200 mt-4">Psychometrically:</h4>
               <ul className="list-disc pt-2">
-                <li>MBTI: ENTJ-A "Executive”</li>
+                <li>MBTI: ENTJ-A &quot;Executive&quot;</li>
                 <li>Quintax: elsT-V Logical with Theoretical Strategist</li>
                 <li>True-Colors: Blue-Green</li>
                 <li>StrengthsFinder: Responsibility, Relator, Intellection, Learner & Strategic</li>
@@ -651,7 +651,7 @@ export default function Web() {
               </ul>
               <h4 className="text-cerise-200 pt-12">Practically:</h4>
               <ul className="list-disc pt-2">
-                <li>I'm extroverted, enthusiastic, communicative and honest, sometimes to my detriment</li>
+                <li>I&apos;m extroverted, enthusiastic, communicative and honest, sometimes to my detriment</li>
                 <li>I like to lead, grow and be strategic in my activities</li>
                 <li>
                   I take my responsibilities seriously and am conscientious but I am prone to emotional irrationalities
@@ -660,29 +660,33 @@ export default function Web() {
                 <li>
                   I care about people and am always keen to understand psychology and the why behind what people do
                 </li>
-                <li>I'm very liberal and open to new experiences and ideas, although it means that I need novelty</li>
+                <li>
+                  I&apos;m very liberal and open to new experiences and ideas, although it means that I need novelty
+                </li>
                 <li>I have a growth mindset but I still have high standards</li>
                 <li>
                   I intellectualise things a lot and my personality is dominated by independent thinking,
                   cognitive/logical reasoning and models
                 </li>
                 <li>
-                  I'm enthusiastic, optimistic, and generally seek harmony however I'm not afraid to speak my mind
+                  I&apos;m enthusiastic, optimistic, and generally seek harmony however I&apos;m not afraid to speak my
+                  mind
                 </li>
               </ul>
             </div>
             <div className="basis-2/6 place-self-center p-12 text-white">
               <h2 className="animate-once animate-ease-in font-callout text-cerise-200 animate-pulse text-2xl">
-                <a id="goodToKnow">Good To Know</a>
+                <span id="goodToKnow">Good To Know</span>
               </h2>
               <ul className="list-disc pt-2">
                 <li>
-                  I'm a late-diagnosed (2024) autistic person. This has deep implications far too numerous to publicly
-                  write here. However, I generally fit a{" "}
+                  I&apos;m a late-diagnosed (2024) autistic person. This has deep implications far too numerous to
+                  publicly write here. However, I generally fit a{" "}
                   <a
                     href="https://the-art-of-autism.com/females-and-aspergers-a-checklist/"
                     className="underline hover:text-gray-200"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     typical presentation for the internalised AFAB autistic profile
                   </a>
@@ -698,21 +702,22 @@ export default function Web() {
                     href="https://neuroqueer.com/neuroqueer-an-introduction/neuroqueer"
                     className="underline hover:text-gray-200"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     neuroqueer
                   </a>
                   .
                 </li>
                 <li>
-                  I love lists (as you can see). I can write a lot. Quickly. I don't have the same blocks/filters that
-                  others seem to have.
+                  I love lists (as you can see). I can write a lot. Quickly. I don&apos;t have the same blocks/filters
+                  that others seem to have.
                 </li>
-                <li>I'm a near lifelong vegetarian and I do not drink alcohol.</li>
+                <li>I&apos;m a near lifelong vegetarian and I do not drink alcohol.</li>
                 <li>
-                  I grew up in a low socio-economic home, with a chronically-ill parent, who didn't work and another
-                  parent who was their full-time carer. My father died when I was 16. I am the first generation to go to
-                  university. Despite my current higher socio-economic status, I am quintessentially working class in a
-                  lot of my attitudes, even though I am now estranged from my first family.
+                  I grew up in a low socio-economic home, with a chronically-ill parent, who didn&apos;t work and
+                  another parent who was their full-time carer. My father died when I was 16. I am the first generation
+                  to go to university. Despite my current higher socio-economic status, I am quintessentially working
+                  class in a lot of my attitudes, even though I am now estranged from my first family.
                 </li>
                 <li>
                   I am genetically and partially culturally Ashkenazi Jewish. This has some implications on some of my
@@ -725,14 +730,15 @@ export default function Web() {
                     href="http://accenture.com/techculturereset"
                     className="underline hover:text-gray-200"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Please see horrendous stats on how 50% of females leave tech before 35
                   </a>
                   .
                 </li>
                 <li>
-                  I've been coding since I was 13. I'm not in tech for money, status, or because I didn't know what else
-                  to do. It's been my passion since I got my own computer.
+                  I&apos;ve been coding since I was 13. I&apos;m not in tech for money, status, or because I didn&apos;t
+                  know what else to do. It&apos;s been my passion since I got my own computer.
                 </li>
                 <li>I am a domestic/sexual abuse survivor.</li>
                 <li>
@@ -741,14 +747,14 @@ export default function Web() {
                 </li>
                 <li>
                   I read (and listen/watch) a lot of business, psychology, and non-fiction books/podcasts. In the last
-                  decade alone, I've averaged about 50 books a year.
+                  decade alone, I&apos;ve averaged about 50 books a year.
                 </li>
                 <li>
                   My main hobbies are all Arts related: theatre (going to and performing), drawing (I drew all the
                   animals on this site), and crotcheting.
                 </li>
                 <li>
-                  I have some ethical hard lines in terms of industries I won't work for: gambling, oil and gas,
+                  I have some ethical hard lines in terms of industries I won&apos;t work for: gambling, oil and gas,
                   tobacco, payday lending, BNPL, investment banking, companies that test on animals, and a particular UK
                   supermarket beginning with T (I boycott them).
                 </li>
@@ -769,9 +775,9 @@ export default function Web() {
             <div className="basis-1/5"></div>
             <div className="basis-2/5 place-self-center p-12 text-white">
               <h2 className="font-callout text-anzac-700 text-2xl">
-                <a id="qualifications">My Academic Qualifications</a>
+                <span id="qualifications">My Academic Qualifications</span>
               </h2>
-              <div className="mt-4 rounded bg-white bg-opacity-25 px-4 py-2 shadow-md">
+              <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
                 <h3>MBA - Merit (68.5%) - Warwick Business School</h3>
                 <h4 className="text-black">
                   0.5% from Distinction (very annoying!). Student representative. HR/People specialism. Completed mainly
@@ -784,21 +790,21 @@ export default function Web() {
                   switched schools after 1 term and started again).
                 </h4>
               </div>
-              <div className="mt-4 rounded bg-white bg-opacity-25 px-4 py-2 shadow-md">
+              <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
                 <h3>BA(Hons) Computing & Spanish - First Class - University of Kent</h3>
                 <h4 className="text-black">
                   Top of my class and top of my faculty first year. Student representative. Retail work 15 hours/week.
                 </h4>
               </div>
-              <div className="mt-4 rounded bg-white bg-opacity-25 px-4 py-2 shadow-md">
+              <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
                 <h3>AVEC ICT (3 A Levels) ICT - AAA - Sussex Downs College</h3>
                 <h3 className="pt-2">AS Spanish - B - Sussex Downs College</h3>
                 <h4 className="text-black">
-                  Only 1 of 60 starting students to complete 3 A Levels' worth of modules. Only student to study an
+                  Only 1 of 60 starting students to complete 3 A Levels&apos; worth of modules. Only student to study an
                   additional subject.
                 </h4>
               </div>
-              <div className="mt-4 rounded bg-white bg-opacity-25 px-4 py-2 shadow-md">
+              <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
                 <h3>11 GCSEs - 4 A*s, 5 As, 3 Bs - Bexhill High School</h3>
                 <h4 className="text-black">
                   My father was diagnosed with terminal cancer months before my final exams and died a few weeks before
@@ -847,7 +853,7 @@ export default function Web() {
             </div>
             <div className="basis-2/5 place-self-center p-12 text-white">
               <h2 className="font-callout text-christalle-950 text-2xl">
-                <a id="certifications">My Certifications & Vocational Training</a>
+                <span id="certifications">My Certifications & Vocational Training</span>
               </h2>
               <h3 className="pt-4">
                 Micro-certs: Cloud Computing, AI Strategy, AI Transformers (GPTs), Generative AI x 2, Product Analytics,
@@ -877,7 +883,7 @@ export default function Web() {
             <div className="basis-1/5"></div>
             <div className="basis-2/5 place-self-center p-12 text-white">
               <h2 className="font-callout text-bright-turquoise-400 text-2xl">
-                <a id="qa">Q&A</a>
+                <span id="qa">Q&A</span>
               </h2>
               <h3 className="font-callout text-bright-turquoise-400 pt-4 text-xl">
                 What am I looking for in a new opportunity/role?
@@ -888,86 +894,89 @@ export default function Web() {
               </p>
               <h3 className="font-callout text-bright-turquoise-400 pt-4 text-xl">What makes me different?</h3>
               <p>
-                Too much. I don't really fit in a box or the norm in my industry. I've never really worked with anyone
-                like me. I'd say that it's rare to find someone with a good technical background/sense that is a good
-                storyteller, strategy thinker, and is courageous enough to take risks and embrace change.
+                Too much. I don&apos;t really fit in a box or the norm in my industry. I&apos;ve never really worked
+                with anyone like me. I&apos;d say that it&apos;s rare to find someone with a good technical
+                background/sense that is a good storyteller, strategy thinker, and is courageous enough to take risks
+                and embrace change.
               </p>
               <h3 className="font-callout text-bright-turquoise-400 pt-4 text-xl">When should someone not hire me?</h3>
               <p>
                 If the organisational power structure is very hierarchial, or heavily based on unwritten social dynamics
-                (like politics or in-groups), instead of outcomes or collaborative relationship building, I'm unlikely
-                to navigate the environment well. Additionally, if the executives are too busy, not available or not
-                able to set a clear strategic direction, I'd also not do so well. If you want people to stay in their
-                lane, do as they are told, or as sleepwalk as Seth Godin puts it in the book Tribes, I'm likely to cause
-                you stress. If the environment is slow to change, embrace new ideas, people or ways of doing things,
-                also I'm unlikely to be compatible and it will cause tension as I am a changemaker.
+                (like politics or in-groups), instead of outcomes or collaborative relationship building, I&apos;m
+                unlikely to navigate the environment well. Additionally, if the executives are too busy, not available
+                or not able to set a clear strategic direction, I&apos;d also not do so well. If you want people to stay
+                in their lane, do as they are told, or as sleepwalk as Seth Godin puts it in the book Tribes, I&apos;m
+                likely to cause you stress. If the environment is slow to change, embrace new ideas, people or ways of
+                doing things, also I&apos;m unlikely to be compatible and it will cause tension as I am a changemaker.
               </p>
               <h3 className="font-callout text-bright-turquoise-400 pt-4 text-xl">
                 Why have I had short tenures in previous roles?
               </h3>
               <p>
-                I'm going to give a very honest answer here; I'm not going to give the "interview safe" version. In a
-                word: autism. Or more specifically, undiagnosed, misunderstood autistic behaviours. It's a common
-                pattern for undiagnosed autistic people to go through the world, feeling like we don't belong so I have
-                chosen to move on from places because I felt I didn't belong, always trying to be optimistic that I just
-                had to find the right place. My particular personality and autistic traits mean that I don't keep my
-                head down, I try to make an impact quickly and I'm vocal and confident. This doesn't go down well in low
-                trust or hierarchial environments. I've also seemingly gone into a lot of environments as a PM, where
-                the company or people above or around just didn't really understand what Product Managers were. Most
-                seemed to think that the primary marker of a PM's success was people being "happy" with them. As most
-                seasoned PMs know, this is often the sign of a bad PM who never says no or a very tactical operator!
-                I've only worked in a role for 1 month with a manager that was also a Product person. I've also just had
-                some bad luck/timing. Not one of the Product roles I've held was backfilled after I left. Despite short
-                tenures however, I've been able to have standout impacts because I am a fast learner and executor. I
-                don't seem to need as long as other people to ramp up, or at least I can't pretend to need as long as to
-                not upset anyone.{" "}
+                I&apos;m going to give a very honest answer here; I&apos;m not going to give the &quot;interview
+                safe&quot; version. In a word: autism. Or more specifically, undiagnosed, misunderstood autistic
+                behaviours. It&apos;s a common pattern for undiagnosed autistic people to go through the world, feeling
+                like we don&apos;t belong so I have chosen to move on from places because I felt I didn&apos;t belong,
+                always trying to be optimistic that I just had to find the right place. My particular personality and
+                autistic traits mean that I don&apos;t keep my head down, I try to make an impact quickly and I&apos;m
+                vocal and confident. This doesn&apos;t go down well in low trust or hierarchial environments. I&apos;ve
+                also seemingly gone into a lot of environments as a PM, where the company or people above or around just
+                didn&apos;t really understand what Product Managers were. Most seemed to think that the primary marker
+                of a PM&apos;s success was people being &quot;happy&quot; with them. As most seasoned PMs know, this is
+                often the sign of a bad PM who never says no or a very tactical operator! I&apos;ve only worked in a
+                role for 1 month with a manager that was also a Product person. I&apos;ve also just had some bad
+                luck/timing. Not one of the Product roles I&apos;ve held was backfilled after I left. Despite short
+                tenures however, I&apos;ve been able to have standout impacts because I am a fast learner and executor.
+                I don&apos;t seem to need as long as other people to ramp up, or at least I can&apos;t pretend to need
+                as long as to not upset anyone.{" "}
               </p>
               <p className="pt-2">
-                And it shouldn't matter that I'm non-binary/female but tech is a sexist place, we cannot deny it. I,
-                like many other people from under-represented groups do have more of a spotlight on me; I am judged by
-                stricter standards. It's basic psychology: I'm basically othered by most people I meet so when I do
-                something they don't expect, I don't have the benefit of affinity or in-group biases to be easily
-                forgiven or understood or even given the benefit of the doubt. It's also a competitive environment
-                generally, and whilst not everyone will actively try to make you fail, they certainly don't help you
-                succeed. At least, that has been my experience.
+                And it shouldn&apos;t matter that I&apos;m non-binary/female but tech is a sexist place, we cannot deny
+                it. I, like many other people from under-represented groups do have more of a spotlight on me; I am
+                judged by stricter standards. It&apos;s basic psychology: I&apos;m basically othered by most people I
+                meet so when I do something they don&apos;t expect, I don&apos;t have the benefit of affinity or
+                in-group biases to be easily forgiven or understood or even given the benefit of the doubt. It&apos;s
+                also a competitive environment generally, and whilst not everyone will actively try to make you fail,
+                they certainly don&apos;t help you succeed. At least, that has been my experience.
               </p>
 
               <h3 className="font-callout text-bright-turquoise-400 pt-4 text-xl">
                 In a nutshell, why should someone hire me?
               </h3>
               <p>
-                I'm a generalist. I can do a lot of things pretty well, at least to a good enough standard to get things
-                going or to help others out. I'm an executor. I'll swallow frogs on behalf of the team. I get things
-                done. I'm efficient and quick but I also care about quality. I care about what I do and I don't just
-                dial it in. I care about people and I can easily imagine what it's like to be in other's shoes. I've
-                worked with many businesses, in different businesses and industries so I have a bredth of experience. I
-                study and I learn fast. I'm creative. I'm technically competent and can bridge the gaps between
-                different teams. I've been around the block enough to have learnt major lessons and to have honed a
-                decent instinct on what and how to do things. And I love tech and I love Product, because it's different
-                every day (I like the variety of different tasks and types of work), it's strategic, it allows me to use
-                a lot of my skills and I think companies with strong Product people and cultures, build better products.
+                I&apos;m a generalist. I can do a lot of things pretty well, at least to a good enough standard to get
+                things going or to help others out. I&apos;m an executor. I&apos;ll swallow frogs on behalf of the team.
+                I get things done. I&apos;m efficient and quick but I also care about quality. I care about what I do
+                and I don&apos;t just dial it in. I care about people and I can easily imagine what it&apos;s like to be
+                in other&apos;s shoes. I&apos;ve worked with many businesses, in different businesses and industries so
+                I have a bredth of experience. I study and I learn fast. I&apos;m creative. I&apos;m technically
+                competent and can bridge the gaps between different teams. I&apos;ve been around the block enough to
+                have learnt major lessons and to have honed a decent instinct on what and how to do things. And I love
+                tech and I love Product, because it&apos;s different every day (I like the variety of different tasks
+                and types of work), it&apos;s strategic, it allows me to use a lot of my skills and I think companies
+                with strong Product people and cultures, build better products.
               </p>
               <h3 className="font-callout text-bright-turquoise-400 pt-4 text-xl">Hybrid, remote, or in-office?</h3>
               <p>
-                I've only ever worked as a PM in remote or remote-hybrid setups. I have a strong preference for remote
-                but I recognise that in person collaboration, or at least knowing colleagues as people is important for
-                most people. So my preference is remote, with quarterly or ad-hoc meetups. I could potentially do hybrid
-                2 days a week in office, but on those days I'm likely not to be at my best, especially if a commute on
-                public transport or longer than an hour is involved (it's an autism sensory thing). I would not
-                appreciate going into an empty office or an office so busy there's nowhere to have a meeting. In office
-                100% is a no-go for me. I live in Reading, UK. Ideally, I'd love to be able to work from anywhere in the
-                world for short stints as I have family abroad and a partner who travels for work a lot. Office
-                socials/parties are not really a plus for me. Alcohol and work especially are something I try to avoid
-                due to past experiences and because I don't believe that intoxicating substances have a place in a
-                workplace.
+                I&apos;ve only ever worked as a PM in remote or remote-hybrid setups. I have a strong preference for
+                remote but I recognise that in person collaboration, or at least knowing colleagues as people is
+                important for most people. So my preference is remote, with quarterly or ad-hoc meetups. I could
+                potentially do hybrid 2 days a week in office, but on those days I&apos;m likely not to be at my best,
+                especially if a commute on public transport or longer than an hour is involved (it&apos;s an autism
+                sensory thing). I would not appreciate going into an empty office or an office so busy there&apos;s
+                nowhere to have a meeting. In office 100% is a no-go for me. I live in Reading, UK. Ideally, I&apos;d
+                love to be able to work from anywhere in the world for short stints as I have family abroad and a
+                partner who travels for work a lot. Office socials/parties are not really a plus for me. Alcohol and
+                work especially are something I try to avoid due to past experiences and because I don&apos;t believe
+                that intoxicating substances have a place in a workplace.
               </p>
               <h3 className="font-callout text-bright-turquoise-400 pt-4 text-xl">
-                What's with all the animals and the rainbows?
+                What&apos;s with all the animals and the rainbows?
               </h3>
               <p>
                 I love animals. I love rainbows (I am queer after all). I love drawing. And, well I needed something so
-                that this didn't just look like any other portfolio site. Love it or hate it, hopefully you'll remember
-                it.
+                that this didn&apos;t just look like any other portfolio site. Love it or hate it, hopefully you&apos;ll
+                remember it.
               </p>
             </div>
             <div className="mt-4 basis-1/5">

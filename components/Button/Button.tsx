@@ -31,7 +31,7 @@ const button = cva(
           "border-none",
           "shadow-md",
           "shadow-gray-200",
-          "hover:rotate-[2deg]",
+          "hover:rotate-2",
           "transition",
           "duration-300",
           "ease-in-out",
@@ -52,7 +52,7 @@ const button = cva(
         lg: ["min-w-32", "h-full", "min-h-12", "text-lg", "py-2.5", "px-6"],
       },
       underline: { true: ["underline"], false: [] },
-      odd: { true: ["hover:rotate-[-2deg]"], false: [] },
+      odd: { true: ["hover:-rotate-2"], false: [] },
     },
     defaultVariants: {
       intent: "primary",
