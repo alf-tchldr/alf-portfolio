@@ -30,7 +30,7 @@ export default function SamplePanel({ children, beforeColon, afterColon, link }:
       className="border-mosque-100 hover:border-mosque-700 hover:bg-mosque-700 my-4 border-y-2 p-2 hover:cursor-pointer"
       onClick={() => openInNewTab(link)}
     >
-      <span className="font-bold capitalize">{beforeColon}</span>{" "}
+      <span className="font-semibold capitalize">{beforeColon}</span>{" "}
     </p>
   )
 }

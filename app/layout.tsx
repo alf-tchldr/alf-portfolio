@@ -2,6 +2,8 @@ import { Dosis, Jost, Roboto_Mono } from "next/font/google"
 import "styles/custom.css"
 import "styles/tailwind.css"
 
+import { PHProvider } from "./providers"
+
 const callout = Jost({
   subsets: ["latin"],
   display: "swap",
@@ -26,7 +28,9 @@ const roboto_mono = Roboto_Mono({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${callout.variable} ${callout2.variable} ${roboto_mono.variable}`}>
-      <body>{children}</body>
+      <PHProvider>
+        <body>{children}</body>
+      </PHProvider>
     </html>
   )
 }

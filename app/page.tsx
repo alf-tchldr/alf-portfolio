@@ -968,7 +968,7 @@ export default function Web() {
                     {" "}
                     <Tooltip
                       explainer={
-                        "A lion's roar can be heard from up to eight kilometers away. I'm not saying that some people are like lions, but I've definitely heard too many people roaring about their grades to anyone that'll listen"
+                        "A lion's roar can be heard from up to eight kilometers away. I'm not saying that some people are like lions, but I've definitely heard many people roaring about their education to anyone in the vicinity"
                       }
                     >
                       <Image
