@@ -153,6 +153,9 @@ module.exports = {
       minWidth: {
         ...defaultTheme.width,
       },
+      listStyleImage: {
+        checkmark: 'url("/imgs/checkmark.png")',
+      },
     },
   },
   plugins: [require("tailwindcss-animated")],

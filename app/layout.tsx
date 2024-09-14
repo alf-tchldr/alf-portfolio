@@ -1,4 +1,5 @@
 import { Dosis, Jost, Roboto_Mono } from "next/font/google"
+import "styles/custom.css"
 import "styles/tailwind.css"
 
 const callout = Jost({

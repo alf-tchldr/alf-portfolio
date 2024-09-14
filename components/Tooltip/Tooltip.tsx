@@ -8,7 +8,7 @@ import { twMerge } from "tailwind-merge"
 const tooltipContent = cva([], {
   variants: {
     intent: {
-      primary: ["rounded-0.5md", "bg-zinc-700", "font-open-sans", "text-white"],
+      primary: ["rounded", "bg-black", "text-white"],
     },
     size: {
       md: ["px-4", "py-2.5", "text-2xs"],
@@ -23,7 +23,7 @@ const tooltipContent = cva([], {
 const tooltipArrow = cva([], {
   variants: {
     intent: {
-      primary: ["fill-zinc-700"],
+      primary: ["fill-black"],
     },
     size: {
       md: ["w-4", "h-2"],
@@ -53,7 +53,7 @@ export function Tooltip({
   size,
   side = "top",
   className,
-  withArrow,
+  withArrow = true,
 }: TooltipProps) {
   return (
     <RadixTooltip.Provider>

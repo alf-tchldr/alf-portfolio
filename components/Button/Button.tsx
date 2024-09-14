@@ -44,6 +44,10 @@ const button = cva(
           "border-gray-700",
           "shadow-sm",
           "shadow-gray-200",
+          "hover:-rotate-2",
+          "transition",
+          "duration-300",
+          "ease-in-out",
         ],
       },
       size: {

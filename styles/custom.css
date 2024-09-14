@@ -1,0 +1,22 @@
+body {
+  background: black;
+}
+
+ul li {
+  padding-top: 5px;
+  padding-left: 6px;
+  list-style-type: "◉";
+}
+
+.double-list ul li {
+  padding: 6px;
+  margin: 10px;
+  list-style-type: "❥";
+  padding-left: 1ch;
+  @apply rounded bg-white/10;
+}
+
+.double-list ul li::marker {
+  color: white;
+  font-size: 18pt;
+}
