@@ -66,7 +66,7 @@ export default function Web() {
                       alt="CV icon."
                       width="25"
                       height="25"
-                      className="animate-fade-up ml-4 place-self-center hover:border-3 hover:border-white"
+                      className="rounded animate-fade-up ml-4 place-self-center hover:border-3 hover:border-white"
                     />
                   </a>
                 </div>
@@ -470,7 +470,9 @@ export default function Web() {
                 <Heading className="font-callout pt-4 text-3xl font-semibold" from="christalle-800" to="christalle-950">
                   <span id="examples">
                     Example Products I&apos;ve Worked On As A Dedicated PM <br />
-                    <span className="text-xl">(I've worked on a lot more products as an engineer, or consultant)</span>
+                    <span className="text-xl">
+                      (I&apos;ve worked on a lot more products as an engineer, or consultant)
+                    </span>
                   </span>
                 </Heading>
                 <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
@@ -815,7 +817,7 @@ export default function Web() {
                   </li>
                   <li>I have a growth mindset but I still have high standards</li>
                   <li>
-                    I intellectualise things a lot and I'm often driven by independent thinking, cognitive/logical
+                    I intellectualise things a lot and I&apos;m often driven by independent thinking, cognitive/logical
                     reasoning and mental models
                   </li>
                   <li>
@@ -922,7 +924,7 @@ export default function Web() {
             <div className="flex flex-row">
               <div className="basis-1/5"></div>
               <div className="basis-2/5 place-self-center p-12 text-white">
-                <Heading className="font-callout pb-4 pt-4 text-3xl font-semibold" from="anzac-600" to="anzac-900">
+                <Heading className="font-callout py-4 text-3xl font-semibold" from="anzac-600" to="anzac-900">
                   <span id="qualifications">My Academic Qualifications</span>
                 </Heading>
                 <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">

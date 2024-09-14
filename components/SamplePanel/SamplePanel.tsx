@@ -12,7 +12,7 @@ type PanelProps = {
   link: string
 }
 
-export default function SamplePanel({ children, beforeColon, afterColon, link }: PropsWithChildren<PanelProps>) {
+export default function SamplePanel({ beforeColon, afterColon, link }: PropsWithChildren<PanelProps>) {
   if (afterColon) {
     return (
       <p
