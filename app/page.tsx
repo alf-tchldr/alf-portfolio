@@ -66,7 +66,7 @@ export default function Web() {
                       alt="CV icon."
                       width="25"
                       height="25"
-                      className="rounded animate-fade-up ml-4 place-self-center hover:border-3 hover:border-white"
+                      className="animate-fade-up ml-4 place-self-center rounded hover:border-3 hover:border-white"
                     />
                   </a>
                 </div>
@@ -927,7 +927,7 @@ export default function Web() {
                 <Heading className="font-callout py-4 text-3xl font-semibold" from="anzac-600" to="anzac-900">
                   <span id="qualifications">My Academic Qualifications</span>
                 </Heading>
-                <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
+                <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
                   <h3 className="text-2xl font-medium">🎓 MBA - Merit (68.5%) - Warwick Business School</h3>
                   <h4 className="text-black">
                     0.5% from Distinction (very annoying!). Student representative. HR/People specialism. Completed
@@ -940,7 +940,7 @@ export default function Web() {
                     switched schools after 1 term and started again).
                   </h4>
                 </div>
-                <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
+                <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
                   <h3 className="text-2xl font-medium">
                     🎓 BA(Hons) Computing & Spanish - First Class - University of Kent
                   </h3>
@@ -948,7 +948,7 @@ export default function Web() {
                     Top of my class and top of my faculty first year. Student representative. Retail work 15 hours/week.
                   </h4>
                 </div>
-                <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
+                <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
                   <h3 className="text-2xl font-medium">🎓 AVEC ICT (3 A Levels) ICT - AAA</h3>
                   <h3 className="pt-2 text-2xl font-medium">🎓 AS Spanish - B</h3>
                   <h4 className="text-black">
@@ -956,7 +956,7 @@ export default function Web() {
                     an additional subject.
                   </h4>
                 </div>
-                <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
+                <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
                   <h3 className="text-2xl font-medium">🎓 11 GCSEs - 4 A*s, 5 As, 3 Bs</h3>
                   <h4 className="text-black">
                     My father was diagnosed with terminal cancer months before my final exams and died a few weeks
