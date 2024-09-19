@@ -663,7 +663,7 @@ export default function Web() {
                 <LoadPanel faster>
                   <SamplePanel
                     beforeColon={"Launching an innovation project (series of workshops)"}
-                    link={"https://drive.google.com/file/d/1IlkUuxFb_PaCRIgPZzG9XsM6f3gA3FLI/view?usp=sharing"}
+                    link={"https://drive.google.com/file/d/1B_GItm0B_X8CxsEwIAoERESjM9pqD-XW/view?usp=sharing"}
                   ></SamplePanel>
                   <SamplePanel
                     beforeColon={"Pirate prioritisation game following innovation workshops I invented"}
