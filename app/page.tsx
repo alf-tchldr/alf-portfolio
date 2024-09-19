@@ -1165,14 +1165,14 @@ export default function Web() {
                     pretend to need as long as to not upset anyone or to just coast through probationary periods.
                   </p>
                   <p className="pt-2">
-                    And it shouldn&apos;t matter that I&apos;m non-binary/female but tech is a sexist place, we cannot
-                    deny it (50% of women leave by 35). I, like many other people from under-represented groups do have
-                    more of a spotlight on me; I am judged by stricter standards. It&apos;s basic psychology: I&apos;m
-                    basically othered by most people I meet so when I do something they don&apos;t expect, I don&apos;t
-                    have the benefit of affinity or in-group biases to be easily forgiven or understood or even given
-                    the benefit of the doubt. It&apos;s also a competitive environment generally, and whilst not
-                    everyone will actively try to make you fail, they certainly don&apos;t help you succeed. At least,
-                    that has been my experience.
+                    And it shouldn&apos;t matter that I&apos;m non-binary, female-presenting and queer but tech is a
+                    sexist place, we cannot deny it (50% of women leave by 35). I, like many other people from
+                    under-represented groups do have more of a spotlight on me; I am judged by stricter standards.
+                    It&apos;s basic psychology: I&apos;m basically othered by most people I meet so when I do something
+                    they don&apos;t expect, I don&apos;t have the benefit of affinity or in-group biases to be easily
+                    forgiven or understood or even given the benefit of the doubt. It&apos;s also a competitive
+                    environment generally, and whilst not everyone will actively try to make you fail, they certainly
+                    don&apos;t help you succeed. At least, that has been my experience.
                   </p>
 
                   <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
