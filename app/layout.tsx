@@ -28,6 +28,9 @@ const roboto_mono = Roboto_Mono({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${callout.variable} ${callout2.variable} ${roboto_mono.variable}`}>
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/imgs/LogoTypeColour.svg" />
+      </head>
       <PHProvider>
         <body>{children}</body>
       </PHProvider>
