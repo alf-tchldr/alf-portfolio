@@ -63,7 +63,7 @@ export function Tooltip({
           <RadixTooltip.Content
             side={side}
             sideOffset={5}
-            className={twMerge(tooltipContent({ intent, size, className }))}
+            className={twMerge(tooltipContent({ intent, size, className })) + " TooltipContent"}
           >
             {explainer}
             {withArrow ? <RadixTooltip.Arrow className={twMerge(tooltipArrow({ intent, size, className }))} /> : null}
