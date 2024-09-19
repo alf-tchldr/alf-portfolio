@@ -1,0 +1,695 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Product-Market Fit Narrative</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="36b0610b-8975-4822-a84e-8b52e30d137b" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-4.0.3&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb" style="object-position:center 79.41%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="Potential_Icon.png"/></div><h1 class="page-title">Product-Market Fit Narrative</h1></header><div class="page-body"><p id="d782c579-6c69-4e61-8d44-df0fd584d2b3" class=""><em><a href="https://docs.google.com/document/d/1pPe-li62un7aVXGJkSP-YRwv1uPv4LkwM48iC0DznPA/edit">Based on a Reforge template</a></em></p><figure id="4832dc9f-320a-4814-8705-ceace394b213" class="link-to-page">
+	PMF Research November 2022</figure><p id="98424898-7bac-446b-9075-545aec4f630f" class="">
+</p><nav id="3459a22d-3bc6-49e7-9c97-4553c9df43eb" class="block-color-purple_background table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#fbdd4817-156a-4d38-a417-e8a236dd5238"><mark class="highlight-purple">Overview</mark></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#bb3c55c6-3fb6-4e8a-8558-b943e0f52bca"><mark class="highlight-purple">Initial Insight</mark></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#c4322177-4f68-403a-97f6-b758a7e1a07b">1. <mark class="highlight-purple">Problem To Solve</mark></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#bbf0133b-5ebe-4341-921a-585806174054">2. <mark class="highlight-purple">Target Audience
+</mark></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#cd97849c-f11c-40e6-ac91-3102c0b40b48">3. <mark class="highlight-purple">Value Proposition</mark></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#4992384b-830e-4996-8eb3-f85dbffe5d01">4. <mark class="highlight-purple">Competitive Advantage</mark></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#fa45e472-c7e2-4f59-9fa6-ed1f1610969b">5. <mark class="highlight-purple">Growth Strategy</mark></a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#8f5c92bc-5e70-47d9-972a-e1ad44eece73">6. <mark class="highlight-purple">Business Model</mark></a></div></nav><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3"><mark class="highlight-purple">Overview</mark></summary><div class="indented"><p id="7c2ffcd6-4e32-454a-82c9-50031345d24e" class="">This is a living, breathing document which details our current understanding of product-market fit for Potential. It will help safeguard against common commercial product failures.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3"><mark class="highlight-purple">Initial Insight</mark></summary><div class="indented"><p id="08a50f38-bad6-4797-93f9-3a9635dab5bb" class="">The initial insight behind this product is that companies (including educational establishments) find it hard to assess people’s potential in cyber security related topics or in the field in general before investing in training or before individuals have to do a lot of self-study. There is a shortage of people and diversity in the field.</p><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3"><mark class="highlight-purple">Passes litmus test? </mark>✅</summary><div class="indented"><p id="ff6ee01a-21b8-441c-b741-8d111b777ed1" class=""><strong>Earned: derived from experience or observations?</strong><div class="indented"><p id="afa97767-19d7-4e55-b864-f57e92423dca" class="">✅ James witnessed this first hand whilst running academies</p><p id="fa216287-b8cc-40d2-afda-a5ecae3249a6" class="">✅ We have witnessed this being discussed in SANS and on podcasts</p><p id="04869854-d0da-4e6c-8d79-289defd6f281" class="">
+</p></div></p><p id="bd3e73d3-85b2-43a0-bd13-063e227eb43e" class=""><strong>Unique: under-appreciated problem?</strong><div class="indented"><p id="e24a2bd5-16c0-41e8-a889-242752eb371e" class="">✅ People have defaulted to what worked for them when looking for people e.g. hobbyists</p><p id="72aa052b-6660-4caa-8aa5-096d8b60fad1" class="">✅ SANS has not capitalised on existing assessments to solve for this problem</p><p id="80e4401f-0500-4597-b261-c76d0cfa8fe3" class="">✅ The industry is going down the path of lengthy labs and practice based activities (not really solving the problem directly)</p><p id="74f00f12-9488-478c-9414-0d363d66c0df" class="">✅ People in the industry and in society do not know what is possible with psychometric testing</p><p id="296e8b1d-83aa-4cb7-ba1d-b7153ed63d6b" class="">
+</p></div></p><p id="ce73f775-1203-4124-8778-87ed24cdbcef" class=""><strong>Grounded: value can be derived from one of the 6 elements below?</strong><div class="indented"><p id="886ac3f6-719b-4abf-8f40-cead88ebf0f7" class="">✅ 1 Problem To Solve: we can help raise awareness of the problem and give companies the confidence to solve it themselves (not just talk about education, pipelines, hobbies, certifications)</p><p id="6d6edca1-3041-493a-9094-b505e36e330b" class="">✅ 2 Target Audience: a tool built especially for Cyber Security (not generic tech or wider)</p><p id="fdfcc6e8-ae07-4d4e-810a-aee0ce8c3781" class="">✅ 3 Value Proposition: we will focus on insights and data in a beautiful, digestible and actionable way; we will simplify decision making not just provide more data points</p><p id="11b43497-c402-4582-b313-830c07e95a93" class="">✅ 4 Competitive Advantage: through SANS as selling channel</p><p id="9a7ab685-ba5f-444f-82d1-d48ddc1fb226" class="">✅ 4 Competitive Advantage: through SANS as a content-validation channel (data &amp; proving that our assessments work)</p><p id="cc82baee-1ef7-4c71-a16c-efa311ae2956" class="">✅ 4 Competitive Advantage: we have built a team, including psychometricians to tackle this</p><p id="95795415-1f70-4a9e-97e9-5684b3e337a6" class="">✅ 5 Growth Strategy: we can start through SANS customers, then expand outside of SANS</p><p id="f25b139c-6da7-405f-9660-f073a4cf9b2d" class="">✅ 6 Business Model: we can offer a good service for a reasonable percentage cost of hiring in a modern SaaS platform model </p></div></p></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3">1. <mark class="highlight-purple">Problem To Solve</mark></summary><div class="indented"><h3 id="6b7c7b37-f4c2-4ee3-bcbc-0e9a5791cd82" class=""><mark class="highlight-purple">Outcome for customer</mark></h3><p id="d3f8f70b-29cf-4957-8f5d-6897bdd0a022" class="">They can make quick, fair, and easy decisions on who to hire, award opportunities to, or train based on people’s potential (aptitude &amp; attitude) for cyber security, not just their skills or knowledge.</p><h3 id="3d1a2a26-4140-400e-a2eb-5461c9d18f9b" class=""><mark class="highlight-purple">Why do they want to solve this problem?</mark></h3><p id="890cd5b0-5867-456a-b201-25da6ab4484d" class="">There is a pipeline problem with cyber security and the field is growing/ever-changing. They need to be able to find staff from new sources and hire and train based on potential not just acquired skills, certifications or experience, as this quickly becomes outdated and exacerbates diversity issues in the field. </p><h3 id="cf68b08e-e1e8-46ab-a41b-d411be8f5998" class=""><mark class="highlight-purple">Why can’t they do it today?</mark></h3><p id="ff8e6b92-a91b-4d32-9745-3f8f24a4af5a" class=""><strong>It is not well-understood what good looks like and what it takes to make it in cyber security</strong>. <strong>It is believed that the only way to determine if someone is good is for them to try the field first, either through hobbies or educatio</strong>n (expensive and privileged route). Companies copy each other’s job descriptions and are not strategic enough when linking the roles that they need to their company strategies. Consequently, <strong>many report a lack of entry level positions or job descriptions that ask too much from one person</strong>. <strong>Candidates also report unfair, biased and long interview/selection processes</strong>. This is partly due to techies being in charge of people and sometimes focusing too much on technical sides of cyber security and not the human side or having to do too much technical work at the top (due to a lack of staff). It is also because <strong>HR do not know how to hire cyber security people</strong> and delegate or gatekeep a lot; hiring managers and HR mistrust each other and there is a disjoint. <strong>There are no clear shared tools or understandings</strong>. </p><p id="2e50d7e5-6a58-4772-be0b-274153b5a5b4" class="">
+</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3">2. <mark class="highlight-purple">Target Audience
+</mark></summary><div class="indented"><p id="bf2db6e5-e49c-4354-9bfa-0ca9700e5c85" class="">The rationale behind the choice of audience prioritisation is:</p><ol type="1" id="f944edbd-b812-4f13-8b16-abf9a6482cef" class="numbered-list" start="1"><li>Proximity/ease of reach: SANS is easiest to reach</li></ol><ol type="1" id="b3732274-362b-4bc5-837e-daac079a5872" class="numbered-list" start="2"><li>Competitive advantage: we can build a competitive moat with data we acquire from the academies for free</li></ol><ol type="1" id="09ae7aa9-c520-46ae-a9cf-459783fe5d58" class="numbered-list" start="3"><li>Strongest resonance: the academies and existing SANS customers (of assessments) have the strongest resonance with our value proposition i.e. they already have faith in assessments</li></ol><p id="10e1de29-b9c4-406a-88cc-68d80ab69197" class="">
+</p><p id="be8b64c8-267f-482f-a8e6-3af7e612df73" class=""><em>The perceived downsides of this approach is that they are predicted to financially worth less to us and could try to consume the product into their ecosystem before it’s fully fledged (wasting an opportunity for further growth).</em></p><p id="07e807a0-9c3a-4edb-b242-71e22f43ca7d" class="">
+</p><figure id="4272c5d9-a2db-4ff8-a0fd-f4af7b1f6203" class="link-to-page"><a href="https://www.notion.so/Jobs-To-Be-Done-Hypotheses-4272c5d9a2db4ff8a0fdf4af7b1f6203"><span class="icon">♟️</span>Jobs To Be Done (Hypotheses)</a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3">3. <mark class="highlight-purple">Value Proposition</mark></summary><div class="indented"><p id="ee800b04-dd0d-4da8-aba5-741282eeab05" class="">
+</p><blockquote id="781b8c03-f576-4ea1-8ced-2ca6b9dc471c" class=""><strong>Our team is on a mission to build an industry leading tool that helps businesses enable people to unlock their cyber security potential by providing easy to use online assessments and deep insight, supported and validated by renowned psychometricians and industry experts.</strong></blockquote><p id="1d7802e8-b340-4a23-acb7-4bf05d039ac4" class="">
+</p><ol type="1" id="ec95f2f2-0dea-4da2-acf6-e4cdf6c914a8" class="numbered-list" start="1"><li>Scientifically validated; proven, trustworthy, repeatable</li></ol><ol type="1" id="2c301ffb-973e-4990-9de9-e2c90ee275dc" class="numbered-list" start="2"><li>Easy to use; a modern platform, designed with non-technical end users in mind</li></ol><ol type="1" id="33d863b9-3007-47ce-8b35-bac89a1d4af1" class="numbered-list" start="3"><li>Helps translate cyber security needs into people needs; breaks down silos between HR and hiring managers</li></ol><ol type="1" id="9c36c367-cdfa-427c-be3c-9cde19fa6cf2" class="numbered-list" start="4"><li>Fair; judges people who who they can be not what privileges or opportunities they’ve had</li></ol><ol type="1" id="be92fc7b-2e64-4941-9c09-ca442bdc5d23" class="numbered-list" start="5"><li>Increases opportunities; finds hidden talent, increases team diversity and doesn’t rely on just one path in (as criminals don’t have just one path in)</li></ol><ol type="1" id="a04aa6c9-b098-479f-9cb2-8c7723b5032c" class="numbered-list" start="6"><li>Backed by data; over time, data will become richer and insights into the cyber security workforce will grow</li></ol><p id="d5db13ff-de5e-40ec-8393-17ebbd1d71d8" class="">
+</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3">4. <mark class="highlight-purple">Competitive Advantage</mark></summary><div class="indented"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Scale economics: <mark class="highlight-orange">medium-term</mark> <mark class="highlight-orange_background">strong</mark></summary><div class="indented"><p id="962585ae-b2b0-4677-a874-2180d9b6f3a4" class="">Over time, as more customers onboard, we will be able to deliver at scale, reducing overheads and making use of investments in new technology and content. This will offer us a strong competitive advantage over time</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Network economics: <mark class="highlight-red">long-term</mark> <mark class="highlight-teal_background">very strong</mark></summary><div class="indented"><p id="7bfbd18f-64ed-44c2-a7ef-d7428fc70512" class="">As more assessments are completed, we will have more data and will be able to develop more insights and derive more benefits.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Counter-positioning: <mark class="highlight-teal">short-term</mark>* <mark class="highlight-teal_background">very strong</mark></summary><div class="indented"><p id="0c34047c-7d46-4726-b2e9-3b5a3686ed6b" class="">*conflict with SANS? Alternative to certifications first approach.
+We are offering an alternative to train first and then see how they get on. We are offering an alternative to current cookie-cutter interviews with checkbox questions or highly biased ones. </p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Switching costs: <mark class="highlight-red">long-term</mark> <mark class="highlight-orange_background">strong</mark></summary><div class="indented"><p id="358cde0c-3fd6-4271-97b6-55e3f72a974b" class="">Over time, people will embed us into their HR systems and will gather a wealth of historical data which they would lose if they were to switch.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Branding: <mark class="highlight-teal">short-term</mark> <mark class="highlight-orange_background">strong</mark></summary><div class="indented"><p id="f7b1c9ce-8807-4317-a3f8-6bf20972fa3c" class="">We have a strong brand: good name, design etc and can attach ourselves to SANS’ prestige if we want.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Cornered resource: <mark class="highlight-teal">short-term</mark> <mark class="highlight-orange_background">strong</mark></summary><div class="indented"><p id="8053f461-809b-4d92-b903-b553e606ead9" class="">Using world-leading psychometricians and our contacts within SANS/GIAC to deliver content and a sales experience that nobody else has e.g. CTE or the Potential + training package.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3"><del>Process power: no</del></summary><div class="indented"><p id="a5dda541-6cde-445c-9940-9d5b17cb785a" class="">We will not be leveraging any superior (internal) processes to enhance our value proposition.</p></div></details><p id="62641d48-cd94-4e77-b217-fa816d0fadb6" class="">
+</p><p id="c5f90a4e-ad74-4ce5-a1e9-ff208632c1ac" class="">Over competitors (in the immediate term- they could pivot at any time!):</p><p id="659c2460-6144-4880-8d00-545e7bb061ca" class="">
+</p><ol type="1" id="a1bf1a49-9101-435a-ac08-0396d6204071" class="numbered-list" start="1"><li><strong>Generic technical skills testing</strong><p id="3295a9e3-051c-4476-a507-994fd1daaf1b" class="">Cyber security focused and based on aptitude, attitude and personality, not acquired skills/investment. Opening up to more people to quickly test their suitability for the field. Helping companies understand who is best suited for cyber roles, why and which roles.</p></li></ol><ol type="1" id="126c4eaa-6bb2-49a5-a5d5-f298aec75b61" class="numbered-list" start="2"><li><strong>Generic psychometric testing</strong>
+Cyber security focused and based on aptitude, attitude and personality relevant to cyber security roles specifically. Opening up to more people to quickly test their suitability for the field. Helping companies understand who is best suited for cyber roles, why and which roles.</li></ol><ol type="1" id="acf6bcd3-1058-4b4c-abaf-bc61002401ca" class="numbered-list" start="3"><li><strong>WithYouWithMe.com</strong>
+Closest competitor. However we can compete on insights that are cyber security and built around companies’ use cases rather than the B2C market. Opening up to more people to quickly test their suitability for the field based on real opportunities. </li></ol><ol type="1" id="e0fdc02d-a48d-4139-8c5b-35b394a9547e" class="numbered-list" start="4"><li><strong>MyCyberPath.com</strong>
+A close competitor for RoleFinder assessment. However we can compete on insights that are cyber security and built around companies’ use cases rather than the B2C market. Opening up to more people to quickly test their suitability for the field based on real opportunities, not hypothetical.</li></ol><ol type="1" id="779a00a4-bb69-45ca-a0ca-4eea9fd7e73d" class="numbered-list" start="5"><li><strong>Traditional interviewing/performance reviews</strong>
+We will bridge communications gaps between HR &amp; Hiring Managers. We will be able to provide a fast, fair and quick interview checkpoint. We will help companies understand the talent market and develop ways to make hiring and training decisions beyond existing processes, which can be biased and slow.</li></ol><ol type="1" id="999e810e-1966-4131-bff6-d23b2c23c48c" class="numbered-list" start="6"><li><strong>ATS systems (adjacent)</strong>
+These systems filter out people based on keywords. This is not looking for people based on potential at all but companies have unfortunately adopted them for handling recruitment at scale.</li></ol><ol type="1" id="3c79b5f4-c806-4f9f-8cd2-2b1627cd1803" class="numbered-list" start="7"><li><strong>HRM systems (adjacent)</strong>
+These systems filter out people based on performance reviews and subjective reports. This can be biased and problematic.<strong> We should choose some to integrate with.</strong></li></ol><p id="8523faf4-8501-4a24-8caa-16b0bb5043b5" class="">
+</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3">5. <mark class="highlight-purple">Growth Strategy</mark></summary><div class="indented"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Short-term channels</summary><div class="indented"><p id="4a17f6b1-f308-4287-a0fb-6041456cf39b" class=""><mark class="highlight-purple_background"><strong>GOAL: To get 10 paying customers (within 1 year)</strong></mark></p><ul id="1c5ede39-950a-4ffa-8e9b-6ff2577105ba" class="bulleted-list"><li style="list-style-type:disc">SANS academies</li></ul><ul id="f1b0ec22-5f41-4de6-87e9-3f55ff850832" class="bulleted-list"><li style="list-style-type:disc">SANS end of courses assessments</li></ul><ul id="193ee6b9-21b2-4220-8220-ac32ab74c743" class="bulleted-list"><li style="list-style-type:disc">SANS existing customers (of assessments)</li></ul><ul id="204f4247-a340-4a31-a420-5f216dfe5ea3" class="bulleted-list"><li style="list-style-type:disc">SANS value added sales team</li></ul><ul id="e97e4b40-1a61-44ce-9789-1fa1e9309693" class="bulleted-list"><li style="list-style-type:disc">SANS network</li></ul><ul id="9010a129-b960-4633-9977-d2630de6d0c4" class="bulleted-list"><li style="list-style-type:disc">Paid marketing campaigns</li></ul><ul id="7b021e33-4500-40d2-8dc3-d7ecc20c7463" class="bulleted-list"><li style="list-style-type:disc">Podcasts</li></ul><ul id="968f2191-cc90-416b-94c8-7f8f1d5886d0" class="bulleted-list"><li style="list-style-type:disc">Conferences/events</li></ul><ul id="1218d5c4-87a0-4bf4-9d16-da04f2b37573" class="bulleted-list"><li style="list-style-type:disc">Free trials</li></ul><ul id="6dfcbad4-5b99-4de1-a288-ebaa17e28fcb" class="bulleted-list"><li style="list-style-type:disc">SANS executives need to discuss </li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Long-term channels</summary><div class="indented"><p id="eece415d-a3fa-4687-8121-1e70213cbe70" class=""><mark class="highlight-purple_background"><strong>GOAL: To hit PMF with a profit of $5M/year (within 3 years)</strong></mark></p><ul id="6f328851-135c-4e36-be20-74cdf574177f" class="bulleted-list"><li style="list-style-type:disc">Paid marketing campaigns</li></ul><ul id="1bcb7542-35b4-465b-9a70-14617f73b6f1" class="bulleted-list"><li style="list-style-type:disc">Our own sales team</li></ul><ul id="03f2ef16-021e-4923-bbce-68f3f3c5f67b" class="bulleted-list"><li style="list-style-type:disc">Conferences/events</li></ul><ul id="994a7949-1b5f-40b7-abd4-eb82d7f79e40" class="bulleted-list"><li style="list-style-type:disc">Links with other products e.g. SANS Foundations</li></ul><ul id="1b41d373-b77c-443f-b367-80afc2653da0" class="bulleted-list"><li style="list-style-type:disc">Webinars</li></ul><ul id="2250f6bf-053e-49f9-8369-3d82d28f9e24" class="bulleted-list"><li style="list-style-type:disc">SANS Sales</li></ul><ul id="a81d70ea-ef99-4001-be0e-df6e3cabee33" class="bulleted-list"><li style="list-style-type:disc">SANS academies</li></ul></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3">6. <mark class="highlight-purple">Business Model</mark></summary><div class="indented"><p id="e9c4881e-c44e-4d2a-804f-deef9d069097" class="">Each Sales Org will have different goals, and therefore business models:</p><p id="0f54937f-d50d-40f9-b02d-d5c89c92cafc" class="">
+</p><table id="9239d33d-74dd-41df-b205-40017f2e59c7" class="simple-table"><thead class="simple-table-header"><tr id="df291bc8-00b6-4eba-adb4-0dfb7278ec83"><th id="aZ`s" class="simple-table-header-color simple-table-header"><strong>Sales Org</strong></th><th id="HP`c" class="block-color-teal_background simple-table-header"><strong>Goal of Sales Org</strong></th><th id="O@ec" class="block-color-yellow_background simple-table-header" style="width:141.15625px"><strong>Business Model</strong></th><th id="`\Kv" class="block-color-blue_background simple-table-header"><strong>Hypothesis or Confirmed?</strong></th></tr></thead><tbody><tr id="14e6d61d-edcf-4dfa-a8f0-4c96419fd67b"><th id="aZ`s" class="simple-table-header-color simple-table-header">SANS.edu</th><td id="HP`c" class="block-color-teal_background">Admit as many qualified applicants as possible</td><td id="O@ec" class="block-color-yellow_background" style="width:141.15625px">Fee per year - revenue share</td><td id="`\Kv" class="block-color-blue_background">TBC</td></tr><tr id="09123e94-ff74-4259-af84-cd1e602de518"><th id="aZ`s" class="simple-table-header-color simple-table-header">SANS Programs US</th><td id="HP`c" class="block-color-teal_background">Find the best people to go onto programs from the applicants</td><td id="O@ec" class="block-color-yellow_background" style="width:141.15625px">Fee per program - revenue share</td><td id="`\Kv" class="block-color-blue_background">TBC</td></tr><tr id="84830ec8-43fb-4e32-90e7-da8120e430c8"><th id="aZ`s" class="simple-table-header-color simple-table-header">SANS Programs UK/ROW</th><td id="HP`c" class="block-color-teal_background">Find the best people to go onto programs from the applicants</td><td id="O@ec" class="block-color-yellow_background" style="width:141.15625px">Fee per program - revenue share</td><td id="`\Kv" class="block-color-blue_background">TBC</td></tr><tr id="e5cd788b-8095-4a9b-8f36-a7e1e1f193e2"><th id="aZ`s" class="simple-table-header-color simple-table-header">SANS Training Sales</th><td id="HP`c" class="block-color-teal_background">Sell more training courses</td><td id="O@ec" class="block-color-yellow_background" style="width:141.15625px">Affiliate- revenue share</td><td id="`\Kv" class="block-color-blue_background">TBC</td></tr><tr id="459adc5c-40fa-4169-898d-98dfdfb479c2"><th id="aZ`s" class="simple-table-header-color simple-table-header">SANS Workforce Management &amp; Recruitment Sales</th><td id="HP`c" class="block-color-teal_background">Sell Potential as a tool for use directly by customers to make hiring and training decisions</td><td id="O@ec" class="block-color-yellow_background" style="width:141.15625px">Subscription - yearly or monthly in tiers</td><td id="`\Kv" class="block-color-blue_background">TBC</td></tr><tr id="847849fc-8f2e-48ab-b798-4635e2cf99f4"><th id="aZ`s" class="simple-table-header-color simple-table-header">Potential Direct B2B</th><td id="HP`c" class="block-color-teal_background">Sell Potential as a tool for use directly by customers to make hiring and training decisions</td><td id="O@ec" class="block-color-yellow_background" style="width:141.15625px">Subscription - yearly or monthly in tiers</td><td id="`\Kv" class="block-color-blue_background">TBC</td></tr><tr id="a3c6f3ea-7bec-47c2-8b9f-ec8f7f467a6a"><th id="aZ`s" class="simple-table-header-color simple-table-header">Potential Direct Education</th><td id="HP`c" class="block-color-teal_background">Sell Potential as a tool for use in universities and colleges for career development or admissions selection</td><td id="O@ec" class="block-color-yellow_background" style="width:141.15625px">Subscription or pay per assessment taken</td><td id="`\Kv" class="block-color-blue_background">TBC</td></tr><tr id="942380a4-3501-4993-9f9e-9195b0db1f58"><th id="aZ`s" class="simple-table-header-color simple-table-header">Potential Direct B2C</th><td id="HP`c" class="block-color-teal_background">Help individuals develop themselves</td><td id="O@ec" class="block-color-yellow_background" style="width:141.15625px">Pay per assessment or affiliate marketing or charity</td><td id="`\Kv" class="block-color-blue_background">TBC</td></tr></tbody></table><p id="47da1640-ee47-4acd-ad76-8a0b4e88d019" class="">
+</p><p id="109ab46d-50a6-4f4a-9c16-4027911ab68b" class="">
+</p><p id="81825ddb-db8b-4f3c-9c95-92195303c1fc" class="">Levers/metrics that we need to monitor or experiment within growth phase to derive the best business model/pricing model:</p><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">New opportunities/month</summary><div class="indented"><p id="6103b1d5-b979-49d4-9f43-4cdcbbb25214" class="">We should measure how many new leads we get a month to ensure we have a healthy pipeline</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Win rate/month</summary><div class="indented"><p id="1b94cb35-6c98-47ca-9e1d-ebb13271de0b" class="">We should monitor how many of our leads we are able to convert to ensure that we are not blocking our own pipeline and tailor our marketing/sales materials/processes accordingly.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">ACV (Average Contract Value) or ARR (Annual Recurring Revenue)</summary><div class="indented"><p id="92e3af20-9eb9-428e-98af-9e48b279750d" class="">We should monitor how much each of our customers, customer segments and customers in general are worth to us financially.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Assessments available per customer (not for affiliate)</summary><div class="indented"><p id="b7139d3d-07ea-4958-a474-6a99cee7d522" class="">We should monitor what content customers are buying and using to look for opportunities for different assessment-related revenue streams/packages. </p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Data Generated/Assessments taken per customer</summary><div class="indented"><p id="8816089d-9130-4f41-a4fb-6399c2b1272a" class="">We should keep an eye on the data that we are accruing as over time this will appreciate in value for us and help make our product more valuable.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">(NRR) Net Revenue Retention/Churn rate quarterly</summary><div class="indented"><p id="3a5e8927-1d8f-456c-985d-4e428739df9b" class="">We need to monitor that we are keeping customers and that the customers that we are keeping are still paying as they were in the past.</p></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3">Sales+Marketing:Sales Ratio/CAC (Customer Acquisition Cost)</summary><div class="indented"><p id="8a65b43b-ea87-4f01-a781-2aabad72d20b" class="">We need to keep a handle on the costs involved in winning new business.</p></div></details><p id="9344ff91-5def-4de4-b452-d088f192fa9d" class="">
+</p></div></details></div></article></body></html>

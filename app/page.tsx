@@ -33,6 +33,7 @@ export default function Web() {
               <div className="flex justify-end py-8">
                 <Tooltip explainer={"To contact me, send me a message on LinkedIn!"}>
                   <Image
+                    priority
                     src={`/imgs/rainbow_self.png`}
                     alt="Rainbow-coloured self drawn head of Amy with long hair from a slight side profile."
                     width="200"
@@ -57,10 +58,14 @@ export default function Web() {
                       alt="LinkedIn icon."
                       width="25"
                       height="25"
-                      className="animate-fade-up place-self-center hover:border-3 hover:border-white"
+                      className="animate-fade-up place-self-center rounded hover:border-3 hover:border-white"
                     />
                   </a>
-                  <a target="_blank" href="https://www.linkedin.com/in/freelanderamy" rel="noopener noreferrer">
+                  <a
+                    target="_blank"
+                    href="https://drive.google.com/file/d/1kPoggEQcq1McuU8yg-2l4r2j-Kj0dRBw/view?usp=sharing"
+                    rel="noopener noreferrer"
+                  >
                     <Image
                       src={`/imgs/cv_icon.png`}
                       alt="CV icon."
@@ -80,7 +85,7 @@ export default function Web() {
               <div className="basis-1/5"></div>
               <div className="basis-3/5 place-self-center p-6 pb-12 text-white">
                 <p className="mt-4 text-2xl leading-relaxed">
-                  I&apos;m an <span className="text-mosque-400">MBA-weilding</span>, recovering{" "}
+                  I&apos;m an <span className="text-mosque-400">MBA-wielding</span>, recovering{" "}
                   <span className="text-mosque-400">software engineer turned</span> passionate, creative and inclusive{" "}
                   <span className="text-mosque-400">product leader</span>. I&apos;ve been a{" "}
                   <span className="text-mosque-400">dedicated Product Manager for 6 years</span> but I&apos;ve been
@@ -104,7 +109,7 @@ export default function Web() {
               <div className="py-2">
                 <span id="contents"></span>
               </div>
-              <div className="grid grid-cols-6 gap-2">
+              <div className="grid gap-2 md:grid-cols-3 lg:grid-cols-6">
                 <div>
                   <Button href={"#strengths"} intent="nav" size="md" odd className="hover:text-anzac-500">
                     Strengths
@@ -172,9 +177,9 @@ export default function Web() {
         <section className="from-anzac-400 bg-gradient-to-br to-black">
           <LoadPanel>
             <div className="flex flex-row">
-              <div className="basis-3/12"></div>
+              <div className="md:basis-2/12 lg:basis-2/12"></div>
               <div className="place-self-top basis-3/12 p-12 text-white">
-                <Heading className="font-callout pt-4 text-3xl font-semibold" from="anzac-200" to="anzac-500">
+                <Heading className="font-callout pt-4 text-3xl font-semibold" from="anzac-200" to="anzac-300">
                   <span id="strengths">My Strengths</span>
                 </Heading>
                 <ul className="list-disc pt-2">
@@ -188,8 +193,8 @@ export default function Web() {
                   <li>Data fluency and new information processing</li>
                   <li>Enjoys change and working through ambiguity</li>
                 </ul>
-              </div>{" "}
-              <div className="basis-2/12 items-end justify-items-center pt-16">
+              </div>
+              <div className="basis-2/12 basis-2/12 items-end justify-items-center pt-16">
                 <div className="relative pt-4">
                   <div className="absolute top-[100px]">
                     {" "}
@@ -208,18 +213,18 @@ export default function Web() {
                 </div>
               </div>
               <div className="place-self-top basis-3/12 p-12 text-white">
-                <Heading className="font-callout pt-4 text-3xl font-semibold" from="anzac-200" to="anzac-500">
+                <Heading className="font-callout pt-4 text-3xl font-semibold" from="anzac-100" to="anzac-500">
                   <span id="areas">
                     Areas I&apos;ve Worked In <br />
                     (All B2B)
                   </span>
                 </Heading>
                 <ul className="list-disc pt-2">
-                  <li>APIs and Integrations</li>
                   <li>Software Consultancies</li>
+                  <li>APIs and Integrations</li>
                   <li>Payments/FinTech</li>
-                  <li>Internal Tooling</li>
                   <li>BigTech/AdTech</li>
+                  <li>Internal Tooling</li>
                   <li>Ecomm Ops</li>
                   <li>Startups</li>
                   <li>Scaleups</li>
@@ -231,9 +236,9 @@ export default function Web() {
               </div>
             </div>
             <div className="flex flex-row">
-              <div className="basis-1/5"></div>
-              <div className="place-self-top basis-3/5 px-24 pb-14 text-white">
-                <Heading className="font-callout pt-4 text-2xl font-semibold" from="anzac-200" to="anzac-500">
+              <div className="basis-2/12"></div>
+              <div className="place-self-top basis-3/5 px-12 pb-14 text-white md:basis-8/12">
+                <Heading className="font-callout pt-4 text-2xl font-semibold" from="anzac-100" to="anzac-500">
                   Things I&apos;m learning and working on improving (always looking to learn/improve):
                 </Heading>
                 <p>
@@ -297,10 +302,10 @@ export default function Web() {
                   <li>Trying new techniques and developing skills</li>
                   <li>Learning new perspectives/worlds/contexts</li>
                   <li>Being creative, having fun, and making things</li>
-                  <li>Helping people grow and be fulfilled</li>
                   <li>Leaving things better than I found them</li>
                   <li>Honing my craft and mastering my skills</li>
                   <li>Meaningful connections with humans</li>
+                  <li>Helping people grow and be fulfilled</li>
                   <li>Making tech a positive force</li>
                 </ul>
               </div>
@@ -374,66 +379,71 @@ export default function Web() {
                 </Heading>
 
                 <div className="double-list columns-2 gap-12">
-                  <ul className="pt-2">
-                    <li>
-                      Created a scientifically complex 0-1 product, including recruiting the product team (3 engineers,
-                      1 data scientist, 1 product marketer, 3 psychometrician contractors), and launched within 6 months
-                      to 80% user approval
-                    </li>
-                    <li>Created an MVP, pitch deck, and business plan for a startup within 1 month by myself</li>
-                    <li>
-                      Managed response to Brexit in first months at a company with technical complexities, a small team,
-                      and last minute changes
-                    </li>
-                    <li>
-                      Created multiple internal tools in various companies, saving thousands of hours in manual
-                      operations and generating new business lines
-                    </li>
-                    <li>
-                      Created an integration product that could be resold as an addon to a main product, which generated
-                      hundreds of thousands of dollars a year in revenue and put the company on the radar for its
-                      eventual acquisition by the product that I integrated our product into
-                    </li>
-                    <li>
-                      Reduced product portfolio at Google by nearly 80% through end of life program, clearing the path
-                      for efficiency and better tooling
-                    </li>
-                    <li>
-                      Launched a multi-team, technically complex program at Google with the aim of saving $8bn/year
-                      within my first 6 months
-                    </li>
-                    <li>
-                      Took a battlefield promotion to manage a Product team with the aim of ensuring all colleagues stay
-                      during the transition during a great period of change and actually grew the team within months
-                    </li>
-                  </ul>
-                  <ul className="list-disc pt-2">
-                    <li>
-                      Hired by Google as a top 1% candidate (only 1% of people who apply to Google get a 100% positive
-                      indication to be hired by all interviewers)
-                    </li>
-                    <li>
-                      Completed my MBA at Warwick Business School through COVID period whilst working (also accepted to
-                      Imperial Business School)
-                    </li>
-                    <li>
-                      Used machine learning techniques (which I taught myself) to perform an analysis on data I
-                      retrieved online around gender pay gap reporting to create a unique dissertation using techniques
-                      never seen before applied to business school research
-                    </li>
-                    <li>
-                      Successfully spoke at Women of Silicon Roundabout conference two years in a row, once in front of
-                      thousands of people
-                    </li>
-                    <li>
-                      Taught myself numerous programming languages and frameworks across decades including TypeScript,
-                      Python, C#, JavaScript, HTML, CSS, Bash Scripting, Powershell and Perl
-                    </li>
-                    <li>
-                      Numerous academic awards for attainment. Top of my undergraduate class and top of my faculty in my
-                      first year. Received firsts in every Computing class.
-                    </li>
-                  </ul>
+                  <LoadPanel>
+                    <ul className="pt-2">
+                      <li>
+                        Created a scientifically complex 0-1 product, including recruiting the product team (3
+                        engineers, 1 data scientist, 1 product marketer, 3 psychometrician contractors), and launched
+                        within 6 months to 80% user approval
+                      </li>
+                      <li>Created an MVP, pitch deck, and business plan for a startup within 1 month by myself</li>
+                      <li>
+                        Managed response to Brexit in first months at a company with technical complexities, a small
+                        team, and last minute changes
+                      </li>
+                      <li>
+                        Created multiple internal tools in various companies, saving thousands of hours in manual
+                        operations and generating new business lines
+                      </li>
+                      <li>
+                        Created an integration product that could be resold as an addon to a main product, which
+                        generated hundreds of thousands of dollars a year in revenue and put the company on the radar
+                        for its eventual acquisition by the product that I integrated our product into
+                      </li>
+                      <li>
+                        Reduced product portfolio at Google by nearly 80% through end of life program, clearing the path
+                        for efficiency and better tooling
+                      </li>
+                      <li>
+                        Launched a multi-team, technically complex program at Google with the aim of saving $8bn/year
+                        within my first 6 months
+                      </li>
+                    </ul>
+                  </LoadPanel>
+                  <LoadPanel>
+                    <ul className="list-disc pt-2">
+                      <li>
+                        Took a battlefield promotion to manage a Product team with the aim of ensuring all colleagues
+                        stay during the transition during a great period of change and actually grew the team within
+                        months
+                      </li>
+                      <li>
+                        Hired by Google as a top 1% candidate (only 1% of people who apply to Google get a 100% positive
+                        indication to be hired by all interviewers)
+                      </li>
+                      <li>
+                        Completed my MBA at Warwick Business School through COVID period whilst working (also accepted
+                        to Imperial Business School)
+                      </li>
+                      <li>
+                        Used machine learning techniques (which I taught myself) to perform an analysis on data I
+                        retrieved online around gender pay gap reporting to create a unique dissertation using
+                        techniques never seen before applied to business school research
+                      </li>
+                      <li>
+                        Successfully spoke at Women of Silicon Roundabout conference two years in a row, once in front
+                        of thousands of people
+                      </li>
+                      <li>
+                        Taught myself numerous programming languages and frameworks across decades including TypeScript,
+                        Python, C#, JavaScript, HTML, CSS, Bash Scripting, Powershell and Perl
+                      </li>
+                      <li>
+                        Numerous academic awards for attainment. Top of my undergraduate class and top of my faculty in
+                        my first year. Received firsts in every Computing class.
+                      </li>
+                    </ul>
+                  </LoadPanel>
                 </div>
               </div>
             </div>
@@ -475,106 +485,108 @@ export default function Web() {
                     </span>
                   </span>
                 </Heading>
-                <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
-                  <h3>
-                    A semi-legacy platform with APIs for a lot of data ingestion from hardware sources. The backbone of
-                    a monitoring service being used in high-stake environments.{" "}
-                    <span className="block text-black">
-                      I helped navigate tech debt, strategic priorities and incident management.
-                    </span>
-                  </h3>
-                </div>
+                <LoadPanel>
+                  <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
+                    <h3>
+                      A semi-legacy platform with APIs for a lot of data ingestion from hardware sources. The backbone
+                      of a monitoring service being used in high-stake environments.{" "}
+                      <span className="block text-black">
+                        I helped navigate tech debt, strategic priorities and incident management.
+                      </span>
+                    </h3>
+                  </div>
 
-                <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
-                  <h3>
-                    A 0-1 online psychometric tool to help people navigate the roles in the cyber security industry and
-                    work out how their personality and traits would be suited for cyber security with a strong UX, data
-                    presentation, scientific rigour, and API integration.{" "}
-                    <span className="block text-black">I built the product and product team from scratch.</span>
-                  </h3>
-                </div>
+                  <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
+                    <h3>
+                      A 0-1 online psychometric tool to help people navigate the roles in the cyber security industry
+                      and work out how their personality and traits would be suited for cyber security with a strong UX,
+                      data presentation, scientific rigour, and API integration.{" "}
+                      <span className="block text-black">I built the product and product team from scratch.</span>
+                    </h3>
+                  </div>
 
-                <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
-                  <h3>
-                    A decisioning system for multiple territories/languages with lots of data integrations for an online
-                    business credit card application and a third party integration with a tool to allow credit analysts
-                    to iterate on and manually ratify their decisions.{" "}
-                    <span className="block text-black">
-                      I helped iterate on an existing solution to make incremental improvements, to finalise a large
-                      migration project to a third party system and to begin to prepare for territory changes.
-                    </span>
-                  </h3>
-                </div>
+                  <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
+                    <h3>
+                      A decisioning system for multiple territories/languages with lots of data integrations for an
+                      online business credit card application and a third party integration with a tool to allow credit
+                      analysts to iterate on and manually ratify their decisions.{" "}
+                      <span className="block text-black">
+                        I helped iterate on an existing solution to make incremental improvements, to finalise a large
+                        migration project to a third party system and to begin to prepare for territory changes.
+                      </span>
+                    </h3>
+                  </div>
 
-                <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
-                  <h3>
-                    A onboarding flow for multiple territories/languages for an online business credit card application
-                    that allowed for experimentation and telemetry to increase acquisition growth.{" "}
-                    <span className="block text-black">
-                      I ran a design sprint and iterated to devise a new system to allow for more growth experimentation
-                      (A/B testing) without engineering input.
-                    </span>
-                  </h3>
-                </div>
+                  <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
+                    <h3>
+                      A onboarding flow for multiple territories/languages for an online business credit card
+                      application that allowed for experimentation and telemetry to increase acquisition growth.{" "}
+                      <span className="block text-black">
+                        I ran a design sprint and iterated to devise a new system to allow for more growth
+                        experimentation (A/B testing) without engineering input.
+                      </span>
+                    </h3>
+                  </div>
 
-                <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
-                  <h3>
-                    Reliable integrations into couriers for ecommerce operations to be able to create, facilitate and
-                    manage shipments of goods ordered to customers internationally.{" "}
-                    <span className="block text-black">
-                      I managed the company&apos;s response post-Brexit changes and devised a longer-term strategy to
-                      enable territory and market growth.
-                    </span>
-                  </h3>
-                </div>
+                  <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
+                    <h3>
+                      Reliable integrations into couriers for ecommerce operations to be able to create, facilitate and
+                      manage shipments of goods ordered to customers internationally.{" "}
+                      <span className="block text-black">
+                        I managed the company&apos;s response post-Brexit changes and devised a longer-term strategy to
+                        enable territory and market growth.
+                      </span>
+                    </h3>
+                  </div>
 
-                <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
-                  <h3>
-                    Easy to use integrations into online marketplaces for ecommerce operations so that sellers did not
-                    oversell and good efficiently manage orders and inventory.{" "}
-                    <span className="block text-black">
-                      I prioritised and helped manage partners for small third-party compliance changes and devised a
-                      longer-term partner and platform strategy to enable market growth.
-                    </span>
-                  </h3>
-                </div>
+                  <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
+                    <h3>
+                      Easy to use integrations into online marketplaces for ecommerce operations so that sellers did not
+                      oversell and good efficiently manage orders and inventory.{" "}
+                      <span className="block text-black">
+                        I prioritised and helped manage partners for small third-party compliance changes and devised a
+                        longer-term partner and platform strategy to enable market growth.
+                      </span>
+                    </h3>
+                  </div>
 
-                <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
-                  <h3>
-                    Internal tools for use by customer service or support teams within BigTech. Tools often created by
-                    an individual and needed to be professionalised to meet compliance, security and robustness
-                    standards. I helped reduce the team&apos;s portfolio by almost 80%, ensuring that time spent was
-                    dedicated to the most impactful tools and initiatives.{" "}
-                    <span className="block text-black">
-                      I launched a large scale data workflow tool project to be able to access various complex data
-                      sources and create automated actions within different internal systems saving $8bn/year. I
-                      assessed new tooling ideas for inclusion within our portfolio.
-                    </span>
-                  </h3>
-                </div>
+                  <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
+                    <h3>
+                      Internal tools for use by customer service or support teams within BigTech. Tools often created by
+                      an individual and needed to be standardised to meet compliance, security and robustness standards.
+                      I helped reduce the team&apos;s portfolio by almost 80%, ensuring that time spent was dedicated to
+                      the most impactful tools and initiatives.{" "}
+                      <span className="block text-black">
+                        I launched a large scale data workflow tool project to be able to access various complex data
+                        sources and create automated actions within different internal systems saving $8bn/year. I
+                        assessed new tooling ideas for inclusion within our portfolio.
+                      </span>
+                    </h3>
+                  </div>
 
-                <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
-                  <h3>
-                    Bug management tracking and communications system for use throughout BigTech to help ensure
-                    information on customer-facing issues were resolved in a timely and transparent manner.{" "}
-                    <span className="block text-black">
-                      I created an internal marketing campaign to start to bring new users to the system and worked to
-                      disambiguate ongoing security and permissions-based changes following a company restructure.
-                    </span>
-                  </h3>
-                </div>
+                  <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
+                    <h3>
+                      Bug management tracking and communications system for use throughout BigTech to help ensure
+                      information on customer-facing issues were resolved in a timely and transparent manner.{" "}
+                      <span className="block text-black">
+                        I created an internal marketing campaign to start to bring new users to the system and worked to
+                        disambiguate ongoing security and permissions-based changes following a company restructure.
+                      </span>
+                    </h3>
+                  </div>
 
-                <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
-                  <h3>
-                    Reliable and speedy integrations into workforce management solutions from a legacy contact centre
-                    management platform through scheduled data ingestion files and SQL stored procedures.{" "}
-                    <span className="block text-black">
-                      I took an existing collection of scrappy scripts and turned them into an application that could be
-                      sold to customers. I devised and coded this product. I worked closely with pilot customers to
-                      install, troubleshoot and monitor it in production.
-                    </span>
-                  </h3>
-                </div>
+                  <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
+                    <h3>
+                      Reliable and speedy integrations into workforce management solutions from a legacy contact centre
+                      management platform through scheduled data ingestion files and SQL stored procedures.{" "}
+                      <span className="block text-black">
+                        I took an existing collection of scrappy scripts and turned them into an application that could
+                        be sold to customers. I devised and coded this product. I worked closely with pilot customers to
+                        install, troubleshoot and monitor it in production.
+                      </span>
+                    </h3>
+                  </div>
+                </LoadPanel>
               </div>
             </div>
           </LoadPanel>
@@ -602,87 +614,117 @@ export default function Web() {
                 </p>
 
                 <h4 className="text-mosque-200 pt-12 text-2xl font-semibold">Presentations/tasks from interviews</h4>
+                <LoadPanel faster>
+                  <SamplePanel
+                    beforeColon={
+                      "How I would move a Product team through a maturity matrix shortly after starting at a company"
+                    }
+                    link={"https://drive.google.com/file/d/1Z335IeGcTEa12kbhTxBStylDwPq-fgtV/view?usp=sharing"}
+                  ></SamplePanel>
 
-                <SamplePanel
-                  beforeColon={
-                    "How I would move a Product team through a maturity matrix shortly after starting at a company"
-                  }
-                  link={"#"}
-                ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"How I manage products in a multi-business-stakeholder environments"}
+                    link={"https://drive.google.com/file/d/1sOQwCVCn6iUW11kz2dCsZ6xkw64q_FEs/view?usp=sharing"}
+                  ></SamplePanel>
 
-                <SamplePanel
-                  beforeColon={"How I manage products in a multi-business-stakeholder environments"}
-                  link={"#"}
-                ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"My approach to roadmapping features at a fintech startup"}
+                    link={"https://drive.google.com/file/d/1jgSeheRzTOZ71nd_K8f07EQ167mq8tY_/view?usp=sharing"}
+                  ></SamplePanel>
 
-                <SamplePanel
-                  beforeColon={"My approach to roadmapping features at a fintech startup"}
-                  link={"#"}
-                ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"Initial strategic take for an online tool to help onboard engineers"}
+                    link={"https://drive.google.com/file/d/1ZXhQe8eWbsN8tHKmW7NSPZir0xItFJI4/view?usp=sharing"}
+                  ></SamplePanel>
 
-                <SamplePanel
-                  beforeColon={"Initial strategic take for an online tool to help onboard engineers"}
-                  link={"#"}
-                ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"An idea to increase visitors to a zoo using tech"}
+                    link={"https://drive.google.com/file/d/1SEXIajcERWn3gHzKOUAh0t_POnyTf_jQ/view?usp=sharing"}
+                  ></SamplePanel>
 
-                <SamplePanel beforeColon={"An idea to increase visitors to a zoo using tech"} link={"#"}></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"How To Increase Netflix subscribers over 50"}
+                    link={"https://drive.google.com/file/d/1dTarolyphx7RJ0idcbKOPvqb5mTeSHui/view?usp=sharing"}
+                  ></SamplePanel>
 
-                <SamplePanel beforeColon={"How To Increase Netflix subscribers over 50"} link={"#"}></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"Improving a B2C software ecommerce website in 12 weeks"}
+                    link={"https://drive.google.com/file/d/1vHgIIPQhQFfyasdW6bbUmpPwyVEjUuhU/view?usp=sharing"}
+                  ></SamplePanel>
 
-                <SamplePanel
-                  beforeColon={"Improving a B2C software ecommerce website in 12 weeks"}
-                  link={"#"}
-                ></SamplePanel>
-
-                <SamplePanel beforeColon={"An integration product I built start to finish"} link={"#"}></SamplePanel>
-
+                  <SamplePanel
+                    beforeColon={"An integration product I built start to finish"}
+                    link={"https://drive.google.com/file/d/1rZmSmQwyW_am0DCnJ2lAol3x-Bbb-lvg/view?usp=sharing"}
+                  ></SamplePanel>
+                </LoadPanel>
                 <h4 className="text-mosque-200 pt-12 text-2xl font-semibold">
                   Actual artifacts from my recent Product career
                 </h4>
+                <LoadPanel faster>
+                  <SamplePanel
+                    beforeColon={"Launching an innovation project (series of workshops)"}
+                    link={"https://drive.google.com/file/d/1IlkUuxFb_PaCRIgPZzG9XsM6f3gA3FLI/view?usp=sharing"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"Pirate prioritisation game following innovation workshops I invented"}
+                    link={"https://drive.google.com/file/d/1IlkUuxFb_PaCRIgPZzG9XsM6f3gA3FLI/view?usp=sharing"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"Qualitative Interview Script"}
+                    link={"https://drive.google.com/file/d/1g_Mcxviagr8M9Nc85iLDOCtvkbQwM55r/view?usp=sharing"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={
+                      "Proposal to create customer tiering to help prioritisation and other problems (created in 2 hours after 7 weeks in company)"
+                    }
+                    link={"https://drive.google.com/file/d/1Mfe59ZJQSitAKheFa0XzJwaBRjRHHGQN/view?usp=sharing"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"Product Market Fit narrative example"}
+                    link={"/files/Amy Freelander Product-Market Fit Narrative.html"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"Pricing workshop withe executives to get direction setup"}
+                    link={"https://miro.com/app/board/uXjVLdOzd0w=/?share_link_id=955841538693"}
+                  ></SamplePanel>
 
-                <SamplePanel
-                  beforeColon={"Launching an innovation project (series of workshops)"}
-                  link={"#"}
-                ></SamplePanel>
-
-                <SamplePanel
-                  beforeColon={"Proposal to create customer tiering to help prioritisation and other problems"}
-                  link={"#"}
-                ></SamplePanel>
-
-                <SamplePanel beforeColon={"Product Market Fit innovation workshop"} link={"#"}></SamplePanel>
-
-                <SamplePanel
-                  beforeColon={"Pirate prioritisation game following innovation workshops"}
-                  link={"#"}
-                ></SamplePanel>
-
-                <SamplePanel beforeColon={"Product Market Fit narrative example"} link={"#"}></SamplePanel>
-
-                <SamplePanel beforeColon={"Premortem before a big launch"} link={"#"}></SamplePanel>
-
-                <SamplePanel
-                  beforeColon={
-                    "Closed public webinar and initiative explanation to engage cyber security professionals in research"
-                  }
-                  link={"#"}
-                ></SamplePanel>
-
-                <SamplePanel beforeColon={"Example specification for engineering team"} link={"#"}></SamplePanel>
-
-                <SamplePanel
-                  beforeColon={"Example specification for event and data dictionaries (instrumentation)"}
-                  link={"#"}
-                ></SamplePanel>
-
-                <SamplePanel beforeColon={"Incident Management workshop"} link={"#"}></SamplePanel>
-
-                <SamplePanel
-                  beforeColon={
-                    "My startup's pitch deck for an edTech platform for core human skills for engineering managers"
-                  }
-                  link={"#"}
-                ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"Pre-mortem before a big launch"}
+                    link={"https://miro.com/app/board/uXjVLdO_KKc=/?share_link_id=716484686149"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={
+                      "Closed public webinar and research based explanation to engage cyber security professionals (customers and field experts) in research"
+                    }
+                    link={"https://drive.google.com/file/d/13HpPnHwh4reFuwXi-XaS6Vlqi9QT9UBj/view?usp=sharing"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"Example high level score card (measuring product success)"}
+                    link={"/files/Amy Freelander Portfolio High-Level Score Card.html"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"Example jobs to be done (product hypotheses)"}
+                    link={"/files/Amy Freelander Portfolio Jobs To Be Done.html "}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"Example new Product team introductory guide (Product team/charter explainer)"}
+                    link={"https://drive.google.com/file/d/12D8xd8eUL4UOvdMJQTPpL85wjyiXFHuR/view?usp=sharing"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"Incident Management workshop"}
+                    link={"https://drive.google.com/file/d/1kv9a-LsmcepcGwdP2L6F4yNCUONbCDcf/view?usp=sharing"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"Cats In Hats Retrospective"}
+                    link={"https://miro.com/app/board/uXjVLdOqjy4=/?share_link_id=253837241456"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={
+                      "My startup's pitch deck for an edTech platform for core human skills for engineering managers"
+                    }
+                    link={"https://drive.google.com/file/d/1VFHWucCF5Fl7lfbOVN1K9hUOTvoXpOUs/view?usp=sharing"}
+                  ></SamplePanel>
+                </LoadPanel>
               </div>
               <div className="mt-12 basis-1/5">
                 <Tooltip
@@ -699,60 +741,55 @@ export default function Web() {
                   />
                 </Tooltip>
                 <h4 className="text-mosque-200 pt-12 text-2xl font-semibold">Academic writing</h4>
-
-                <p className="mb-4 font-extralight">
-                  Case studies were mainly from my career. Names were anonymised. Some details were changed to anonymise
-                  circumstances without affecting analysis. Analysis was for academic/post-work-experience processing.
-                </p>
-                <SamplePanel
-                  beforeColon={"MBA Organisational Behaviour case study"}
-                  afterColon={"Leveraging Diversity In An Internal Product Team in Google"}
-                  link={"#"}
-                ></SamplePanel>
-
-                <SamplePanel
-                  beforeColon={"MBA HR case study"}
-                  afterColon={"Google's HR Strategy"}
-                  link={"#"}
-                ></SamplePanel>
-
-                <SamplePanel
-                  beforeColon={"MBA Change Management case study"}
-                  afterColon={"Managing change in a French software company"}
-                  link={"#"}
-                ></SamplePanel>
-
-                <SamplePanel
-                  beforeColon={"MBA essay"}
-                  afterColon={"The Behavioural Sciences Behind Scrum"}
-                  link={"#"}
-                ></SamplePanel>
-
-                <SamplePanel
-                  beforeColon={"MBA Strategy case study"}
-                  afterColon={"What to do with a teenage software company?"}
-                  link={"#"}
-                ></SamplePanel>
-
-                <SamplePanel
-                  beforeColon={"MBA Innovation case study with Cortex"}
-                  afterColon={"Innovation and Creativity Field Study 2019 Presentation"}
-                  link={"#"}
-                ></SamplePanel>
-
-                <SamplePanel
-                  beforeColon={"MBA Innovation case study with Cortex"}
-                  afterColon={"Analysis"}
-                  link={"#"}
-                ></SamplePanel>
-
-                <SamplePanel
-                  beforeColon={"MBA final dissertation"}
-                  afterColon={
-                    "What, If Any, Are The Relationships Between Gender Pay Gaps And An Employer's Brand, Amongst Major UK Employers? An Analysis Using Machine Learning based)"
-                  }
-                  link={"#"}
-                ></SamplePanel>
+                <LoadPanel faster>
+                  <p className="mb-4 font-extralight">
+                    Case studies were mainly from my career. Names were anonymised. Some details were changed to
+                    anonymise circumstances without affecting analysis. Analysis was for academic/post-work-experience
+                    processing.
+                  </p>
+                  <SamplePanel
+                    beforeColon={"MBA Organisational Behaviour case study"}
+                    afterColon={"Leveraging Diversity In An Internal Product Team in Google"}
+                    link={"https://drive.google.com/file/d/1Jabw_UJECUfQdFefVa8uL_3aEVngZTOO/view?usp=sharing"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"MBA HR case study"}
+                    afterColon={"Google's HR Strategy"}
+                    link={"https://drive.google.com/file/d/1nUmmH99PBsxYeV8MXClrtyuR8YLsvd7x/view?usp=sharing"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"MBA Change Management case study"}
+                    afterColon={"Managing change in a French software company"}
+                    link={"https://drive.google.com/file/d/1NYzkRUsAnkPgz6odZ5t89chQkdKc2sbr/view?usp=sharing"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"MBA Behavioural Sciences case study"}
+                    afterColon={"The Behavioural Sciences Behind Scrum"}
+                    link={"https://drive.google.com/file/d/1KiErdGMSop0OTAWj8-CwtORNqpnetv8a/view?usp=sharing"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"MBA Strategy case study"}
+                    afterColon={"What to do with a teenage software company?"}
+                    link={"https://drive.google.com/file/d/1lCso14OdmYnAqEhtRn_FzZWh9ATduMPG/view?usp=sharing"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"MBA Innovation case study with Cortex"}
+                    afterColon={"Innovation and Creativity in a Software Company Field Study 2019 Presentation"}
+                    link={"https://drive.google.com/file/d/1O-GdRbraw0I_YTqT8VCXCn2gnmU7x31f/view?usp=sharing"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"MBA Innovation case study with Cortex"}
+                    afterColon={"Innovation and Creativity in a Software Company  Field Study Analysis"}
+                    link={"https://drive.google.com/file/d/1Sdce7lyiVwkeR_u4slvluutqcHnH-9D0/view?usp=sharing"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"MBA final dissertation"}
+                    afterColon={
+                      "Do UK employees think more highly of employers if they report smaller gender pay gaps? An Analysis Using Machine Learning."
+                    }
+                    link={"https://drive.google.com/file/d/1YMjiJRxu0QjrgXDUgwaaLjIM35SzO4xg/view?usp=sharing"}
+                  ></SamplePanel>
+                </LoadPanel>
               </div>
             </div>
           </LoadPanel>
@@ -773,7 +810,7 @@ export default function Web() {
                 <div className="basis-1/6">
                   <Tooltip
                     explainer={
-                      "Every zebra has unique black and white stripes, similar to fingerpints in their uniqueness. We're all unique, but zebras really give it to us in black and white."
+                      "Every zebra has unique black and white stripes, similar to fingerprints in their uniqueness. We're all unique, but zebras really give it to us in black and white."
                     }
                   >
                     <Image
@@ -790,123 +827,128 @@ export default function Web() {
                   <span id="personality">My Personality Profile</span>
                 </Heading>
                 <h4 className="text-cerise-200 mt-4 text-2xl">Psychometrically:</h4>
-                <ul className="list-disc pt-2">
-                  <li>MBTI: ENTJ-A &quot;Executive&quot;</li>
-                  <li>Quintax: elsT-V Logical with Theoretical Strategist</li>
-                  <li>True-Colors: Blue-Green</li>
-                  <li>StrengthsFinder: Responsibility, Relator, Intellection, Learner & Strategic</li>
-                  <li>
-                    OCEAN/Big 5: Openness 98%; Conscientiousness 71%; Extraversion 90%; Agreeableness 67%; Neuroticism
-                    77%
-                  </li>
-                  <li>IQ approx 137 as an adult (Wechsler Adult Intelligence Scale)</li>
-                </ul>
-                <h4 className="text-cerise-200 pt-12 text-2xl">Practically:</h4>
-                <ul className="list-disc pt-2">
-                  <li>I&apos;m extroverted, enthusiastic, communicative and honest, sometimes to my detriment</li>
-                  <li>I like to lead, grow and be strategic in my activities</li>
-                  <li>
-                    I take my responsibilities seriously and am conscientious but I am prone to emotional
-                    irrationalities (like most people!)
-                  </li>
-                  <li>
-                    I care about people and am always keen to understand psychology and the why behind what people do
-                  </li>
-                  <li>
-                    I&apos;m very liberal and open to new experiences and ideas, although it means that I need novelty
-                  </li>
-                  <li>I have a growth mindset but I still have high standards</li>
-                  <li>
-                    I intellectualise things a lot and I&apos;m often driven by independent thinking, cognitive/logical
-                    reasoning and mental models
-                  </li>
-                  <li>
-                    I&apos;m enthusiastic, optimistic, and generally seek harmony however I&apos;m not afraid to speak
-                    my mind
-                  </li>
-                </ul>
+                <LoadPanel faster>
+                  <ul className="list-disc pt-2">
+                    <li>MBTI: ENTJ-A &quot;Executive&quot;</li>
+                    <li>Quintax: elsT-V Logical with Theoretical Strategist</li>
+                    <li>True-Colors: Blue-Green</li>
+                    <li>StrengthsFinder: Responsibility, Relator, Intellection, Learner & Strategic</li>
+                    <li>
+                      OCEAN/Big 5: Openness 98%; Conscientiousness 71%; Extraversion 90%; Agreeableness 67%; Neuroticism
+                      77%
+                    </li>
+                    <li>IQ approx 137 as an adult (Wechsler Adult Intelligence Scale)</li>
+                  </ul>
+                  <h4 className="text-cerise-200 pt-12 text-2xl">Practically:</h4>
+                  <ul className="list-disc pt-2">
+                    <li>I&apos;m extroverted, enthusiastic, communicative and honest, sometimes to my detriment</li>
+                    <li>I like to lead, grow and be strategic in my activities</li>
+                    <li>
+                      I take my responsibilities seriously and am conscientious but I am prone to emotional
+                      irrationalities (like most people!)
+                    </li>
+                    <li>
+                      I care about people and am always keen to understand psychology and the why behind what people do
+                    </li>
+                    <li>
+                      I&apos;m very liberal and open to new experiences and ideas, although it means that I need novelty
+                    </li>
+                    <li>I have a growth mindset but I still have high standards</li>
+                    <li>
+                      I intellectualise things a lot and I&apos;m often driven by independent thinking,
+                      cognitive/logical reasoning and mental models
+                    </li>
+                    <li>
+                      I&apos;m enthusiastic, optimistic, and generally seek harmony however I&apos;m not afraid to speak
+                      my mind
+                    </li>
+                  </ul>
+                </LoadPanel>
               </div>
               <div className="basis-2/6 place-self-center p-12 text-white">
                 <Heading className="font-callout pt-4 text-3xl font-semibold" from="cerise-200" to="cerise-400">
                   <span id="goodToKnow">Good To Know</span>
                 </Heading>
-                <ul className="list-disc pt-2">
-                  <li>
-                    I&apos;m a late-diagnosed (2024) autistic person. This has deep implications far too numerous to
-                    publicly write here. However, I generally fit a lot of{" "}
-                    <a
-                      href="https://the-art-of-autism.com/females-and-aspergers-a-checklist/"
-                      className="underline hover:text-gray-200"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      typical traits for the internalised AFAB autistic profile
-                    </a>
-                    .
-                  </li>
-                  <li>
-                    I am non-binary. My pronouns are they/them and she/her. Why? Because my gender is non-binary but I
-                    have a very female body/sex.
-                  </li>
-                  <li>
-                    I am queer (LGBTQIA+). I am{" "}
-                    <a
-                      href="https://neuroqueer.com/neuroqueer-an-introduction/neuroqueer"
-                      className="underline hover:text-gray-200"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      neuroqueer
-                    </a>
-                    .
-                  </li>
-                  <li>
-                    I&apos;m a near lifelong vegetarian and I do not drink alcohol. I do not want to work in an
-                    environment where alcohol is present or plays a part in the culture (beer on tap is not a perk for
-                    me).
-                  </li>{" "}
-                  <li>
-                    I grew up in a low socio-economic home, with a chronically-ill parent. My father died when I was 16.
-                    I am the first generation to go to university. Despite my current higher socio-economic status, I am
-                    quintessentially working class in a lot of my attitudes.
-                  </li>
-                  <li>
-                    I am genetically and partially culturally Ashkenazi Jewish. This has driven some of my attitudes to
-                    the world and I carry with me definite generational, heriditary traumas from the 20th century.
-                  </li>
-                  <li>
-                    Working in tech with my identity and in my generation has not been easy. &nbsp;
-                    <a
-                      href="http://accenture.com/techculturereset"
-                      className="underline hover:text-gray-200"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Please see stats on how 50% of females leave tech before 35
-                    </a>
-                    .
-                  </li>
-                  <li>
-                    I&apos;ve been coding since I was 13. I&apos;m not in tech for money, status, or because I
-                    didn&apos;t know what else to do. It&apos;s been my passion since I got my own computer.
-                  </li>
-                  <li>
-                    I speak Spanish, have lived in Spain and have a Portuguese family. I am heavily influenced by
-                    Iberian culture and ways of being.
-                  </li>
-                  <li>
-                    I read (and listen/watch) a lot of business, psychology, and non-fiction books/podcasts. In the last
-                    decade alone, I&apos;ve averaged about 50 books a year.
-                  </li>
-                  <li>
-                    My main hobbies are all Arts related: theatre (going to and performing), drawing (I drew all the
-                    animals on this site), and crotcheting.
-                  </li>
-                  <li>
-                    I have some ethical hard lines in terms of industries I won&apos;t work for: gambling, oil and gas,
-                    tobacco, alcohol, payday lending, BNPL, investment banking, and companies that test on animals.
-                  </li>
-                </ul>
+                <LoadPanel faster>
+                  <ul className="list-disc pt-2">
+                    <li>
+                      I&apos;m a late-diagnosed (2024) autistic person. This has deep implications far too numerous to
+                      publicly write here. However, I generally fit a lot of{" "}
+                      <a
+                        href="https://the-art-of-autism.com/females-and-aspergers-a-checklist/"
+                        className="underline hover:text-gray-200"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        typical traits for the internalised AFAB autistic profile
+                      </a>
+                      .
+                    </li>
+                    <li>
+                      I am non-binary. My pronouns are they/them and she/her. Why? Because my gender is non-binary but I
+                      have a very female body/sex.
+                    </li>
+                    <li>
+                      I am queer (LGBTQIA+). I am{" "}
+                      <a
+                        href="https://neuroqueer.com/neuroqueer-an-introduction/neuroqueer"
+                        className="underline hover:text-gray-200"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        neuroqueer
+                      </a>
+                      .
+                    </li>
+                    <li>
+                      I&apos;m a near lifelong vegetarian and I do not drink alcohol. I do not want to work in an
+                      environment where alcohol is present or plays a part in the culture (beer on tap is not a perk for
+                      me).
+                    </li>{" "}
+                    <li>
+                      I grew up in a low socio-economic home, with a chronically-ill parent. My father died when I was
+                      16. I am the first generation to go to university. Despite my current higher socio-economic
+                      status, I am quintessentially working class in a lot of my attitudes.
+                    </li>
+                    <li>
+                      I am genetically and partially culturally Ashkenazi Jewish. This has driven some of my attitudes
+                      to the world and I carry with me definite generational, hereditary traumas from the 20th century.
+                    </li>
+                    <li>
+                      Working in tech with my identity and in my generation has not been easy. &nbsp;
+                      <a
+                        href="http://accenture.com/techculturereset"
+                        className="underline hover:text-gray-200"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Please see stats on how 50% of females leave tech before 35
+                      </a>
+                      .
+                    </li>
+                    <li>
+                      I&apos;ve been coding since I was 13. I&apos;m not in tech for money, status, or because I
+                      didn&apos;t know what else to do. It&apos;s been my passion since I got my own computer.
+                    </li>
+                    <li>
+                      I speak Spanish, have lived in Spain and have a Portuguese family. I am heavily influenced by
+                      Iberian culture and ways of being.
+                    </li>
+                    <li>
+                      I read (and listen/watch) a lot of business, psychology, and non-fiction books/podcasts. In the
+                      last decade alone, I&apos;ve averaged about 50 books a year.
+                    </li>
+                    <li>
+                      My main hobbies are all Arts related: theatre (going to and performing), drawing (I drew all the
+                      animals on this site), and crotcheting.
+                    </li>
+                    <li>
+                      I have some ethical hard lines in terms of industries I won&apos;t work for: gambling, oil and
+                      gas, tobacco, alcohol, payday lending, BNPL, investment banking, and companies that test on
+                      animals.
+                    </li>
+                  </ul>
+                </LoadPanel>
               </div>
             </div>
           </LoadPanel>
@@ -926,43 +968,46 @@ export default function Web() {
               <div className="basis-2/5 place-self-center p-12 text-white">
                 <Heading className="font-callout py-4 text-3xl font-semibold" from="anzac-600" to="anzac-900">
                   <span id="qualifications">My Academic Qualifications</span>
-                </Heading>
-                <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
-                  <h3 className="text-2xl font-medium">🎓 MBA - Merit (68.5%) - Warwick Business School</h3>
-                  <h4 className="text-black">
-                    0.5% from Distinction (very annoying!). Student representative. HR/People specialism. Completed
-                    mainly during pandemic. <br />
-                    <br />
-                    Change Management, Org Behaviour, Marketing, Finance, Operations Management, Leadership, Economics,
-                    Innovation, HR, Strategy, Wellbeing Economics and Behavioural Sciences. <br />
-                    <br />
-                    Distinctions in all exams (including 2 I took at Imperial Business School whilst enrolled there- I
-                    switched schools after 1 term and started again).
-                  </h4>
-                </div>
-                <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
-                  <h3 className="text-2xl font-medium">
-                    🎓 BA(Hons) Computing & Spanish - First Class - University of Kent
-                  </h3>
-                  <h4 className="text-black">
-                    Top of my class and top of my faculty first year. Student representative. Retail work 15 hours/week.
-                  </h4>
-                </div>
-                <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
-                  <h3 className="text-2xl font-medium">🎓 AVEC ICT (3 A Levels) ICT - AAA</h3>
-                  <h3 className="pt-2 text-2xl font-medium">🎓 AS Spanish - B</h3>
-                  <h4 className="text-black">
-                    Only 1 of 60 starting students to complete 3 A Levels&apos; worth of modules. Only student to study
-                    an additional subject.
-                  </h4>
-                </div>
-                <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
-                  <h3 className="text-2xl font-medium">🎓 11 GCSEs - 4 A*s, 5 As, 3 Bs</h3>
-                  <h4 className="text-black">
-                    My father was diagnosed with terminal cancer months before my final exams and died a few weeks
-                    before my exams started, so this was under severe adversity.
-                  </h4>
-                </div>
+                </Heading>{" "}
+                <LoadPanel faster>
+                  <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
+                    <h3 className="text-2xl font-medium">🎓 MBA - Merit (68.5%) - Warwick Business School</h3>
+                    <h4 className="text-black">
+                      0.5% from Distinction (very annoying!). Student representative. HR/People specialism. Completed
+                      mainly during pandemic. <br />
+                      <br />
+                      Change Management, Org Behaviour, Marketing, Finance, Operations Management, Leadership,
+                      Economics, Innovation, HR, Strategy, Wellbeing Economics and Behavioural Sciences. <br />
+                      <br />
+                      Distinctions in all exams (including 2 I took at Imperial Business School whilst enrolled there- I
+                      switched schools after 1 term and started again).
+                    </h4>
+                  </div>
+                  <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
+                    <h3 className="text-2xl font-medium">
+                      🎓 BA(Hons) Computing & Spanish - First Class - University of Kent
+                    </h3>
+                    <h4 className="text-black">
+                      Top of my class and top of my faculty first year. Student representative. Retail work 15
+                      hours/week.
+                    </h4>
+                  </div>
+                  <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
+                    <h3 className="text-2xl font-medium">🎓 AVCE ICT (3 A Levels) ICT - AAA</h3>
+                    <h3 className="pt-2 text-2xl font-medium">🎓 AS Spanish - B</h3>
+                    <h4 className="text-black">
+                      Only 1 of 60 starting students to complete 3 A Levels&apos; worth of modules. Only student to
+                      study an additional subject.
+                    </h4>
+                  </div>
+                  <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
+                    <h3 className="text-2xl font-medium">🎓 11 GCSEs - 4 A*s, 5 As, 3 Bs</h3>
+                    <h4 className="text-black">
+                      My father was diagnosed with terminal cancer months before my final exams and died a few weeks
+                      before my exams started, so this was under severe adversity.
+                    </h4>
+                  </div>
+                </LoadPanel>
               </div>
               <div className="basis-1/5">
                 <div className="relative pt-4">
@@ -1021,19 +1066,21 @@ export default function Web() {
               <div className="basis-2/5 place-self-center p-12 text-white">
                 <Heading className="font-callout pt-4 text-3xl font-semibold" from="christalle-800" to="christalle-950">
                   <span id="certifications">My Certifications & Vocational Training</span>
-                </Heading>
-                <h3 className="pt-4">
-                  📃 Micro-certs: Cloud Computing, AI Strategy, AI Transformers (GPTs), Generative AI x 2, Product
-                  Analytics, Product-Led Growth, Product Launches, Product Roadmapping, Product Strategy, and AI for
-                  Product Management.
-                </h3>
-                <h3 className="pt-4">📃 Reforge Program- 8x courses on Product Management</h3>
-                <h3 className="pt-4">📃 SAFe Program Consultant (SPC4)</h3>
-                <h3 className="pt-4">📃 Professional Scrum Master</h3>
-                <h3 className="pt-4">📃 BCS Certificate in Business Analysis Practice</h3>
-                <h3 className="pt-4">📃 Agile Project Manager Practitioner</h3>
-                <h3 className="pt-4">📃 Lean Six Sigma Green Belt</h3>
-                <h3 className="pt-4">📃 PRINCE2 Practitioner</h3>
+                </Heading>{" "}
+                <LoadPanel faster>
+                  <h3 className="pt-4">
+                    📃 Micro-certs: Cloud Computing, AI Strategy, AI Transformers (GPTs), Generative AI x 2, Product
+                    Analytics, Product-Led Growth, Product Launches, Product Roadmapping, Product Strategy, and AI for
+                    Product Management.
+                  </h3>
+                  <h3 className="pt-4">📃 Reforge Program- 8x courses on Product Management</h3>
+                  <h3 className="pt-4">📃 SAFe Program Consultant (SPC4)</h3>
+                  <h3 className="pt-4">📃 Professional Scrum Master</h3>
+                  <h3 className="pt-4">📃 BCS Certificate in Business Analysis Practice</h3>
+                  <h3 className="pt-4">📃 Agile Project Manager Practitioner</h3>
+                  <h3 className="pt-4">📃 Lean Six Sigma Green Belt</h3>
+                  <h3 className="pt-4">📃 PRINCE2 Practitioner</h3>
+                </LoadPanel>
               </div>
             </div>
           </LoadPanel>
@@ -1057,107 +1104,110 @@ export default function Web() {
                   to="bright-turquoise-600"
                 >
                   <span id="qa">Q&A</span>
-                </Heading>
-                <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
-                  What am I looking for in a new opportunity/role?
-                </h3>
-                <p>
-                  A chance to improve, progress in seniority, and make a positive impact on something that is
-                  meaningful. A chance to be myself, be trusted and understood/appreciated. Easy, right? :D
-                </p>
-                <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
-                  What makes me different?
-                </h3>
-                <p>
-                  Too much. I don&apos;t really fit in a box or the norm in my industry. I&apos;ve never really worked
-                  with anyone like me. I&apos;d say that it&apos;s rare to find someone with a good technical
-                  background/sense that is a good storyteller, strategy thinker, and is courageous enough to take risks
-                  and embrace change.
-                </p>
-                <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
-                  When should someone not hire me?
-                </h3>
-                <p>
-                  If the organisational power structure is very hierarchial, or heavily based on unwritten social
-                  dynamics (like politics or in-groups), instead of outcomes or collaborative relationship building,
-                  I&apos;m unlikely to navigate the environment well. Additionally, if the executives are too busy, not
-                  available or not able to set a clear strategic direction, I&apos;d also not do so well. If you want
-                  people to stay in their lane, do as they are told, or as sleepwalk as Seth Godin puts it in the book
-                  Tribes, I&apos;m likely to cause you stress. If the environment is slow to change, embrace new ideas,
-                  people or ways of doing things, also I&apos;m unlikely to be compatible and it will cause tension as I
-                  am a changemaker.
-                </p>
-                <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
-                  Why have I had short tenures in previous roles?
-                </h3>
-                <p>
-                  I&apos;m going to give a very honest answer here; I&apos;m not going to give the &quot;interview
-                  safe&quot; version. In a word: autism. Or more specifically, undiagnosed, misunderstood autistic
-                  behaviours. It&apos;s a common pattern for undiagnosed autistic people to go through the world,
-                  feeling like we don&apos;t belong so I have chosen to move on from places because I felt I didn&apos;t
-                  belong, always trying to be optimistic that I just had to find the right place. My particular
-                  personality and autistic traits mean that I don&apos;t keep my head down, I try to make an impact
-                  quickly and I&apos;m vocal and confident. This doesn&apos;t go down well in low trust or hierarchial
-                  environments. I&apos;ve also seemingly gone into a lot of environments as a PM, where the company or
-                  people above or around just didn&apos;t really understand what Product Managers were. Most seemed to
-                  think that the primary marker of a PM&apos;s success was people being &quot;happy&quot; with them. As
-                  most seasoned PMs know, this is often the sign of a bad PM who never says no or a very tactical
-                  operator! I&apos;ve only worked in a role for 1 month with a manager that was also a Product person.
-                  I&apos;ve also just had some bad luck/timing. Not one of the Product roles I&apos;ve held was
-                  backfilled after I left. Despite short tenures however, I&apos;ve been able to have standout impacts
-                  because I am a fast learner and executor. I don&apos;t seem to need as long as other people to ramp
-                  up, or at least I can&apos;t pretend to need as long as to not upset anyone.{" "}
-                </p>
-                <p className="pt-2">
-                  And it shouldn&apos;t matter that I&apos;m non-binary/female but tech is a sexist place, we cannot
-                  deny it. I, like many other people from under-represented groups do have more of a spotlight on me; I
-                  am judged by stricter standards. It&apos;s basic psychology: I&apos;m basically othered by most people
-                  I meet so when I do something they don&apos;t expect, I don&apos;t have the benefit of affinity or
-                  in-group biases to be easily forgiven or understood or even given the benefit of the doubt. It&apos;s
-                  also a competitive environment generally, and whilst not everyone will actively try to make you fail,
-                  they certainly don&apos;t help you succeed. At least, that has been my experience.
-                </p>
+                </Heading>{" "}
+                <LoadPanel faster>
+                  <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
+                    What am I looking for in a new opportunity/role?
+                  </h3>
+                  <p>
+                    A chance to improve, progress in seniority, and make a positive impact on something that is
+                    meaningful. A chance to be myself, be trusted and understood/appreciated. Easy, right? :D
+                  </p>
+                  <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
+                    What makes me different?
+                  </h3>
+                  <p>
+                    Too much. I don&apos;t really fit in a box or the norm in my industry. I&apos;ve never really worked
+                    with anyone like me. I&apos;d say that it&apos;s rare to find someone with a good technical
+                    background/sense that is a good storyteller, strategy thinker, and is courageous enough to take
+                    risks and embrace change.
+                  </p>
+                  <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
+                    When should someone not hire me?
+                  </h3>
+                  <p>
+                    If the organisational power structure is very hierarchial, or heavily based on unwritten social
+                    dynamics (like politics or in-groups), instead of outcomes or collaborative relationship building,
+                    I&apos;m unlikely to navigate the environment well. Additionally, if the executives are too busy,
+                    not available or not able to set a clear strategic direction, I&apos;d also not do so well. If you
+                    want people to stay in their lane, do as they are told, or as sleepwalk as Seth Godin puts it in the
+                    book Tribes, I&apos;m likely to cause you stress. If the environment is slow to change, embrace new
+                    ideas, people or ways of doing things, also I&apos;m unlikely to be compatible and it will cause
+                    tension as I am a changemaker.
+                  </p>
+                  <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
+                    Why have I had short tenures in previous roles?
+                  </h3>
+                  <p>
+                    I&apos;m going to give a very honest answer here; I&apos;m not going to give the &quot;interview
+                    safe&quot; version. In a word: autism. Or more specifically, undiagnosed, misunderstood autistic
+                    behaviours. It&apos;s a common pattern for undiagnosed autistic people to go through the world,
+                    feeling like we don&apos;t belong so I have chosen to move on from places because I felt I
+                    didn&apos;t belong, always trying to be optimistic that I just had to find the right place. My
+                    particular personality and autistic traits mean that I don&apos;t keep my head down, I try to make
+                    an impact quickly and I&apos;m vocal and confident. This doesn&apos;t go down well in low trust or
+                    hierarchial environments. I&apos;ve also seemingly gone into a lot of environments as a PM, where
+                    the company or people above or around just didn&apos;t really understand what Product Managers were.
+                    Most seemed to think that the primary marker of a PM&apos;s success was people being
+                    &quot;happy&quot; with them. As most seasoned PMs know, this is often the sign of a bad PM who never
+                    says no or a very tactical operator! I&apos;ve only worked in a role for 1 month with a manager that
+                    was also a Product person. I&apos;ve also just had some bad luck/timing. Not one of the Product
+                    roles I&apos;ve held was backfilled after I left. Despite short tenures however, I&apos;ve been able
+                    to have standout impacts because I am a fast learner and executor. I don&apos;t seem to need as long
+                    as other people to ramp up, or at least I can&apos;t pretend to need as long as to not upset anyone.{" "}
+                  </p>
+                  <p className="pt-2">
+                    And it shouldn&apos;t matter that I&apos;m non-binary/female but tech is a sexist place, we cannot
+                    deny it. I, like many other people from under-represented groups do have more of a spotlight on me;
+                    I am judged by stricter standards. It&apos;s basic psychology: I&apos;m basically othered by most
+                    people I meet so when I do something they don&apos;t expect, I don&apos;t have the benefit of
+                    affinity or in-group biases to be easily forgiven or understood or even given the benefit of the
+                    doubt. It&apos;s also a competitive environment generally, and whilst not everyone will actively try
+                    to make you fail, they certainly don&apos;t help you succeed. At least, that has been my experience.
+                  </p>
 
-                <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
-                  In a nutshell, why should someone hire me?
-                </h3>
-                <p>
-                  I&apos;m a generalist. I can do a lot of things pretty well, at least to a good enough standard to get
-                  things going or to help others out. I&apos;m an executor. I&apos;ll swallow frogs on behalf of the
-                  team. I get things done. I&apos;m efficient and quick but I also care about quality. I care about what
-                  I do and I don&apos;t just dial it in. I care about people and I can easily imagine what it&apos;s
-                  like to be in other&apos;s shoes. I&apos;ve worked with many businesses, in different businesses and
-                  industries so I have a bredth of experience. I study and I learn fast. I&apos;m creative. I&apos;m
-                  technically competent and can bridge the gaps between different teams. I&apos;ve been around the block
-                  enough to have learnt major lessons and to have honed a decent instinct on what and how to do things.
-                  And I love tech and I love Product, because it&apos;s different every day (I like the variety of
-                  different tasks and types of work), it&apos;s strategic, it allows me to use a lot of my skills and I
-                  think companies with strong Product people and cultures, build better products.
-                </p>
-                <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
-                  Hybrid, remote, or in-office?
-                </h3>
-                <p>
-                  I&apos;ve only ever worked as a PM in remote or remote-hybrid setups. I have a strong preference for
-                  remote but I recognise that in person collaboration, or at least knowing colleagues as people is
-                  important for most people. So my preference is remote, with quarterly or ad-hoc meetups. I could
-                  potentially do hybrid 2 days a week in office, but on those days I&apos;m likely not to be at my best,
-                  especially if a commute on public transport or longer than an hour is involved (it&apos;s an autism
-                  sensory thing). I would not appreciate going into an empty office or an office so busy there&apos;s
-                  nowhere to have a meeting. In office 100% is a no-go for me. I live in Reading, UK. Ideally, I&apos;d
-                  love to be able to work from anywhere in the world for short stints as I have family abroad and a
-                  partner who travels for work a lot. Office socials/parties are not really a plus for me. Alcohol and
-                  work especially are something I try to avoid due to past experiences and because I don&apos;t believe
-                  that intoxicating substances have a place in a workplace.
-                </p>
-                <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
-                  What&apos;s with all the animals and the rainbows?
-                </h3>
-                <p>
-                  I love animals. I love rainbows (I am queer after all). I love drawing. And, well I needed something
-                  so that this didn&apos;t just look like any other portfolio site. Love it or hate it, hopefully
-                  you&apos;ll remember it.
-                </p>
+                  <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
+                    In a nutshell, why should someone hire me?
+                  </h3>
+                  <p>
+                    I&apos;m a generalist. I can do a lot of things pretty well, at least to a good enough standard to
+                    get things going or to help others out. I&apos;m an executor. I&apos;ll swallow frogs on behalf of
+                    the team. I get things done. I&apos;m efficient and quick but I also care about quality. I care
+                    about what I do and I don&apos;t just dial it in. I care about people and I can easily imagine what
+                    it&apos;s like to be in other&apos;s shoes. I&apos;ve worked with many businesses, in different
+                    businesses and industries so I have a breadth of experience. I study and I learn fast. I&apos;m
+                    creative. I&apos;m technically competent and can bridge the gaps between different teams. I&apos;ve
+                    been around the block enough to have learnt major lessons and to have honed a decent instinct on
+                    what and how to do things. And I love tech and I love Product, because it&apos;s different every day
+                    (I like the variety of different tasks and types of work), it&apos;s strategic, it allows me to use
+                    a lot of my skills and I think companies with strong Product people and cultures, build better
+                    products.
+                  </p>
+                  <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
+                    Hybrid, remote, or in-office?
+                  </h3>
+                  <p>
+                    I&apos;ve only ever worked as a PM in remote or remote-hybrid setups. I have a strong preference for
+                    remote but I recognise that in person collaboration, or at least knowing colleagues as people is
+                    important for most people. So my preference is remote, with quarterly or ad-hoc meetups. I could
+                    potentially do hybrid 2 days a week in office, but on those days I&apos;m likely not to be at my
+                    best, especially if a commute on public transport or longer than an hour is involved (it&apos;s an
+                    autism sensory thing). I would not appreciate going into an empty office or an office so busy
+                    there&apos;s nowhere to have a meeting. In office 100% is a no-go for me. I live in Reading, UK.
+                    Ideally, I&apos;d love to be able to work from anywhere in the world for short stints as I have
+                    family abroad and a partner who travels for work a lot. Office socials/parties are not really a plus
+                    for me. Alcohol and work especially are something I try to avoid due to past experiences and because
+                    I don&apos;t believe that intoxicating substances have a place in a workplace.
+                  </p>
+                  <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
+                    What&apos;s with all the animals and the rainbows?
+                  </h3>
+                  <p>
+                    I love animals. I love rainbows (I am queer after all). I love drawing. And, well I needed something
+                    so that this didn&apos;t just look like any other portfolio site. Love it or hate it, hopefully
+                    you&apos;ll remember it.
+                  </p>
+                </LoadPanel>
               </div>
               <div className="mt-4 basis-1/5">
                 <Tooltip
