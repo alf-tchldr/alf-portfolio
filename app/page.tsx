@@ -1143,27 +1143,36 @@ export default function Web() {
                     safe&quot; version. In a word: autism. Or more specifically, undiagnosed, misunderstood autistic
                     behaviours. It&apos;s a common pattern for undiagnosed autistic people to go through the world,
                     feeling like we don&apos;t belong so I have chosen to move on from places because I felt I
-                    didn&apos;t belong, always trying to be optimistic that I just had to find the right place. My
-                    particular personality and autistic traits mean that I don&apos;t keep my head down, I try to make
-                    an impact quickly and I&apos;m vocal and confident. This doesn&apos;t go down well in low trust or
-                    hierarchial environments. I&apos;ve also seemingly gone into a lot of environments as a PM, where
-                    the company or people above or around just didn&apos;t really understand what Product Managers were.
-                    Most seemed to think that the primary marker of a PM&apos;s success was people being
-                    &quot;happy&quot; with them. As most seasoned PMs know, this is often the sign of a bad PM who never
-                    says no or a very tactical operator! I&apos;ve only worked in a role for 1 month with a manager that
-                    was also a Product person. I&apos;ve also just had some bad luck/timing. Not one of the Product
-                    roles I&apos;ve held was backfilled after I left. Despite short tenures however, I&apos;ve been able
-                    to have standout impacts because I am a fast learner and executor. I don&apos;t seem to need as long
-                    as other people to ramp up, or at least I can&apos;t pretend to need as long as to not upset anyone.{" "}
+                    didn&apos;t belong, always trying to be optimistic that I just had to find the right place. I think,
+                    also because I'm autistic, I can get the measure of somewhere fast and I don't have an ability to
+                    ignore things once I've realised them. I'm also not as great as others claim to be at spotting
+                    problems in interviews. Or maybe I am but I am often looking for roles in a state of desperation
+                    that I feel I have to ignore them or at least give the company the benefit of the doubt. I'm still
+                    not sure how anyone knows what it's like to work somewhere until they actually do?! My particular
+                    personality and autistic traits also mean that I don&apos;t keep my head down, I try to make an
+                    impact quickly and I&apos;m vocal and confident. This doesn&apos;t go down well in low trust or
+                    hierarchial environments. It can put a target on my back too in low psychological safety zones where
+                    people are competitive or insecure, and I am too trusting/open. I&apos;ve also seemingly gone into a
+                    lot of environments as a PM, where the company or people above or around just didn&apos;t really
+                    understand what Product Managers were. Most seemed to think that the primary marker of a PM&apos;s
+                    success was people being &quot;happy&quot; with them. As most seasoned PMs know, this is often the
+                    sign of a bad PM who never says no or a very tactical operator! I&apos;ve only worked in a role for
+                    1 month with a manager that was also a Product person. I&apos;ve also just had some bad luck/timing.
+                    Not one of the Product roles I&apos;ve held was backfilled after I left. I've worked in environments
+                    going through a lot of change or taking big risks, which so often don't pan out. Despite short
+                    tenures however, I&apos;ve been able to have standout impacts because I am a fast learner and
+                    executor. I don&apos;t seem to need as long as other people to ramp up, or at least I can&apos;t
+                    pretend to need as long as to not upset anyone or to just coast through probationary periods.
                   </p>
                   <p className="pt-2">
                     And it shouldn&apos;t matter that I&apos;m non-binary/female but tech is a sexist place, we cannot
-                    deny it. I, like many other people from under-represented groups do have more of a spotlight on me;
-                    I am judged by stricter standards. It&apos;s basic psychology: I&apos;m basically othered by most
-                    people I meet so when I do something they don&apos;t expect, I don&apos;t have the benefit of
-                    affinity or in-group biases to be easily forgiven or understood or even given the benefit of the
-                    doubt. It&apos;s also a competitive environment generally, and whilst not everyone will actively try
-                    to make you fail, they certainly don&apos;t help you succeed. At least, that has been my experience.
+                    deny it (50% of women leave by 35). I, like many other people from under-represented groups do have
+                    more of a spotlight on me; I am judged by stricter standards. It&apos;s basic psychology: I&apos;m
+                    basically othered by most people I meet so when I do something they don&apos;t expect, I don&apos;t
+                    have the benefit of affinity or in-group biases to be easily forgiven or understood or even given
+                    the benefit of the doubt. It&apos;s also a competitive environment generally, and whilst not
+                    everyone will actively try to make you fail, they certainly don&apos;t help you succeed. At least,
+                    that has been my experience.
                   </p>
 
                   <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
