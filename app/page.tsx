@@ -82,8 +82,8 @@ export default function Web() {
         <section className="from-mosque-900 bg-gradient-to-br to-black">
           <LoadPanel effect="fade">
             <div className="flex flex-row">
-              <div className="basis-1/12"></div>
-              <div className="basis-10/12 place-self-center p-12 pb-12 text-white md:px-24 md:pb-12">
+              <div className="basis-1/12 md:basis-2/12"></div>
+              <div className="basis-10/12 place-self-center p-12 pb-12 text-white md:basis-8/12 md:px-24 md:pb-12">
                 <p className="text-2xl leading-relaxed">
                   I&apos;m an <span className="text-mosque-400">MBA-wielding</span>, recovering{" "}
                   <span className="text-mosque-400">software engineer turned</span> passionate, creative and inclusive{" "}
