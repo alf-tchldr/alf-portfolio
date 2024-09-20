@@ -43,7 +43,7 @@ export default function Web() {
                 </Tooltip>
               </div>
             </div>
-            <div className="basis-3/5 justify-start px-8 py-16">
+            <div className="justify-left basis-3/5 px-8 py-16">
               <div className="place-self-left mx-auto">
                 <h1 className="animate-fade-up font-callout mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl xl:text-6xl">
                   Hi. I&apos;m Amy.
@@ -82,16 +82,16 @@ export default function Web() {
         <section className="from-mosque-900 bg-gradient-to-br to-black">
           <LoadPanel effect="fade">
             <div className="flex flex-row">
-              <div className="basis-1/5"></div>
-              <div className="basis-3/5 place-self-center p-6 pb-12 text-white">
-                <p className="mt-4 text-2xl leading-relaxed">
+              <div className="basis-1/12"></div>
+              <div className="basis-10/12 place-self-center p-12 pb-12 text-white md:px-24 md:pb-12">
+                <p className="text-2xl leading-relaxed">
                   I&apos;m an <span className="text-mosque-400">MBA-wielding</span>, recovering{" "}
                   <span className="text-mosque-400">software engineer turned</span> passionate, creative and inclusive{" "}
                   <span className="text-mosque-400">product leader</span>. I&apos;ve been a{" "}
                   <span className="text-mosque-400">dedicated Product Manager for 6 years</span> but I&apos;ve been
                   working <span className="text-mosque-400">in tech for over 15 years</span>. I suit collaborative,
                   innovative, ambitious and dynamic environments best, so{" "}
-                  <span className="text-mosque-400">startups and scaleups</span>, although I&apos;ve done some great
+                  <span className="text-mosque-400">leftups and scaleups</span>, although I&apos;ve done some great
                   stuff in some of the largest tech firms out there (Google & Visa).
                 </p>
                 <p className="mt-4 text-2xl leading-relaxed">
@@ -176,13 +176,13 @@ export default function Web() {
         </section>
         <section className="from-anzac-400 bg-gradient-to-br to-black">
           <LoadPanel>
-            <div className="flex flex-row">
-              <div className="md:basis-2/12 lg:basis-2/12"></div>
-              <div className="place-self-top basis-3/12 p-12 text-white">
+            <div className="md:flex md:flex-row">
+              <div className="md:basis-1/12"></div>
+              <div className="place-self-top  p-12 text-white md:basis-3/12">
                 <Heading className="font-callout pt-4 text-3xl font-semibold" from="anzac-200" to="anzac-300">
                   <span id="strengths">My Strengths</span>
                 </Heading>
-                <ul className="list-disc pt-2">
+                <ul className="list-disc pl-6 pt-2">
                   <li>Very fast learner</li>
                   <li>Storytelling and presentations</li>
                   <li>Inclusivity and caring about people</li>
@@ -194,39 +194,33 @@ export default function Web() {
                   <li>Enjoys change and working through ambiguity</li>
                 </ul>
               </div>
-              <div className="basis-2/12 basis-2/12 items-end justify-items-center pt-16">
-                <div className="relative pt-4">
-                  <div className="absolute top-[100px]">
-                    {" "}
-                    <Tooltip
-                      explainer={"We share about 98% of our DNA with gorillas. We share even more with each other."}
-                    >
-                      <Image
-                        src={`/imgs/Rainbow_Gorilla.png`}
-                        alt="Rainbow-coloured self drawn gorilla face."
-                        width="256"
-                        height="274"
-                        className="hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear place-self-center self-end"
-                      />
-                    </Tooltip>
-                  </div>
-                </div>
+              <div className="place-items-center content-center justify-center pl-6 md:basis-3/12">
+                {" "}
+                <Tooltip explainer={"We share about 98% of our DNA with gorillas. We share even more with each other."}>
+                  <Image
+                    src={`/imgs/Rainbow_Gorilla.png`}
+                    alt="Rainbow-coloured self drawn gorilla face."
+                    width="256"
+                    height="274"
+                    className="hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear place-self-center self-center"
+                  />
+                </Tooltip>
               </div>
-              <div className="place-self-top basis-3/12 p-12 text-white">
-                <Heading className="font-callout pt-4 text-3xl font-semibold" from="anzac-100" to="anzac-500">
+              <div className="place-self-top p-12 text-white md:basis-3/12">
+                <Heading className="font-callout text-3xl font-semibold" from="anzac-100" to="anzac-500">
                   <span id="areas">
                     Areas I&apos;ve Worked In <br />
                     (All B2B)
                   </span>
                 </Heading>
-                <ul className="list-disc pt-2">
+                <ul className="list-disc pl-6 pt-2">
                   <li>Software Consultancies</li>
                   <li>APIs and Integrations</li>
                   <li>Payments/FinTech</li>
                   <li>BigTech/AdTech</li>
                   <li>Internal Tooling</li>
                   <li>Ecomm Ops</li>
-                  <li>Startups</li>
+                  <li>leftups</li>
                   <li>Scaleups</li>
                   <li>CCaaS</li>
                   <li>EdTech</li>
@@ -235,22 +229,24 @@ export default function Web() {
                 </ul>
               </div>
             </div>
-            <div className="flex flex-row">
-              <div className="basis-2/12"></div>
-              <div className="place-self-top basis-3/5 px-12 pb-14 text-white md:basis-8/12">
-                <Heading className="font-callout pt-4 text-2xl font-semibold" from="anzac-100" to="anzac-500">
-                  Things I&apos;m learning and working on improving (always looking to learn/improve):
-                </Heading>
-                <p>
-                  Coaching skills, conflict management techniques, pacing myself to adjust to change at a rate suitable
-                  for the environment, working out how to balance authenticity with professionalism, Portuguese,
-                  playwriting, crotcheting, acting, improv, and AI.
-                </p>
+            <div className="md:flex md:flex-row">
+              <div className="md:basis-1/12"></div>
+              <div className="md:basis-8/12">
+                <div className="place-self-top px-12 pb-14 text-white">
+                  <Heading className="font-callout pt-4 text-2xl font-semibold" from="anzac-100" to="anzac-500">
+                    Things I&apos;m learning and working on improving (always looking to learn/improve):
+                  </Heading>
+                  <p>
+                    Coaching skills, conflict management techniques, pacing myself to adjust to change at a rate
+                    suitable for the environment, working out how to balance authenticity with professionalism,
+                    Portuguese, playwriting, crotcheting, acting, improv, and AI.
+                  </p>
+                </div>
               </div>
             </div>
           </LoadPanel>
           <div className="relative pt-4">
-            <div className="absolute -top-3 start-1/2">
+            <div className="absolute -top-[4px] left-0 right-0 grid place-items-center">
               <Button href="#contents" intent="back">
                 ^ Back To Top
               </Button>
@@ -259,9 +255,9 @@ export default function Web() {
         </section>
         <section className="from-bright-turquoise-900 bg-gradient-to-br to-black">
           <LoadPanel>
-            <div className="flex flex-row">
-              <div className="basis-1/5"></div>
-              <div className="place-self-top basis-2/5 p-12 text-white">
+            <div className="md:flex md:flex-row">
+              <div className="md:basis-1/12"></div>
+              <div className="place-self-top p-12 text-white md:basis-5/12">
                 <Heading
                   className="font-callout pt-4 text-3xl font-semibold"
                   from="bright-turquoise-200"
@@ -269,7 +265,7 @@ export default function Web() {
                 >
                   <span id="interests">My Professional Interests & Passions</span>
                 </Heading>
-                <ul className="list-disc pt-2">
+                <ul className="list-disc pl-6 pt-2">
                   <li>Scripting, machine learning, and APIs</li>
                   <li>User, customer, and employee experience</li>
                   <li>UI/Web design and front-end development</li>
@@ -286,7 +282,7 @@ export default function Web() {
                   </li>
                 </ul>
               </div>
-              <div className="place-self-top basis-2/5 p-12 text-white">
+              <div className="place-self-top p-12 text-white md:basis-5/12">
                 {" "}
                 <Heading
                   className="font-callout pt-4 text-3xl font-semibold"
@@ -295,7 +291,7 @@ export default function Web() {
                 >
                   <span id="motivations">My Motivations</span>
                 </Heading>
-                <ul className="list-disc pt-2">
+                <ul className="list-disc pl-6 pt-2">
                   <li>Increasing social mobility and opportunities for marginalised groups</li>
                   <li>Making people laugh, providing clarity, and helping ease anxiety</li>
                   <li>Problem solving and fixing things that are broken</li>
@@ -310,9 +306,9 @@ export default function Web() {
                 </ul>
               </div>
             </div>
-            <div className="flex flex-row">
-              <div className="basis-1/5"></div>
-              <div className="basis-2/5 place-self-center p-12 text-white">
+            <div className="pl-6 md:flex md:flex-row md:pl-0">
+              <div className="md:basis-2/12 "></div>
+              <div className="place-self-center p-6 text-white md:basis-7/12 md:p-0 md:pb-12 ">
                 <Heading
                   className="font-callout pt-4 text-2xl font-semibold"
                   from="bright-turquoise-200"
@@ -324,10 +320,10 @@ export default function Web() {
                   A place where people want to be on a journey, united by a shared vision and goals. Collaborative,
                   trusting, and creative people. Managers and colleagues who care about people as well as profits,
                   certainly more than status or personal wealth alone. Modern and improving tech/processes. So probably
-                  a startup or scaleup?
+                  a leftup or scaleup?
                 </p>
               </div>
-              <div className="basis-1/5">
+              <div className="basis-2/5 p-6">
                 <Tooltip
                   explainer={
                     "Giraffes have very large (2 foot long), heavy hearts. They definitely put their heart into things. Probably why I like them."
@@ -345,7 +341,7 @@ export default function Web() {
             </div>
           </LoadPanel>
           <div className="relative pt-4">
-            <div className="absolute -top-3 start-1/2">
+            <div className="absolute -top-[4px] left-0 right-0 grid place-items-center">
               <Button href="#contents" intent="back">
                 ^ Back To Top
               </Button>
@@ -354,10 +350,9 @@ export default function Web() {
         </section>
         <section className="from-christalle-950 bg-gradient-to-br to-black text-white">
           <LoadPanel>
-            <div className="flex flex-row">
-              <div className="basis-1/6"></div>
-
-              <div className="basis-4/6 place-self-center p-12 text-white">
+            <div className="md:flex md:flex-row">
+              <div className="md:basis-1/5"></div>
+              <div className="place-self-center p-12 text-white md:basis-3/5 md:p-0">
                 <div className="justify-items-end">
                   <Tooltip
                     explainer={
@@ -378,15 +373,15 @@ export default function Web() {
                   <span id="achievements">My Key Achievements</span>
                 </Heading>
 
-                <div className="double-list columns-2 gap-12">
+                <div className="double-list gap-12 pb-6 md:columns-2">
                   <LoadPanel>
-                    <ul className="pt-2">
+                    <ul className="break-inside-avoid-column pt-2">
                       <li>
                         Created a scientifically complex 0-1 product, including recruiting the product team (3
                         engineers, 1 data scientist, 1 product marketer, 3 psychometrician contractors), and launched
                         within 6 months to 80% user approval
                       </li>
-                      <li>Created an MVP, pitch deck, and business plan for a startup within 1 month by myself</li>
+                      <li>Created an MVP, pitch deck, and business plan for a leftup within 1 month by myself</li>
                       <li>
                         Managed response to Brexit in first months at a company with technical complexities, a small
                         team, and last minute changes
@@ -411,7 +406,7 @@ export default function Web() {
                     </ul>
                   </LoadPanel>
                   <LoadPanel>
-                    <ul className="list-disc pt-2">
+                    <ul className="list-disc break-inside-avoid-column pt-2">
                       <li>
                         Took a battlefield promotion to manage a Product team with the aim of ensuring all colleagues
                         stay during the transition during a great period of change and actually grew the team within
@@ -449,7 +444,7 @@ export default function Web() {
             </div>
           </LoadPanel>
           <div className="relative pt-4">
-            <div className="absolute -top-3 start-1/2">
+            <div className="absolute -top-[4px] left-0 right-0 grid place-items-center">
               <Button href="#contents" intent="back">
                 ^ Back To Top
               </Button>
@@ -458,10 +453,9 @@ export default function Web() {
         </section>
         <section className="from-christalle-400 bg-gradient-to-br to-black">
           <LoadPanel>
-            <div className="flex flex-row">
-              <div className="basis-1/5"></div>
-
-              <div className="basis-3/5 place-self-center p-12 text-white">
+            <div className="md:flex md:flex-row">
+              <div className="md:basis-1/5"></div>
+              <div className="place-self-center p-12 text-white md:basis-3/5">
                 <div>
                   <Tooltip
                     explainer={
@@ -569,7 +563,7 @@ export default function Web() {
                       Bug management tracking and communications system for use throughout BigTech to help ensure
                       information on customer-facing issues were resolved in a timely and transparent manner.{" "}
                       <span className="block text-black">
-                        I created an internal marketing campaign to start to bring new users to the system and worked to
+                        I created an internal marketing campaign to left to bring new users to the system and worked to
                         disambiguate ongoing security and permissions-based changes following a company restructure.
                       </span>
                     </h3>
@@ -591,7 +585,7 @@ export default function Web() {
             </div>
           </LoadPanel>
           <div className="relative pt-4">
-            <div className="absolute -top-3 start-1/2">
+            <div className="absolute -top-[4px] left-0 right-0 grid place-items-center">
               <Button href="#contents" intent="back">
                 ^ Back To Top
               </Button>
@@ -601,9 +595,9 @@ export default function Web() {
 
         <section className="from-mosque-950 bg-gradient-to-br to-black text-white">
           <LoadPanel>
-            <div className="flex flex-row">
-              <div className="basis-1/5"></div>
-              <div className="basis-2/5 place-self-center p-12 text-white">
+            <div className="md:flex md:flex-row">
+              <div className="md:basis-1/5"></div>
+              <div className="place-self-center p-8 text-white md:basis-2/5">
                 <Heading className="font-callout pt-4 text-3xl font-semibold" from="mosque-400" to="mosque-700">
                   <span id="samples">Some Samples of My Work </span>
                 </Heading>
@@ -617,7 +611,7 @@ export default function Web() {
                 <LoadPanel faster>
                   <SamplePanel
                     beforeColon={
-                      "How I would move a Product team through a maturity matrix shortly after starting at a company"
+                      "How I would move a Product team through a maturity matrix shortly after lefting at a company"
                     }
                     link={"https://drive.google.com/file/d/1Z335IeGcTEa12kbhTxBStylDwPq-fgtV/view?usp=sharing"}
                   ></SamplePanel>
@@ -628,7 +622,7 @@ export default function Web() {
                   ></SamplePanel>
 
                   <SamplePanel
-                    beforeColon={"My approach to roadmapping features at a fintech startup"}
+                    beforeColon={"My approach to roadmapping features at a fintech leftup"}
                     link={"https://drive.google.com/file/d/1jgSeheRzTOZ71nd_K8f07EQ167mq8tY_/view?usp=sharing"}
                   ></SamplePanel>
 
@@ -653,7 +647,7 @@ export default function Web() {
                   ></SamplePanel>
 
                   <SamplePanel
-                    beforeColon={"An integration product I built start to finish"}
+                    beforeColon={"An integration product I built left to finish"}
                     link={"https://drive.google.com/file/d/1rZmSmQwyW_am0DCnJ2lAol3x-Bbb-lvg/view?usp=sharing"}
                   ></SamplePanel>
                 </LoadPanel>
@@ -720,13 +714,13 @@ export default function Web() {
                   ></SamplePanel>
                   <SamplePanel
                     beforeColon={
-                      "My startup's pitch deck for an edTech platform for core human skills for engineering managers"
+                      "My leftup's pitch deck for an edTech platform for core human skills for engineering managers"
                     }
                     link={"https://drive.google.com/file/d/1VFHWucCF5Fl7lfbOVN1K9hUOTvoXpOUs/view?usp=sharing"}
                   ></SamplePanel>
                 </LoadPanel>
               </div>
-              <div className="mt-12 basis-1/5">
+              <div className="p-8 md:basis-1/5">
                 <Tooltip
                   explainer={
                     "Deer are considered intelligent animals because of their keen sense of smell, good vision, and acute hearing. Maybe that's why they generally stay away from humans who don't have food."
@@ -794,7 +788,7 @@ export default function Web() {
             </div>
           </LoadPanel>
           <div className="relative pt-4">
-            <div className="absolute -top-3 start-1/2">
+            <div className="absolute -top-[4px] left-0 right-0 grid place-items-center">
               <Button href="#contents" intent="back">
                 ^ Back To Top
               </Button>
@@ -804,10 +798,10 @@ export default function Web() {
 
         <section className="from-cerise-900 bg-gradient-to-br to-black">
           <LoadPanel>
-            <div className="flex flex-row">
-              <div className="basis-1/6"></div>
-              <div className="basis-2/6 place-self-center p-12 text-white">
-                <div className="basis-1/6">
+            <div className="md:flex md:flex-row">
+              <div className="md:basis-1/6"></div>
+              <div className="place-self-center p-12 text-white md:basis-2/6">
+                <div className="md:basis-1/6">
                   <Tooltip
                     explainer={
                       "Every zebra has unique black and white stripes, similar to fingerprints in their uniqueness. We're all unique, but zebras really give it to us in black and white."
@@ -865,8 +859,8 @@ export default function Web() {
                   </ul>
                 </LoadPanel>
               </div>
-              <div className="basis-2/6 place-self-center p-12 text-white">
-                <Heading className="font-callout pt-4 text-3xl font-semibold" from="cerise-200" to="cerise-400">
+              <div className="place-self-center p-12 text-white md:basis-2/6">
+                <Heading className="font-callout text-3xl font-semibold md:pt-4" from="cerise-200" to="cerise-400">
                   <span id="goodToKnow">Good To Know</span>
                 </Heading>
                 <LoadPanel faster>
@@ -953,7 +947,7 @@ export default function Web() {
             </div>
           </LoadPanel>
           <div className="relative pt-4">
-            <div className="absolute -top-3 start-1/2">
+            <div className="absolute -top-[4px] left-0 right-0 grid place-items-center">
               <Button href="#contents" intent="back">
                 ^ Back To Top
               </Button>
@@ -963,9 +957,9 @@ export default function Web() {
 
         <section className="from-anzac-400 bg-gradient-to-br to-black">
           <LoadPanel>
-            <div className="flex flex-row">
-              <div className="basis-1/5"></div>
-              <div className="basis-2/5 place-self-center p-12 text-white">
+            <div className="md:flex md:flex-row">
+              <div className="md:basis-1/5"></div>
+              <div className="place-self-center p-12 text-white md:basis-2/5">
                 <Heading className="font-callout py-4 text-3xl font-semibold" from="anzac-600" to="anzac-900">
                   <span id="qualifications">My Academic Qualifications</span>
                 </Heading>{" "}
@@ -980,7 +974,7 @@ export default function Web() {
                       Economics, Innovation, HR, Strategy, Wellbeing Economics and Behavioural Sciences. <br />
                       <br />
                       Distinctions in all exams (including 2 I took at Imperial Business School whilst enrolled there- I
-                      switched schools after 1 term and started again).
+                      switched schools after 1 term and lefted again).
                     </h4>
                   </div>
                   <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
@@ -996,22 +990,22 @@ export default function Web() {
                     <h3 className="text-2xl font-medium">🎓 AVCE ICT (3 A Levels) ICT - AAA</h3>
                     <h3 className="pt-2 text-2xl font-medium">🎓 AS Spanish - B</h3>
                     <h4 className="text-black">
-                      Only 1 of 60 starting students to complete 3 A Levels&apos; worth of modules. Only student to
-                      study an additional subject.
+                      Only 1 of 60 lefting students to complete 3 A Levels&apos; worth of modules. Only student to study
+                      an additional subject.
                     </h4>
                   </div>
                   <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
                     <h3 className="text-2xl font-medium">🎓 11 GCSEs - 4 A*s, 5 As, 3 Bs</h3>
                     <h4 className="text-black">
                       My father was diagnosed with terminal cancer months before my final exams and died a few weeks
-                      before my exams started, so this was under severe adversity.
+                      before my exams lefted, so this was under severe adversity.
                     </h4>
                   </div>
                 </LoadPanel>
               </div>
-              <div className="basis-1/5">
-                <div className="relative pt-4">
-                  <div className="absolute top-[420px]">
+              <div className="p-12 pt-0 md:basis-1/5 md:p-0 md:pb-0">
+                <div className="md:relative md:pt-4">
+                  <div className="md:absolute md:top-[420px]">
                     {" "}
                     <Tooltip
                       explainer={
@@ -1032,7 +1026,7 @@ export default function Web() {
             </div>
           </LoadPanel>
           <div className="relative pt-4">
-            <div className="absolute -top-3 start-1/2">
+            <div className="absolute -top-[4px] left-0 right-0 grid place-items-center">
               <Button href="#contents" intent="back">
                 ^ Back To Top
               </Button>
@@ -1042,11 +1036,11 @@ export default function Web() {
 
         <section className="from-christalle-400 bg-gradient-to-br to-black">
           <LoadPanel>
-            <div className="flex flex-row">
-              <div className="basis-1/5"></div>
-              <div className="basis-1/5">
-                <div className="relative pt-4">
-                  <div className="absolute top-[180px]">
+            <div className="md:flex md:flex-row">
+              <div className="md:basis-1/5"></div>
+              <div className="md:basis-1/5">
+                <div className="pt-4 md:relative">
+                  <div className="md:absolute md:top-[180px]">
                     <Tooltip
                       explainer={
                         "Foxes are difficult to surprise and are known to be able to think well on the spot and adjust their plans. Smart and always ready to adapt, that's why they are cool."
@@ -1063,8 +1057,8 @@ export default function Web() {
                   </div>
                 </div>
               </div>
-              <div className="basis-2/5 place-self-center p-12 text-white">
-                <Heading className="font-callout pt-4 text-3xl font-semibold" from="christalle-800" to="christalle-950">
+              <div className="place-self-center p-12 text-white md:basis-2/5">
+                <Heading className="font-callout pt-4 text-3xl font-semibold" from="christalle-800" to="black">
                   <span id="certifications">My Certifications & Vocational Training</span>
                 </Heading>{" "}
                 <LoadPanel faster>
@@ -1085,7 +1079,7 @@ export default function Web() {
             </div>
           </LoadPanel>
           <div className="relative pt-4">
-            <div className="absolute -top-3 start-1/2">
+            <div className="absolute -top-[4px] left-0 right-0 grid place-items-center">
               <Button href="#contents" intent="back">
                 ^ Back To Top
               </Button>
@@ -1095,9 +1089,9 @@ export default function Web() {
 
         <section className="bg-black">
           <LoadPanel>
-            <div className="flex flex-row">
-              <div className="basis-1/5"></div>
-              <div className="basis-2/5 place-self-center p-12 text-white">
+            <div className="md:flex md:flex-row">
+              <div className="md:basis-1/5"></div>
+              <div className="place-self-center p-12 text-white md:basis-2/5">
                 <Heading
                   className="font-callout pt-4 text-3xl font-semibold"
                   from="bright-turquoise-400"
@@ -1218,7 +1212,7 @@ export default function Web() {
                   </p>
                 </LoadPanel>
               </div>
-              <div className="mt-4 basis-1/5">
+              <div className="mt-4 pb-6 pl-12 md:basis-1/5 md:pb-0 md:pl-0">
                 <Tooltip
                   explainer={
                     "When guinea pigs are happy they jump around, twisting their body up to 90 degrees and kicking their legs out. Humans have named this popcorning. I'm not averse to jumping with glee myself."
@@ -1236,7 +1230,7 @@ export default function Web() {
             </div>
           </LoadPanel>
           <div className="relative pt-4">
-            <div className="absolute -top-3 start-1/2">
+            <div className="absolute -top-[4px] left-0 right-0 grid place-items-center">
               <Button href="#contents" intent="back">
                 ^ Back To Top
               </Button>
