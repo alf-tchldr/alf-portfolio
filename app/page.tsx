@@ -1130,7 +1130,7 @@ export default function Web() {
                     dynamics (like politics or in-groups), instead of outcomes or collaborative relationship building,
                     I&apos;m unlikely to navigate the environment well. Additionally, if the executives are too busy,
                     not available or not able to set a clear strategic direction, I&apos;d also not do so well. If you
-                    want people to stay in their lane, do as they are told, or as sleepwalk as Seth Godin puts it in the
+                    want people to stay in their lane, do as they are told, or sleepwalk as Seth Godin puts it in the
                     book Tribes, I&apos;m likely to cause you stress. If the environment is slow to change, embrace new
                     ideas, people or ways of doing things, also I&apos;m unlikely to be compatible and it will cause
                     tension as I am a changemaker.
@@ -1221,7 +1221,7 @@ export default function Web() {
               <div className="mt-4 basis-1/5">
                 <Tooltip
                   explainer={
-                    "When guinea pigs are happy they jump around, twisting their body up to 90 degrees and kicking their legs out. Humans have named this popcorning. I'm not adverse to jumping with glee myself."
+                    "When guinea pigs are happy they jump around, twisting their body up to 90 degrees and kicking their legs out. Humans have named this popcorning. I'm not averse to jumping with glee myself."
                   }
                 >
                   <Image
