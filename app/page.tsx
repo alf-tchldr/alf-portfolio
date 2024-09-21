@@ -9,7 +9,7 @@ import { Tooltip } from "components/Tooltip/Tooltip"
 export const metadata: Metadata = {
   title: "Amy Freelander Portfolio",
   description: "Amy Freelander's Portfolio Website showcasing product work and personal profile.",
-  author: "Amy Freelander",
+  authors: { name: "Amy Freelander", url: "alf.tchldr.com" },
   twitter: {
     card: "summary_large_image",
   },
