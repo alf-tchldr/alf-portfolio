@@ -8,16 +8,19 @@ import SamplePanel from "components/SamplePanel/SamplePanel"
 import { Tooltip } from "components/Tooltip/Tooltip"
 export const metadata: Metadata = {
   title: "Amy Freelander Portfolio",
+  author: "Amy Freelander",
   twitter: {
     card: "summary_large_image",
   },
   openGraph: {
+    description: "Amy Freelander Portfolio Website",
+    type: "website",
     url: "https://alf.tchldr.com",
     images: [
       {
-        width: 1200,
-        height: 630,
-        url: "https://alf.tchldr.com/logo.png",
+        width: 643,
+        height: 272,
+        url: "https://alf.tchldr.com/imgs/preview.png",
       },
     ],
   },
