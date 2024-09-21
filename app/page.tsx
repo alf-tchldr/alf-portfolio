@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     url: "https://alf.tchldr.com",
     images: [
       {
-        width: 643,
-        height: 272,
+        width: 520,
+        height: 270,
         url: "https://alf.tchldr.com/imgs/preview.png",
       },
     ],
