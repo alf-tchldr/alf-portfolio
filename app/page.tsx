@@ -31,7 +31,7 @@ export default function Web() {
   return (
     <>
       <div className="text-xl">
-        <section className="from-christalle-950 bg-gradient-to-br to-black text-white">
+        <section className="bg-gradient-to-br from-christalle-950 to-black text-white">
           <div className="flex flex-row">
             <div className="basis-2/5">
               <div className="flex justify-end py-8">
@@ -42,17 +42,17 @@ export default function Web() {
                     alt="Rainbow-coloured self drawn head of Amy with long hair from a slight side profile."
                     width="200"
                     height="200"
-                    className="animate-wiggle-more animate-ease-in hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear place-self-center"
+                    className="animate-wiggle-more place-self-center animate-ease-in hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear"
                   />
                 </Tooltip>
               </div>
             </div>
             <div className="justify-left basis-3/5 px-8 py-16">
               <div className="place-self-left mx-auto">
-                <h1 className="animate-fade-up font-callout mb-4 max-w-2xl text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl xl:text-6xl">
+                <h1 className="mb-4 max-w-2xl animate-fade-up font-callout text-4xl font-extrabold leading-none tracking-tight text-white md:text-5xl xl:text-6xl">
                   Hi. I&apos;m Amy.
                 </h1>
-                <p className="animate-fade-up font-callout2 text-christalle-600 text-2xl">
+                <p className="animate-fade-up font-callout2 text-2xl text-christalle-600">
                   And this is my portfolio website.
                 </p>
                 <div className="mt-8 inline-grid grid-cols-2 gap-0">
@@ -75,7 +75,7 @@ export default function Web() {
                       alt="CV icon."
                       width="25"
                       height="25"
-                      className="animate-fade-up ml-4 place-self-center rounded hover:border-3 hover:border-white"
+                      className="ml-4 animate-fade-up place-self-center rounded hover:border-3 hover:border-white"
                     />
                   </a>
                 </div>
@@ -83,7 +83,7 @@ export default function Web() {
             </div>
           </div>
         </section>
-        <section className="from-mosque-900 bg-gradient-to-br to-black">
+        <section className="bg-gradient-to-br from-mosque-900 to-black">
           <LoadPanel effect="fade">
             <div className="flex flex-row">
               <div className="basis-1/12 md:basis-2/12"></div>
@@ -178,12 +178,12 @@ export default function Web() {
             </div>
           </div>
         </section>
-        <section className="from-anzac-400 bg-gradient-to-br to-black">
+        <section className="bg-gradient-to-br from-anzac-400 to-black">
           <LoadPanel>
             <div className="md:flex md:flex-row">
               <div className="md:basis-1/12"></div>
-              <div className="place-self-top  p-12 text-white md:basis-3/12">
-                <Heading className="font-callout pt-4 text-3xl font-semibold" from="anzac-200" to="anzac-300">
+              <div className="place-self-top p-12 text-white md:basis-3/12">
+                <Heading className="pt-4 font-callout text-3xl font-semibold" from="anzac-200" to="anzac-300">
                   <span id="strengths">My Strengths</span>
                 </Heading>
                 <ul className="list-disc pl-6 pt-2">
@@ -206,7 +206,7 @@ export default function Web() {
                     alt="Rainbow-coloured self drawn gorilla face."
                     width="256"
                     height="274"
-                    className="hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear place-self-center self-center"
+                    className="place-self-center self-center hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear"
                   />
                 </Tooltip>
               </div>
@@ -237,7 +237,7 @@ export default function Web() {
               <div className="md:basis-1/12"></div>
               <div className="md:basis-8/12">
                 <div className="place-self-top px-12 pb-14 text-white">
-                  <Heading className="font-callout pt-4 text-2xl font-semibold" from="anzac-100" to="anzac-500">
+                  <Heading className="pt-4 font-callout text-2xl font-semibold" from="anzac-100" to="anzac-500">
                     Things I&apos;m learning and working on improving (always looking to learn/improve):
                   </Heading>
                   <p>
@@ -257,13 +257,13 @@ export default function Web() {
             </div>
           </div>
         </section>
-        <section className="from-bright-turquoise-900 bg-gradient-to-br to-black">
+        <section className="bg-gradient-to-br from-bright-turquoise-900 to-black">
           <LoadPanel>
             <div className="md:flex md:flex-row">
               <div className="md:basis-1/12"></div>
               <div className="place-self-top p-12 text-white md:basis-5/12">
                 <Heading
-                  className="font-callout pt-4 text-3xl font-semibold"
+                  className="pt-4 font-callout text-3xl font-semibold"
                   from="bright-turquoise-200"
                   to="bright-turquoise-500"
                 >
@@ -289,7 +289,7 @@ export default function Web() {
               <div className="place-self-top p-12 text-white md:basis-5/12">
                 {" "}
                 <Heading
-                  className="font-callout pt-4 text-3xl font-semibold"
+                  className="pt-4 font-callout text-3xl font-semibold"
                   from="bright-turquoise-200"
                   to="bright-turquoise-500"
                 >
@@ -311,10 +311,10 @@ export default function Web() {
               </div>
             </div>
             <div className="pl-6 md:flex md:flex-row md:pl-0">
-              <div className="md:basis-2/12 "></div>
-              <div className="place-self-center p-6 text-white md:basis-7/12 md:p-0 md:pb-12 ">
+              <div className="md:basis-2/12"></div>
+              <div className="place-self-center p-6 text-white md:basis-7/12 md:p-0 md:pb-12">
                 <Heading
-                  className="font-callout pt-4 text-2xl font-semibold"
+                  className="pt-4 font-callout text-2xl font-semibold"
                   from="bright-turquoise-200"
                   to="bright-turquoise-500"
                 >
@@ -338,7 +338,7 @@ export default function Web() {
                     alt="Rainbow-coloured self drawn giraffe head looking curious."
                     width="200"
                     height="200"
-                    className="hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear place-self-center"
+                    className="place-self-center hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear"
                   />
                 </Tooltip>
               </div>
@@ -352,7 +352,7 @@ export default function Web() {
             </div>
           </div>
         </section>
-        <section className="from-christalle-950 bg-gradient-to-br to-black text-white">
+        <section className="bg-gradient-to-br from-christalle-950 to-black text-white">
           <LoadPanel>
             <div className="md:flex md:flex-row">
               <div className="md:basis-1/5"></div>
@@ -368,12 +368,12 @@ export default function Web() {
                       alt="Rainbow-coloured self drawn baby monkey looking shocked."
                       width="200"
                       height="200"
-                      className="hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear right-0 place-self-center"
+                      className="right-0 place-self-center hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear"
                     />
                   </Tooltip>
                 </div>
 
-                <Heading className="font-callout pt-4 text-3xl font-semibold" from="christalle-100" to="christalle-400">
+                <Heading className="pt-4 font-callout text-3xl font-semibold" from="christalle-100" to="christalle-400">
                   <span id="achievements">My Key Achievements</span>
                 </Heading>
 
@@ -455,7 +455,7 @@ export default function Web() {
             </div>
           </div>
         </section>
-        <section className="from-christalle-400 bg-gradient-to-br to-black">
+        <section className="bg-gradient-to-br from-christalle-400 to-black">
           <LoadPanel>
             <div className="md:flex md:flex-row">
               <div className="md:basis-1/5"></div>
@@ -471,11 +471,11 @@ export default function Web() {
                       alt="Rainbow-coloured self drawn sheep head."
                       width="200"
                       height="200"
-                      className="hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear place-self-center"
+                      className="place-self-center hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear"
                     />
                   </Tooltip>
                 </div>
-                <Heading className="font-callout pt-4 text-3xl font-semibold" from="christalle-800" to="christalle-950">
+                <Heading className="pt-4 font-callout text-3xl font-semibold" from="christalle-800" to="christalle-950">
                   <span id="examples">
                     Example Products I&apos;ve Worked On As A Dedicated PM <br />
                     <span className="text-xl">
@@ -597,12 +597,12 @@ export default function Web() {
           </div>
         </section>
 
-        <section className="from-mosque-950 bg-gradient-to-br to-black text-white">
+        <section className="bg-gradient-to-br from-mosque-950 to-black text-white">
           <LoadPanel>
             <div className="md:flex md:flex-row">
               <div className="md:basis-1/5"></div>
               <div className="place-self-center p-8 text-white md:basis-2/5">
-                <Heading className="font-callout pt-4 text-3xl font-semibold" from="mosque-400" to="mosque-700">
+                <Heading className="pt-4 font-callout text-3xl font-semibold" from="mosque-400" to="mosque-700">
                   <span id="samples">Some Samples of My Work </span>
                 </Heading>
                 <p className="font-extralight">
@@ -611,7 +611,7 @@ export default function Web() {
                   company.
                 </p>
 
-                <h4 className="text-mosque-200 pt-12 text-2xl font-semibold">Presentations/tasks from interviews</h4>
+                <h4 className="pt-12 text-2xl font-semibold text-mosque-200">Presentations/tasks from interviews</h4>
                 <LoadPanel faster>
                   <SamplePanel
                     beforeColon={
@@ -646,6 +646,11 @@ export default function Web() {
                   ></SamplePanel>
 
                   <SamplePanel
+                    beforeColon={"Investigating an AOV drop on a B2C product ecommerce website"}
+                    link={"https://drive.google.com/file/d/1ZnaTJ_MYKC4rioc7cnzpXc4Tys761f-1/view?usp=sharing"}
+                  ></SamplePanel>
+
+                  <SamplePanel
                     beforeColon={"Improving a B2C software ecommerce website in 12 weeks"}
                     link={"https://drive.google.com/file/d/1vHgIIPQhQFfyasdW6bbUmpPwyVEjUuhU/view?usp=sharing"}
                   ></SamplePanel>
@@ -655,7 +660,7 @@ export default function Web() {
                     link={"https://drive.google.com/file/d/1rZmSmQwyW_am0DCnJ2lAol3x-Bbb-lvg/view?usp=sharing"}
                   ></SamplePanel>
                 </LoadPanel>
-                <h4 className="text-mosque-200 pt-12 text-2xl font-semibold">
+                <h4 className="pt-12 text-2xl font-semibold text-mosque-200">
                   Actual artifacts from my recent Product career
                 </h4>
                 <LoadPanel faster>
@@ -735,10 +740,10 @@ export default function Web() {
                     alt="Rainbow-coloured self drawn deer looking to camera, one leg raised."
                     width="200"
                     height="200"
-                    className="hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear place-self-center place-self-center"
+                    className="place-self-center hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear"
                   />
                 </Tooltip>
-                <h4 className="text-mosque-200 pt-12 text-2xl font-semibold">Academic writing</h4>
+                <h4 className="pt-12 text-2xl font-semibold text-mosque-200">Academic writing</h4>
                 <LoadPanel faster>
                   <p className="mb-4 font-extralight">
                     Case studies were mainly from my career. Names were anonymised. Some details were changed to
@@ -800,7 +805,7 @@ export default function Web() {
           </div>
         </section>
 
-        <section className="from-cerise-900 bg-gradient-to-br to-black">
+        <section className="bg-gradient-to-br from-cerise-900 to-black">
           <LoadPanel>
             <div className="md:flex md:flex-row">
               <div className="md:basis-1/6"></div>
@@ -816,15 +821,15 @@ export default function Web() {
                       alt="Rainbow-coloured self drawn zebra head."
                       width="200"
                       height="200"
-                      className="hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear place-self-center place-self-center"
+                      className="place-self-center hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear"
                     />
                   </Tooltip>
                 </div>
 
-                <Heading className="font-callout pt-4 text-3xl font-semibold" from="cerise-200" to="cerise-400">
+                <Heading className="pt-4 font-callout text-3xl font-semibold" from="cerise-200" to="cerise-400">
                   <span id="personality">My Personality Profile</span>
                 </Heading>
-                <h4 className="text-cerise-200 mt-4 text-2xl">Psychometrically:</h4>
+                <h4 className="mt-4 text-2xl text-cerise-200">Psychometrically:</h4>
                 <LoadPanel faster>
                   <ul className="list-disc pt-2">
                     <li>MBTI: ENTJ-A &quot;Executive&quot;</li>
@@ -837,7 +842,7 @@ export default function Web() {
                     </li>
                     <li>IQ approx 137 as an adult (Wechsler Adult Intelligence Scale)</li>
                   </ul>
-                  <h4 className="text-cerise-200 pt-12 text-2xl">Practically:</h4>
+                  <h4 className="pt-12 text-2xl text-cerise-200">Practically:</h4>
                   <ul className="list-disc pt-2">
                     <li>I&apos;m extroverted, enthusiastic, communicative and honest, sometimes to my detriment</li>
                     <li>I like to lead, grow and be strategic in my activities</li>
@@ -959,12 +964,12 @@ export default function Web() {
           </div>
         </section>
 
-        <section className="from-anzac-400 bg-gradient-to-br to-black">
+        <section className="bg-gradient-to-br from-anzac-400 to-black">
           <LoadPanel>
             <div className="md:flex md:flex-row">
               <div className="md:basis-1/5"></div>
               <div className="place-self-center p-12 text-white md:basis-2/5">
-                <Heading className="font-callout py-4 text-3xl font-semibold" from="anzac-600" to="anzac-900">
+                <Heading className="py-4 font-callout text-3xl font-semibold" from="anzac-600" to="anzac-900">
                   <span id="qualifications">My Academic Qualifications</span>
                 </Heading>{" "}
                 <LoadPanel faster>
@@ -1021,7 +1026,7 @@ export default function Web() {
                         alt="Rainbow-coloured self drawn roaring lion profile."
                         width="300"
                         height="300"
-                        className="hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear place-self-center place-self-center "
+                        className="place-self-center hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear"
                       />
                     </Tooltip>
                   </div>
@@ -1038,7 +1043,7 @@ export default function Web() {
           </div>
         </section>
 
-        <section className="from-christalle-400 bg-gradient-to-br to-black">
+        <section className="bg-gradient-to-br from-christalle-400 to-black">
           <LoadPanel>
             <div className="md:flex md:flex-row">
               <div className="md:basis-1/5"></div>
@@ -1055,14 +1060,14 @@ export default function Web() {
                         alt="Rainbow-coloured self drawn fox sitting."
                         width="300"
                         height="300"
-                        className="hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear place-self-center"
+                        className="place-self-center hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear"
                       />
                     </Tooltip>
                   </div>
                 </div>
               </div>
               <div className="place-self-center p-12 text-white md:basis-2/5">
-                <Heading className="font-callout pt-4 text-3xl font-semibold" from="christalle-800" to="black">
+                <Heading className="pt-4 font-callout text-3xl font-semibold" from="christalle-800" to="black">
                   <span id="certifications">My Certifications & Vocational Training</span>
                 </Heading>{" "}
                 <LoadPanel faster>
@@ -1097,21 +1102,21 @@ export default function Web() {
               <div className="md:basis-1/5"></div>
               <div className="place-self-center p-12 text-white md:basis-2/5">
                 <Heading
-                  className="font-callout pt-4 text-3xl font-semibold"
+                  className="pt-4 font-callout text-3xl font-semibold"
                   from="bright-turquoise-400"
                   to="bright-turquoise-600"
                 >
                   <span id="qa">Q&A</span>
                 </Heading>{" "}
                 <LoadPanel faster>
-                  <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
+                  <h3 className="pt-4 font-callout text-2xl font-medium text-bright-turquoise-400">
                     What am I looking for in a new opportunity/role?
                   </h3>
                   <p>
                     A chance to improve, progress in seniority, and make a positive impact on something that is
                     meaningful. A chance to be myself, be trusted and understood/appreciated. Easy, right? :D
                   </p>
-                  <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
+                  <h3 className="pt-4 font-callout text-2xl font-medium text-bright-turquoise-400">
                     What makes me different?
                   </h3>
                   <p>
@@ -1120,7 +1125,7 @@ export default function Web() {
                     background/sense that is a good storyteller, strategy thinker, and is courageous enough to take
                     risks and embrace change.
                   </p>
-                  <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
+                  <h3 className="pt-4 font-callout text-2xl font-medium text-bright-turquoise-400">
                     When should someone not hire me?
                   </h3>
                   <p>
@@ -1133,7 +1138,7 @@ export default function Web() {
                     ideas, people or ways of doing things, also I&apos;m unlikely to be compatible and it will cause
                     tension as I am a changemaker.
                   </p>
-                  <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
+                  <h3 className="pt-4 font-callout text-2xl font-medium text-bright-turquoise-400">
                     Why have I had short tenures in previous roles?
                   </h3>
                   <p>
@@ -1173,7 +1178,7 @@ export default function Web() {
                     don&apos;t help you succeed. At least, that has been my experience.
                   </p>
 
-                  <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
+                  <h3 className="pt-4 font-callout text-2xl font-medium text-bright-turquoise-400">
                     In a nutshell, why should someone hire me?
                   </h3>
                   <p>
@@ -1190,7 +1195,7 @@ export default function Web() {
                     a lot of my skills and I think companies with strong Product people and cultures, build better
                     products.
                   </p>
-                  <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
+                  <h3 className="pt-4 font-callout text-2xl font-medium text-bright-turquoise-400">
                     Hybrid, remote, or in-office?
                   </h3>
                   <p>
@@ -1206,7 +1211,7 @@ export default function Web() {
                     for me. Alcohol and work especially are something I try to avoid due to past experiences and because
                     I don&apos;t believe that intoxicating substances have a place in a workplace.
                   </p>
-                  <h3 className="font-callout text-bright-turquoise-400 pt-4 text-2xl font-medium">
+                  <h3 className="pt-4 font-callout text-2xl font-medium text-bright-turquoise-400">
                     What&apos;s with all the animals and the rainbows?
                   </h3>
                   <p>
@@ -1227,7 +1232,7 @@ export default function Web() {
                     alt="Rainbow-coloured self drawn guinea pig face."
                     width="200"
                     height="200"
-                    className="hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear place-self-center"
+                    className="place-self-center hover:animate-wiggle-more hover:animate-thrice hover:animate-ease-linear"
                   />
                 </Tooltip>
               </div>
