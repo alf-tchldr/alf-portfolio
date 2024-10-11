@@ -619,42 +619,39 @@ export default function Web() {
                     }
                     link={"https://drive.google.com/file/d/1Z335IeGcTEa12kbhTxBStylDwPq-fgtV/view?usp=sharing"}
                   ></SamplePanel>
-
                   <SamplePanel
                     beforeColon={"How I manage products in a multi-business-stakeholder environments"}
                     link={"https://drive.google.com/file/d/1sOQwCVCn6iUW11kz2dCsZ6xkw64q_FEs/view?usp=sharing"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"Ideating and choosing a solution to a customer reported product criticism"}
+                    link={"https://drive.google.com/file/d/1lNPOxUlqT-fBTP3FQQDA9R8ubNM-7eCG/view?usp=sharing"}
                   ></SamplePanel>
 
                   <SamplePanel
                     beforeColon={"My approach to roadmapping features at a fintech leftup"}
                     link={"https://drive.google.com/file/d/1jgSeheRzTOZ71nd_K8f07EQ167mq8tY_/view?usp=sharing"}
                   ></SamplePanel>
-
                   <SamplePanel
                     beforeColon={"Initial strategic take for an online tool to help onboard engineers"}
                     link={"https://drive.google.com/file/d/1ZXhQe8eWbsN8tHKmW7NSPZir0xItFJI4/view?usp=sharing"}
                   ></SamplePanel>
-
                   <SamplePanel
                     beforeColon={"An idea to increase visitors to a zoo using tech"}
                     link={"https://drive.google.com/file/d/1SEXIajcERWn3gHzKOUAh0t_POnyTf_jQ/view?usp=sharing"}
                   ></SamplePanel>
-
                   <SamplePanel
                     beforeColon={"How To Increase Netflix subscribers over 50"}
                     link={"https://drive.google.com/file/d/1dTarolyphx7RJ0idcbKOPvqb5mTeSHui/view?usp=sharing"}
                   ></SamplePanel>
-
                   <SamplePanel
                     beforeColon={"Investigating an AOV drop on a B2C product ecommerce website"}
                     link={"https://drive.google.com/file/d/1ZnaTJ_MYKC4rioc7cnzpXc4Tys761f-1/view?usp=sharing"}
                   ></SamplePanel>
-
                   <SamplePanel
                     beforeColon={"Improving a B2C software ecommerce website in 12 weeks"}
                     link={"https://drive.google.com/file/d/1vHgIIPQhQFfyasdW6bbUmpPwyVEjUuhU/view?usp=sharing"}
                   ></SamplePanel>
-
                   <SamplePanel
                     beforeColon={"An integration product I built left to finish"}
                     link={"https://drive.google.com/file/d/1rZmSmQwyW_am0DCnJ2lAol3x-Bbb-lvg/view?usp=sharing"}
