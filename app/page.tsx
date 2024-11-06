@@ -1001,7 +1001,7 @@ export default function Web() {
                       student to study an additional subject. Achieved As in every technology module which was
                       nationally recognised as standout. This was also in a state-run non-selective college in another
                       town with a high turnover of teaching staff and 50% of students left after the first year. I
-                      taught myself a lot.
+                      taught myself a lot. Also worked most weekends whilst studying in retail or a library.
                     </h4>
                   </div>
                   <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
@@ -1009,7 +1009,7 @@ export default function Web() {
                     <h4 className="text-black">
                       My father was diagnosed with terminal cancer months before my final exams and died a few weeks
                       before my exams started, so this was under severe adversity. This was also in a state-run
-                      non-selective school with a poor Ofsted rating. I taught myself a lot.
+                      non-selective school with a poor Ofsted rating. I needed to teach myself a lot.
                     </h4>
                   </div>
                 </LoadPanel>
