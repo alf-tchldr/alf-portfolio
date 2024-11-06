@@ -989,22 +989,27 @@ export default function Web() {
                     </h3>
                     <h4 className="text-black">
                       Top of my class and top of my faculty first year. Student representative. Retail work 15
-                      hours/week.
+                      hours/week. Year abroad in Spain teaching English as a second language to children and adults with
+                      no prior training.
                     </h4>
                   </div>
                   <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
                     <h3 className="text-2xl font-medium">🎓 AVCE ICT (3 A Levels) ICT - AAA</h3>
                     <h3 className="pt-2 text-2xl font-medium">🎓 AS Spanish - B</h3>
                     <h4 className="text-black">
-                      Only 1 of 60 starting students to complete 3 A Levels&apos; worth of modules. Only student to study
-                      an additional subject.
+                      Only 1 of 60 starting students to complete 3 A Levels&apos; worth of technology modules. Only
+                      student to study an additional subject. Achieved As in every technology module which was
+                      nationally recognised as standout. This was also in a state-run non-selective college in another
+                      town with a high turnover of teaching staff and 50% of students left after the first year. I
+                      taught myself a lot.
                     </h4>
                   </div>
                   <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
                     <h3 className="text-2xl font-medium">🎓 11 GCSEs - 4 A*s, 5 As, 3 Bs</h3>
                     <h4 className="text-black">
                       My father was diagnosed with terminal cancer months before my final exams and died a few weeks
-                      before my exams started, so this was under severe adversity.
+                      before my exams started, so this was under severe adversity. This was also in a state-run
+                      non-selective school with a poor Ofsted rating. I taught myself a lot.
                     </h4>
                   </div>
                 </LoadPanel>
