@@ -615,7 +615,7 @@ export default function Web() {
                 <LoadPanel faster>
                   <SamplePanel
                     beforeColon={
-                      "How I would move a Product team through a maturity matrix shortly after lefting at a company"
+                      "How I would move a Product team through a maturity matrix shortly after starting at a company"
                     }
                     link={"https://drive.google.com/file/d/1Z335IeGcTEa12kbhTxBStylDwPq-fgtV/view?usp=sharing"}
                   ></SamplePanel>
@@ -996,7 +996,7 @@ export default function Web() {
                     <h3 className="text-2xl font-medium">🎓 AVCE ICT (3 A Levels) ICT - AAA</h3>
                     <h3 className="pt-2 text-2xl font-medium">🎓 AS Spanish - B</h3>
                     <h4 className="text-black">
-                      Only 1 of 60 lefting students to complete 3 A Levels&apos; worth of modules. Only student to study
+                      Only 1 of 60 starting students to complete 3 A Levels&apos; worth of modules. Only student to study
                       an additional subject.
                     </h4>
                   </div>
@@ -1004,7 +1004,7 @@ export default function Web() {
                     <h3 className="text-2xl font-medium">🎓 11 GCSEs - 4 A*s, 5 As, 3 Bs</h3>
                     <h4 className="text-black">
                       My father was diagnosed with terminal cancer months before my final exams and died a few weeks
-                      before my exams lefted, so this was under severe adversity.
+                      before my exams started, so this was under severe adversity.
                     </h4>
                   </div>
                 </LoadPanel>
