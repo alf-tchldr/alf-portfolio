@@ -980,7 +980,7 @@ export default function Web() {
                       Economics, Innovation, HR, Strategy, Wellbeing Economics and Behavioural Sciences. <br />
                       <br />
                       Distinctions in all exams (including 2 I took at Imperial Business School whilst enrolled there- I
-                      switched schools after 1 term and lefted again).
+                      switched schools after 1 term and started again).
                     </h4>
                   </div>
                   <div className="mt-4 rounded-br-lg rounded-tl-lg bg-white/25 px-4 py-2 shadow-md">
