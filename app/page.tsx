@@ -95,7 +95,7 @@ export default function Web() {
                   <span className="text-mosque-400">dedicated Product Manager for 6 years</span> but I&apos;ve been
                   working <span className="text-mosque-400">in tech for over 15 years</span>. I suit collaborative,
                   innovative, ambitious and dynamic environments best, so{" "}
-                  <span className="text-mosque-400">leftups and scaleups</span>, although I&apos;ve done some great
+                  <span className="text-mosque-400">startups and scaleups</span>, although I&apos;ve done some great
                   stuff in some of the largest tech firms out there (Google & Visa).
                 </p>
                 <p className="mt-4 text-2xl leading-relaxed">
@@ -224,7 +224,7 @@ export default function Web() {
                   <li>BigTech/AdTech</li>
                   <li>Internal Tooling</li>
                   <li>Ecomm Ops</li>
-                  <li>leftups</li>
+                  <li>startups</li>
                   <li>Scaleups</li>
                   <li>CCaaS</li>
                   <li>EdTech</li>
@@ -324,7 +324,7 @@ export default function Web() {
                   A place where people want to be on a journey, united by a shared vision and goals. Collaborative,
                   trusting, and creative people. Managers and colleagues who care about people as well as profits,
                   certainly more than status or personal wealth alone. Modern and improving tech/processes. So probably
-                  a leftup or scaleup?
+                  a startup or scaleup?
                 </p>
               </div>
               <div className="basis-2/5 p-6">
@@ -385,7 +385,7 @@ export default function Web() {
                         engineers, 1 data scientist, 1 product marketer, 3 psychometrician contractors), and launched
                         within 6 months to 80% user approval
                       </li>
-                      <li>Created an MVP, pitch deck, and business plan for a leftup within 1 month by myself</li>
+                      <li>Created an MVP, pitch deck, and business plan for a startup within 1 month by myself</li>
                       <li>
                         Managed response to Brexit in first months at a company with technical complexities, a small
                         team, and last minute changes
@@ -629,7 +629,7 @@ export default function Web() {
                   ></SamplePanel>
 
                   <SamplePanel
-                    beforeColon={"My approach to roadmapping features at a fintech leftup"}
+                    beforeColon={"My approach to roadmapping features at a fintech startup"}
                     link={"https://drive.google.com/file/d/1jgSeheRzTOZ71nd_K8f07EQ167mq8tY_/view?usp=sharing"}
                   ></SamplePanel>
                   <SamplePanel
@@ -720,7 +720,7 @@ export default function Web() {
                   ></SamplePanel>
                   <SamplePanel
                     beforeColon={
-                      "My leftup's pitch deck for an edTech platform for core human skills for engineering managers"
+                      "My startup's pitch deck for an edTech platform for core human skills for engineering managers"
                     }
                     link={"https://drive.google.com/file/d/1VFHWucCF5Fl7lfbOVN1K9hUOTvoXpOUs/view?usp=sharing"}
                   ></SamplePanel>
