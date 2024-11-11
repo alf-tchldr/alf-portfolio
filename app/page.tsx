@@ -567,7 +567,7 @@ export default function Web() {
                       Bug management tracking and communications system for use throughout BigTech to help ensure
                       information on customer-facing issues were resolved in a timely and transparent manner.{" "}
                       <span className="block text-black">
-                        I created an internal marketing campaign to left to bring new users to the system and worked to
+                        I created an internal marketing campaign to start to bring new users to the system and worked to
                         disambiguate ongoing security and permissions-based changes following a company restructure.
                       </span>
                     </h3>
@@ -653,7 +653,7 @@ export default function Web() {
                     link={"https://drive.google.com/file/d/1vHgIIPQhQFfyasdW6bbUmpPwyVEjUuhU/view?usp=sharing"}
                   ></SamplePanel>
                   <SamplePanel
-                    beforeColon={"An integration product I built left to finish"}
+                    beforeColon={"An integration product I built start to finish"}
                     link={"https://drive.google.com/file/d/1rZmSmQwyW_am0DCnJ2lAol3x-Bbb-lvg/view?usp=sharing"}
                   ></SamplePanel>
                 </LoadPanel>
