@@ -974,7 +974,7 @@ export default function Web() {
                     <h3 className="text-2xl font-medium">🎓 MBA - Merit (68.5%) - Warwick Business School</h3>
                     <h4 className="text-black">
                       0.5% from Distinction (very annoying!). Student representative. HR/People specialism. Completed
-                      mainly during pandemic. <br />
+                      mainly during pandemic and whilst working. <br />
                       <br />
                       Change Management, Org Behaviour, Marketing, Finance, Operations Management, Leadership,
                       Economics, Innovation, HR, Strategy, Wellbeing Economics and Behavioural Sciences. <br />
