@@ -224,7 +224,7 @@ export default function Web() {
                   <li>BigTech/AdTech</li>
                   <li>Internal Tooling</li>
                   <li>Ecomm Ops</li>
-                  <li>startups</li>
+                  <li>Startups</li>
                   <li>Scaleups</li>
                   <li>CCaaS</li>
                   <li>EdTech</li>
