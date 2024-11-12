@@ -243,7 +243,7 @@ export default function Web() {
                   <p>
                     Coaching skills, conflict management techniques, pacing myself to adjust to change at a rate
                     suitable for the environment, working out how to balance authenticity with professionalism,
-                    Portuguese, playwriting, crotcheting, acting, improv, and AI.
+                    Portuguese, playwriting, crocheting, acting, improv, philosophy, ethics of technology, and AI.
                   </p>
                 </div>
               </div>
@@ -940,7 +940,7 @@ export default function Web() {
                     </li>
                     <li>
                       My main hobbies are all Arts related: theatre (going to and performing), drawing (I drew all the
-                      animals on this site), and crotcheting.
+                      animals on this site), and crocheting.
                     </li>
                     <li>
                       I have some ethical hard lines in terms of industries I won&apos;t work for: gambling, oil and
