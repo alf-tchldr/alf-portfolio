@@ -1206,7 +1206,7 @@ export default function Web() {
                   </h3>
                   <p>
                     I&apos;ve only ever worked as a PM in remote or remote-hybrid setups. I have a strong preference for
-                    remote but I recognise that in person collaboration, or at least knowing colleagues as people is
+                    remote but I recognise that in-person collaboration, or at least knowing colleagues as people is
                     important for most people. So my preference is remote, with quarterly or ad-hoc meetups. I could
                     potentially do hybrid 2 days a week in office, but on those days I&apos;m likely not to be at my
                     best, especially if a commute on public transport or longer than an hour is involved (it&apos;s an
