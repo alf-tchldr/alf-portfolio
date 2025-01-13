@@ -67,7 +67,7 @@ export default function Web() {
                   </a>
                   <a
                     target="_blank"
-                    href="https://drive.google.com/file/d/1J-kcMwq81sOc-P5Og9GoDbEC4ScbktwW/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1ZNyZpZMucfA3qgigbHGeqAHNU7hh9ub2/view?usp=sharing"
                     rel="noopener noreferrer"
                   >
                     <Image
