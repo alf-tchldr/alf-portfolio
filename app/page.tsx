@@ -528,7 +528,7 @@ export default function Web() {
 
                   <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
                     <h3>
-                      Reliable integrations into couriers for ecommerce operations to be able to create, facilitate and
+                      Reliable integrations into couriers for e-commerce operations to be able to create, facilitate and
                       manage shipments of goods ordered to customers internationally.{" "}
                       <span className="block text-black">
                         I managed the company&apos;s response post-Brexit changes and devised a longer-term strategy to
@@ -539,7 +539,7 @@ export default function Web() {
 
                   <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
                     <h3>
-                      Easy to use integrations into online marketplaces for ecommerce operations so that sellers did not
+                      Easy to use integrations into online marketplaces for e-commerce operations so that sellers did not
                       oversell and good efficiently manage orders and inventory.{" "}
                       <span className="block text-black">
                         I prioritised and helped manage partners for small third-party compliance changes and devised a
@@ -684,7 +684,7 @@ export default function Web() {
                     link={"/files/Amy Freelander Product-Market Fit Narrative.html"}
                   ></SamplePanel>
                   <SamplePanel
-                    beforeColon={"Pricing workshop withe executives to get direction setup"}
+                    beforeColon={"Pricing workshop with executives to get direction setup"}
                     link={"https://miro.com/app/board/uXjVLdOzd0w=/?share_link_id=955841538693"}
                   ></SamplePanel>
 
