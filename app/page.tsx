@@ -356,7 +356,7 @@ export default function Web() {
           <LoadPanel>
             <div className="md:flex md:flex-row">
               <div className="md:basis-1/5"></div>
-              <div className="place-self-center p-12 text-white md:basis-3/5 md:p-0">
+              <div className="place-self-center p-20 text-white md:basis-3/5 md:p-20">
                 <div className="justify-items-end">
                   <Tooltip
                     explainer={
@@ -539,8 +539,8 @@ export default function Web() {
 
                   <div className="mt-4 rounded bg-white/25 px-4 py-2 shadow-md">
                     <h3>
-                      Easy to use integrations into online marketplaces for e-commerce operations so that sellers did not
-                      oversell and good efficiently manage orders and inventory.{" "}
+                      Easy to use integrations into online marketplaces for e-commerce operations so that sellers did
+                      not oversell and good efficiently manage orders and inventory.{" "}
                       <span className="block text-black">
                         I prioritised and helped manage partners for small third-party compliance changes and devised a
                         longer-term partner and platform strategy to enable market growth.
