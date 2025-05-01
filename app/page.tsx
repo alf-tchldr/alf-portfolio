@@ -931,7 +931,7 @@ export default function Web() {
                       didn&apos;t know what else to do. It&apos;s been my passion since I got my own computer.
                     </li>
                     <li>
-                      I speak Spanish, have lived in Spain and have a Portuguese family. I am heavily influenced by
+                      I speak Spanish, live in Spain and have a Portuguese family. I am heavily influenced by
                       Iberian culture and ways of being.
                     </li>
                     <li>
