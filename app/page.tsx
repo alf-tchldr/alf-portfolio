@@ -360,7 +360,7 @@ export default function Web() {
                 <div className="justify-items-end">
                   <Tooltip
                     explainer={
-                      "Capuchins are one of the first primates to be observed using tools in the wild. What's that joke about a monkey and a typewriter?"
+                      "Capuchins are one of the first primates to be observed using tools in the wild. What&apos;s that joke about a monkey and a typewriter?"
                     }
                   >
                     <Image
@@ -463,7 +463,7 @@ export default function Web() {
                 <div>
                   <Tooltip
                     explainer={
-                      "Sheep have large, rectangular pupils that allow them to see almost 360 degrees, including behind themselves without turning their heads. I have to turn my head unless I've got a mirror."
+                      "Sheep have large, rectangular pupils that allow them to see almost 360 degrees, including behind themselves without turning their heads. I have to turn my head unless I&apos;ve got a mirror."
                     }
                   >
                     <Image
@@ -720,7 +720,7 @@ export default function Web() {
                   ></SamplePanel>
                   <SamplePanel
                     beforeColon={
-                      "My startup's pitch deck for an edTech platform for core human skills for engineering managers"
+                      "My startup&apos;s pitch deck for an edTech platform for core human skills for engineering managers"
                     }
                     link={"https://drive.google.com/file/d/1VFHWucCF5Fl7lfbOVN1K9hUOTvoXpOUs/view?usp=sharing"}
                   ></SamplePanel>
@@ -729,7 +729,7 @@ export default function Web() {
               <div className="p-8 md:basis-1/5">
                 <Tooltip
                   explainer={
-                    "Deer are considered intelligent animals because of their keen sense of smell, good vision, and acute hearing. Maybe that's why they generally stay away from humans who don't have food."
+                    "Deer are considered intelligent animals because of their keen sense of smell, good vision, and acute hearing. Maybe that&apos;s why they generally stay away from humans who don&apos;t have food."
                   }
                 >
                   <Image
@@ -754,7 +754,7 @@ export default function Web() {
                   ></SamplePanel>
                   <SamplePanel
                     beforeColon={"MBA HR case study"}
-                    afterColon={"Google's HR Strategy"}
+                    afterColon={"Google&apos;s HR Strategy"}
                     link={"https://drive.google.com/file/d/1nUmmH99PBsxYeV8MXClrtyuR8YLsvd7x/view?usp=sharing"}
                   ></SamplePanel>
                   <SamplePanel
@@ -810,7 +810,7 @@ export default function Web() {
                 <div className="md:basis-1/6">
                   <Tooltip
                     explainer={
-                      "Every zebra has unique black and white stripes, similar to fingerprints in their uniqueness. We're all unique, but zebras really give it to us in black and white."
+                      "Every zebra has unique black and white stripes, similar to fingerprints in their uniqueness. We&apos;re all unique, but zebras really give it to us in black and white."
                     }
                   >
                     <Image
@@ -1020,7 +1020,7 @@ export default function Web() {
                     {" "}
                     <Tooltip
                       explainer={
-                        "A lion's roar can be heard from up to eight kilometers away. I'm not saying that some people are like lions, but I've definitely heard many people roaring about their education to anyone in the vicinity"
+                        "A lion&apos;s roar can be heard from up to eight kilometers away. I&apos;m not saying that some people are like lions, but I&apos;ve definitely heard many people roaring about their education to anyone in the vicinity"
                       }
                     >
                       <Image
@@ -1054,7 +1054,7 @@ export default function Web() {
                   <div className="md:absolute md:top-[180px]">
                     <Tooltip
                       explainer={
-                        "Foxes are difficult to surprise and are known to be able to think well on the spot and adjust their plans. Smart and always ready to adapt, that's why they are cool."
+                        "Foxes are difficult to surprise and are known to be able to think well on the spot and adjust their plans. Smart and always ready to adapt, that&apos;s why they are cool."
                       }
                     >
                       <Image
@@ -1146,32 +1146,32 @@ export default function Web() {
                   <p>
                     I&apos;m going to give a very honest answer here; I&apos;m not going to give the &quot;interview
                     safe&quot; version. Apart from some bad luck/randomness in the fates of the companies I was working
-                    for or my ability to make my position look redundant/easy (as I've not been replaced in the last 5+
-                    roles I've left), there's a general volatility working for companies pre-PMF or with shifting PMF.
-                    The only personably attributable thing I can think of, is autism. Or more specifically, undiagnosed,
-                    misunderstood autistic behaviours. It&apos;s a common pattern for undiagnosed autistic people to go
-                    through the world, feeling like we don&apos;t belong so I have chosen to move on from places because
-                    I felt I didn&apos;t belong, always trying to be optimistic that I just had to find the right place.
-                    I think, also because I'm autistic, I can get the measure of somewhere fast and I don't have an
-                    ability to ignore things once I've realised them. I'm also not as great as others claim to be at
-                    spotting problems in interviews. Or maybe I am but I am often looking for roles in a state of
-                    desperation that I feel I have to ignore them or at least give the company the benefit of the doubt.
-                    I'm still not sure how anyone knows what it's like to work somewhere until they actually do?! My
-                    particular personality and autistic traits also mean that I don&apos;t keep my head down, I try to
-                    make an impact quickly and I&apos;m vocal and confident. This doesn&apos;t go down well in low trust
-                    or hierarchial environments. It can put a target on my back too in low psychological safety zones
-                    where people are competitive or insecure, and I am too trusting/open. I&apos;ve also seemingly gone
-                    into a lot of environments as a PM, where the company or people above or around just didn&apos;t
-                    really understand what Product Managers were. Most seemed to think that the primary marker of a
-                    PM&apos;s success was people being &quot;happy&quot; with them. As most seasoned PMs know, this is
-                    often the sign of a bad PM who never says no or a very tactical operator! I&apos;ve only worked in a
-                    role for 1 month with a manager that was also a Product person. I&apos;ve also just had some bad
-                    luck/timing. Not one of the Product roles I&apos;ve held was backfilled after I left. I've worked in
-                    environments going through a lot of change or taking big risks, which so often don't pan out.
-                    Despite short tenures however, I&apos;ve been able to have standout impacts because I am a fast
-                    learner and executor. I don&apos;t seem to need as long as other people to ramp up, or at least I
-                    can&apos;t pretend to need as long as to not upset anyone or to just coast through probationary
-                    periods.
+                    for or my ability to make my position look redundant/easy (as I&apos;ve not been replaced in the
+                    last 5+ roles I&apos;ve left), there&apos;s a general volatility working for companies pre-PMF or
+                    with shifting PMF. The only personably attributable thing I can think of, is autism. Or more
+                    specifically, undiagnosed, misunderstood autistic behaviours. It&apos;s a common pattern for
+                    undiagnosed autistic people to go through the world, feeling like we don&apos;t belong so I have
+                    chosen to move on from places because I felt I didn&apos;t belong, always trying to be optimistic
+                    that I just had to find the right place. I think, also because I'm autistic, I can get the measure
+                    of somewhere fast and I don't have an ability to ignore things once I've realised them. I'm also not
+                    as great as others claim to be at spotting problems in interviews. Or maybe I am but I am often
+                    looking for roles in a state of desperation that I feel I have to ignore them or at least give the
+                    company the benefit of the doubt. I'm still not sure how anyone knows what it's like to work
+                    somewhere until they actually do?! My particular personality and autistic traits also mean that I
+                    don&apos;t keep my head down, I try to make an impact quickly and I&apos;m vocal and confident. This
+                    doesn&apos;t go down well in low trust or hierarchial environments. It can put a target on my back
+                    too in low psychological safety zones where people are competitive or insecure, and I am too
+                    trusting/open. I&apos;ve also seemingly gone into a lot of environments as a PM, where the company
+                    or people above or around just didn&apos;t really understand what Product Managers were. Most seemed
+                    to think that the primary marker of a PM&apos;s success was people being &quot;happy&quot; with
+                    them. As most seasoned PMs know, this is often the sign of a bad PM who never says no or a very
+                    tactical operator! I&apos;ve only worked in a role for 1 month with a manager that was also a
+                    Product person. I&apos;ve also just had some bad luck/timing. Not one of the Product roles I&apos;ve
+                    held was backfilled after I left. I've worked in environments going through a lot of change or
+                    taking big risks, which so often don't pan out. Despite short tenures however, I&apos;ve been able
+                    to have standout impacts because I am a fast learner and executor. I don&apos;t seem to need as long
+                    as other people to ramp up, or at least I can&apos;t pretend to need as long as to not upset anyone
+                    or to just coast through probationary periods.
                   </p>
                   <p className="pt-2">
                     And it shouldn&apos;t matter that I&apos;m non-binary, female-presenting and queer but tech is a
@@ -1211,7 +1211,7 @@ export default function Web() {
                     potentially do hybrid 2 days a week in office, but on those days I&apos;m likely not to be at my
                     best, especially if a commute on public transport or longer than an hour is involved (it&apos;s an
                     autism sensory thing). I would not appreciate going into an empty office or an office so busy
-                    there&apos;s nowhere to have a meeting. In office 100% is a no-go for me. I live in Reading, UK.
+                    there&apos;s nowhere to have a meeting. In office 100% is a no-go for me. I live in Madrid, Spain.
                     Ideally, I&apos;d love to be able to work from anywhere in the world for short stints as I have
                     family abroad and a partner who travels for work a lot. Office socials/parties are not really a plus
                     for me. Alcohol and work especially are something I try to avoid due to past experiences and because
