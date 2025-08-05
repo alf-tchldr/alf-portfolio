@@ -720,7 +720,7 @@ export default function Web() {
                   ></SamplePanel>
                   <SamplePanel
                     beforeColon={
-                      "My startup&apos;s pitch deck for an edTech platform for core human skills for engineering managers"
+                      "My startup's pitch deck for an edTech platform for core human skills for engineering managers"
                     }
                     link={"https://drive.google.com/file/d/1VFHWucCF5Fl7lfbOVN1K9hUOTvoXpOUs/view?usp=sharing"}
                   ></SamplePanel>
@@ -754,7 +754,7 @@ export default function Web() {
                   ></SamplePanel>
                   <SamplePanel
                     beforeColon={"MBA HR case study"}
-                    afterColon={"Google&apos;s HR Strategy"}
+                    afterColon={"Google's HR Strategy"}
                     link={"https://drive.google.com/file/d/1nUmmH99PBsxYeV8MXClrtyuR8YLsvd7x/view?usp=sharing"}
                   ></SamplePanel>
                   <SamplePanel
@@ -931,8 +931,8 @@ export default function Web() {
                       didn&apos;t know what else to do. It&apos;s been my passion since I got my own computer.
                     </li>
                     <li>
-                      I speak Spanish, live in Spain and have a Portuguese family. I am heavily influenced by
-                      Iberian culture and ways of being.
+                      I speak Spanish, live in Spain and have a Portuguese family. I am heavily influenced by Iberian
+                      culture and ways of being.
                     </li>
                     <li>
                       I read (and listen/watch) a lot of business, psychology, and non-fiction books/podcasts. In the
