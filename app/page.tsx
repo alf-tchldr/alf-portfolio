@@ -810,7 +810,7 @@ export default function Web() {
                 <div className="md:basis-1/6">
                   <Tooltip
                     explainer={
-                      "Every zebra has unique black and white stripes, similar to fingerprints in their uniqueness. We&apos;re all unique, but zebras really give it to us in black and white."
+                      "Every zebra has unique black and white stripes, similar to fingerprints in their uniqueness. We're all unique, but zebras really give it to us in black and white."
                     }
                   >
                     <Image
@@ -1020,7 +1020,7 @@ export default function Web() {
                     {" "}
                     <Tooltip
                       explainer={
-                        "A lion&apos;s roar can be heard from up to eight kilometers away. I&apos;m not saying that some people are like lions, but I&apos;ve definitely heard many people roaring about their education to anyone in the vicinity"
+                        "A lion's roar can be heard from up to eight kilometers away. I'm not saying that some people are like lions, but I've definitely heard many people roaring about their education to anyone in the vicinity"
                       }
                     >
                       <Image
@@ -1054,7 +1054,7 @@ export default function Web() {
                   <div className="md:absolute md:top-[180px]">
                     <Tooltip
                       explainer={
-                        "Foxes are difficult to surprise and are known to be able to think well on the spot and adjust their plans. Smart and always ready to adapt, that&apos;s why they are cool."
+                        "Foxes are difficult to surprise and are known to be able to think well on the spot and adjust their plans. Smart and always ready to adapt, that's why they are cool."
                       }
                     >
                       <Image
