@@ -135,8 +135,8 @@ module.exports = {
           "Noto Color Emoji",
         ],
         mono: ["var(--font-roboto-mono)"],
-        callout: ["var(--font-jost)"],
-        callout2: ["var(--font-dosis)"],
+        callout: ["var(--font-jost)", "Inter", "sans-serif"],
+        callout2: ["var(--font-dosis)", "Inter", "sans-serif"],
       },
       borderWidth: {
         DEFAULT: "1px",

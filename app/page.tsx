@@ -627,7 +627,6 @@ export default function Web() {
                     beforeColon={"Ideating and choosing a solution to a customer reported product criticism"}
                     link={"https://drive.google.com/file/d/1lNPOxUlqT-fBTP3FQQDA9R8ubNM-7eCG/view?usp=sharing"}
                   ></SamplePanel>
-
                   <SamplePanel
                     beforeColon={"My approach to roadmapping features at a fintech startup"}
                     link={"https://drive.google.com/file/d/1jgSeheRzTOZ71nd_K8f07EQ167mq8tY_/view?usp=sharing"}
@@ -655,6 +654,10 @@ export default function Web() {
                   <SamplePanel
                     beforeColon={"An integration product I built start to finish"}
                     link={"https://drive.google.com/file/d/1rZmSmQwyW_am0DCnJ2lAol3x-Bbb-lvg/view?usp=sharing"}
+                  ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"Engagement and retention roadmapping and 30, 60, 90 day plan for mobile app"}
+                    link={"https://drive.google.com/file/d/143aP-0QpGWidjHjuI5KFqMkYMtTLfXQZ/view?usp=sharing"}
                   ></SamplePanel>
                 </LoadPanel>
                 <h4 className="pt-12 text-2xl font-semibold text-mosque-200">
@@ -687,7 +690,6 @@ export default function Web() {
                     beforeColon={"Pricing workshop with executives to get direction setup"}
                     link={"https://miro.com/app/board/uXjVLdOzd0w=/?share_link_id=955841538693"}
                   ></SamplePanel>
-
                   <SamplePanel
                     beforeColon={"Pre-mortem before a big launch"}
                     link={"https://miro.com/app/board/uXjVLdO_KKc=/?share_link_id=716484686149"}

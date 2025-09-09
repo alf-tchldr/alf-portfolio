@@ -17,12 +17,14 @@ const callout2 = Dosis({
   display: "swap",
   weight: ["200", "300", "400", "500", "600", "700", "800"],
   variable: "--font-dosis",
+  style: ["normal"],
 })
 
 const roboto_mono = Roboto_Mono({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-roboto-mono",
+  style: ["normal", "italic"],
 })
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
