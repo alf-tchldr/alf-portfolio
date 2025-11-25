@@ -937,7 +937,7 @@ export default function Web() {
                       didn&apos;t know what else to do. It&apos;s been my passion since I got my own computer.
                     </li>
                     <li>
-                      I speak Spanish, live in Spain and have a Portuguese family. I am heavily influenced by Iberian
+                      I speak Spanish (B2.2, studying for C1), live in Spain, and have a Portuguese family. I am heavily influenced by Iberian
                       culture and ways of being.
                     </li>
                     <li>
@@ -1091,6 +1091,7 @@ export default function Web() {
                   <h3 className="pt-4">📃 Agile Project Manager Practitioner</h3>
                   <h3 className="pt-4">📃 Lean Six Sigma Green Belt</h3>
                   <h3 className="pt-4">📃 PRINCE2 Practitioner</h3>
+                  <h3 className="pt-4">📃 Level 2 Certificate in Creating A Business Start-Up</h3>
                 </LoadPanel>
               </div>
             </div>
