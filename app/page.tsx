@@ -360,7 +360,7 @@ export default function Web() {
                 <div className="justify-items-end">
                   <Tooltip
                     explainer={
-                      "Capuchins are one of the first primates to be observed using tools in the wild. What&apos;s that joke about a monkey and a typewriter?"
+                      "Capuchins are one of the first primates to be observed using tools in the wild. What's that joke about a monkey and a typewriter?"
                     }
                   >
                     <Image
@@ -735,7 +735,7 @@ export default function Web() {
               <div className="p-8 md:basis-1/5">
                 <Tooltip
                   explainer={
-                    "Deer are considered intelligent animals because of their keen sense of smell, good vision, and acute hearing. Maybe that&apos;s why they generally stay away from humans who don&apos;t have food."
+                    "Deer are considered intelligent animals because of their keen sense of smell, good vision, and acute hearing. Maybe that's why they generally stay away from humans who don't have food."
                   }
                 >
                   <Image
