@@ -659,6 +659,10 @@ export default function Web() {
                     beforeColon={"Engagement and retention roadmapping and 30, 60, 90 day plan for mobile app"}
                     link={"https://drive.google.com/file/d/143aP-0QpGWidjHjuI5KFqMkYMtTLfXQZ/view?usp=sharing"}
                   ></SamplePanel>
+                  <SamplePanel
+                    beforeColon={"AI/Anomaly Detection MVP and Strategy for Sustainability Analytics Company"}
+                    link={"https://drive.google.com/file/d/1hK1THeEYj3KLQJnhDAVJkegGaQFXVgos/view?usp=sharing"}
+                  ></SamplePanel>
                 </LoadPanel>
                 <h4 className="pt-12 text-2xl font-semibold text-mosque-200">
                   Actual artifacts from my recent Product career
